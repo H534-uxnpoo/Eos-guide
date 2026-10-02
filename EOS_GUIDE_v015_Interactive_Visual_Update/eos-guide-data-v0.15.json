@@ -1143,12 +1143,6 @@
               "Channel番号 → Unpatch → Enter → Enter"
             ]
           ]
-        },
-        {
-          "type": "note",
-          "title": "このガイドの方針",
-          "tone": "info",
-          "text": "Clear／Deleteはここでは扱わず、普段使用しているUnpatchの手順だけを掲載します。"
         }
       ]
     },
@@ -1454,9 +1448,6 @@
         "1 Sneak Enter",
         "Sneak Enter"
       ],
-      "warnings": [
-        "Clearはコマンドラインを消すだけで、手動出力は消さない。"
-      ],
       "keywords": [
         "灯体",
         "Channel",
@@ -1683,12 +1674,6 @@
         },
         {
           "type": "note",
-          "title": "Clearでは値は戻らない",
-          "tone": "warning",
-          "text": "Clearを押してもコマンドラインが空になるだけです。手動で変更した値を戻す場合はSneakを使用します。"
-        },
-        {
-          "type": "note",
           "title": "コマンドラインを全部消す",
           "tone": "tip",
           "text": "入力途中のコマンドラインをまとめて消すときはShift＋Backspaceを使用します。Backspaceだけの場合はClearキーとして動作します。"
@@ -1696,7 +1681,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Thru",
@@ -1850,8 +1834,8 @@
           "type": "paragraphs",
           "title": "Group Listを開く",
           "items": [
-            "Groupキーを2回押すと、BlindモードでGroup Listが開きます。PCキーボードではGを2回押します。",
-            "普段はGroup ListまたはDirect SelectからGroupを選択します。"
+            "Groupキー（g）を2回押すと、BlindモードでGroup Listが開きます。",
+            "またはGroup ListまたはDirect SelectからGroupを選択します。"
           ]
         },
         {
@@ -1907,7 +1891,7 @@
           "type": "paragraphs",
           "title": "Groupを修正する",
           "items": [
-            "普段はGroupの内容を一度削除し、必要なChannelを選び直して作成し直します。",
+            "Groupの内容を一度削除し、必要なChannelを選び直して作成し直します。",
             "Group Listでは、編集するGroupを選択してChannelを入力し直すこともできます。"
           ]
         },
@@ -1946,7 +1930,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Group",
@@ -2199,7 +2182,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Undo",
@@ -2495,7 +2477,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Offset",
@@ -2865,12 +2846,6 @@
           ]
         },
         {
-          "type": "note",
-          "title": "表示の確認",
-          "tone": "info",
-          "text": "この手順では、入力後に対象の数値が青色表示になったことを確認します。"
-        },
-        {
           "type": "paragraphs",
           "title": "Presetとは",
           "items": [
@@ -2907,7 +2882,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Record",
@@ -3176,15 +3150,8 @@
           ]
         },
         {
-          "type": "note",
-          "title": "長いTimeの入力",
-          "tone": "warning",
-          "text": "Eosは3桁以上を分：秒として扱います。150と入力すると1分50秒、230と入力すると2分30秒です。"
-        },
-        {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Time",
@@ -3750,7 +3717,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Record",
@@ -4042,7 +4008,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Mark",
@@ -4148,7 +4113,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Block",
@@ -5631,7 +5595,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Effect",
@@ -7286,7 +7249,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Update",
@@ -7408,7 +7370,6 @@
         {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Copy To",
@@ -7543,15 +7504,8 @@
           ]
         },
         {
-          "type": "note",
-          "title": "長いTimeの入力",
-          "tone": "warning",
-          "text": "Eosは3桁以上を分：秒として扱います。150と入力すると1分50秒です。2分30秒は230と入力します。"
-        },
-        {
           "type": "keyboard_reference",
           "title": "使用するPCキー",
-          "image": "/assets/keyboard/eos-keyboard.png",
           "keys": [
             {
               "eos_key": "Time",
