@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+  <title id="title">EOS GUIDE v0.15 visual layout reference</title>
+  <desc id="desc">Cue workflow, glossary, Live and Blind comparison, Offset and Fan, Submaster, and Effect selection prototypes.</desc>
+  <defs>
+    <style>
+      .bg{fill:#07111b}.panel{fill:#0d1a26;stroke:#2a3e51;stroke-width:2}.soft{fill:#132434}.txt{fill:#eef6ff;font-family:system-ui,'Yu Gothic','Meiryo',sans-serif}.muted{fill:#9eb0c2;font-family:system-ui,'Yu Gothic','Meiryo',sans-serif}.title{font-size:24px;font-weight:500}.h{font-size:18px;font-weight:500}.body{font-size:14px}.small{font-size:12px}.orange{fill:#f3a712}.blue{fill:#4a9eff}.green{fill:#35c88a}.line{stroke:#2a3e51;stroke-width:2;fill:none}.arrow{stroke:#9eb0c2;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#9eb0c2"/></marker>
+  </defs>
+  <rect class="bg" width="1440" height="1040"/>
+  <text class="txt title" x="40" y="48">EOS GUIDE v0.15 - visual reference</text>
+
+  <rect class="panel" x="30" y="75" width="1380" height="150" rx="14"/>
+  <text class="txt h" x="50" y="105">Cue workflow - horizontal layout</text>
+  <g transform="translate(50 125)">
+    <g><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">1. Show File</text><text class="muted small" x="12" y="52">Open / New</text></g>
+    <path class="arrow" d="M143 36 H166"/>
+    <g transform="translate(174)"><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">2. Patch</text><text class="muted small" x="12" y="52">Register fixtures</text></g>
+    <path class="arrow" d="M317 36 H340"/>
+    <g transform="translate(348)"><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">3. Channel</text><text class="muted small" x="12" y="52">Select fixtures</text></g>
+    <path class="arrow" d="M491 36 H514"/>
+    <g transform="translate(522)"><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">4. Look</text><text class="muted small" x="12" y="52">Build the look</text></g>
+    <path class="arrow" d="M665 36 H688"/>
+    <g transform="translate(696)"><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">5. Record</text><text class="muted small" x="12" y="52">Record Cue</text></g>
+    <path class="arrow" d="M839 36 H862"/>
+    <g transform="translate(870)"><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">6. GO</text><text class="muted small" x="12" y="52">Run / Check</text></g>
+    <path class="arrow" d="M1013 36 H1036"/>
+    <g transform="translate(1044)"><rect class="soft" width="135" height="72" rx="9"/><text class="txt body" x="12" y="29">7. Update</text><text class="muted small" x="12" y="52">Apply edits</text></g>
+    <path class="arrow" d="M1187 36 H1210"/>
+    <g transform="translate(1218)"><rect class="soft" width="112" height="72" rx="9"/><text class="txt body" x="12" y="29">8. Save</text><text class="muted small" x="12" y="52">Shift + U</text></g>
+  </g>
+
+  <rect class="panel" x="30" y="245" width="680" height="220" rx="14"/>
+  <text class="txt h" x="50" y="278">Setup glossary</text>
+  <g class="txt body">
+    <g transform="translate(50 300)"><rect class="soft" width="130" height="42" rx="8"/><text x="22" y="27">Channel</text></g>
+    <g transform="translate(190 300)"><rect class="soft" width="130" height="42" rx="8"/><text x="24" y="27">Address</text></g>
+    <g transform="translate(330 300)"><rect class="soft" width="130" height="42" rx="8"/><text x="20" y="27">Universe</text></g>
+    <g transform="translate(470 300)"><rect class="soft" width="130" height="42" rx="8"/><text x="18" y="27">Parameter</text></g>
+    <g transform="translate(50 352)"><rect class="soft" width="130" height="42" rx="8"/><text x="34" y="27">Target</text></g>
+    <g transform="translate(190 352)"><rect class="soft" width="130" height="42" rx="8"/><text x="15" y="27">Manual Data</text></g>
+    <g transform="translate(330 352)"><rect class="soft" width="130" height="42" rx="8"/><text x="18" y="27">Tracking</text></g>
+    <g transform="translate(470 352)"><rect class="soft" width="130" height="42" rx="8"/><text x="22" y="27">Cue Only</text></g>
+  </g>
+  <rect x="50" y="410" width="610" height="34" rx="6" fill="#1b3042"/>
+  <text class="txt body" x="64" y="432">Channel: the number used to control a fixture in Eos.</text>
+
+  <rect class="panel" x="730" y="245" width="680" height="220" rx="14"/>
+  <text class="txt h" x="750" y="278">Live / Blind comparison</text>
+  <g transform="translate(750 300)">
+    <rect x="0" y="0" width="305" height="140" rx="10" fill="#071019" stroke="#f3a712" stroke-width="3"/>
+    <text class="orange h" x="16" y="28">LIVE - ORANGE</text>
+    <rect x="16" y="43" width="170" height="52" rx="6" fill="#111e2a"/><text class="txt body" x="28" y="68">Cue / Output</text><text class="muted small" x="28" y="87">Changes output now</text>
+    <rect x="16" y="108" width="270" height="20" rx="4" fill="none" stroke="#f3a712"/><text class="orange small" x="24" y="122">LIVE: Channel 1 @ 50</text>
+  </g>
+  <g transform="translate(1080 300)">
+    <rect x="0" y="0" width="305" height="140" rx="10" fill="#071019" stroke="#4a9eff" stroke-width="3"/>
+    <text class="blue h" x="16" y="28">BLIND - BLUE</text>
+    <rect x="16" y="43" width="170" height="52" rx="6" fill="#111e2a"/><text class="txt body" x="28" y="68">Patch / Data</text><text class="muted small" x="28" y="87">No immediate output</text>
+    <rect x="16" y="108" width="270" height="20" rx="4" fill="none" stroke="#4a9eff"/><text class="blue small" x="24" y="122">BLIND: Patch Channel 1</text>
+  </g>
+
+  <rect class="panel" x="30" y="485" width="680" height="245" rx="14"/>
+  <text class="txt h" x="50" y="518">Channel - Offset / Fan</text>
+  <text class="muted small" x="50" y="548">Before</text>
+  <g class="txt body" transform="translate(50 558)">
+    <g><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">1</text></g><g transform="translate(48)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">2</text></g><g transform="translate(96)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">3</text></g><g transform="translate(144)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">4</text></g><g transform="translate(192)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">5</text></g><g transform="translate(240)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">6</text></g><g transform="translate(288)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">7</text></g><g transform="translate(336)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">8</text></g><g transform="translate(384)"><circle class="soft" cx="19" cy="19" r="19"/><text x="15" y="24">9</text></g>
+  </g>
+  <text class="muted small" x="50" y="622">Reverse</text>
+  <text class="txt body" x="50" y="650">9  8  7  6  5  4  3  2  1</text>
+  <g transform="translate(390 548)"><line class="line" x1="0" y1="140" x2="250" y2="140"/><line class="line" x1="0" y1="20" x2="0" y2="140"/><path d="M0 130 L31 116 L62 102 L93 88 L124 75 L155 61 L186 47 L217 33 L248 20" fill="none" stroke="#4a9eff" stroke-width="4"/><g class="orange"><circle cx="0" cy="130" r="5"/><circle cx="31" cy="116" r="5"/><circle cx="62" cy="102" r="5"/><circle cx="93" cy="88" r="5"/><circle cx="124" cy="75" r="5"/><circle cx="155" cy="61" r="5"/><circle cx="186" cy="47" r="5"/><circle cx="217" cy="33" r="5"/><circle cx="248" cy="20" r="5"/></g><text class="muted small" x="75" y="164">Fan: Channel - Value</text></g>
+
+  <rect class="panel" x="730" y="485" width="680" height="245" rx="14"/>
+  <text class="txt h" x="750" y="518">Submaster - 2-input HTP / LTP</text>
+  <g transform="translate(750 548)">
+    <text class="txt body" x="0" y="17">Input A</text><rect class="soft" x="70" y="0" width="430" height="22" rx="5"/><rect class="blue" x="70" y="0" width="301" height="22" rx="5"/><text class="txt body" x="515" y="17">70%</text>
+    <text class="txt body" x="0" y="57">Input B</text><rect class="soft" x="70" y="40" width="430" height="22" rx="5"/><rect class="blue" x="70" y="40" width="172" height="22" rx="5"/><text class="txt body" x="515" y="57">40%</text>
+    <text class="txt body" x="0" y="97">HTP</text><rect class="soft" x="70" y="80" width="430" height="22" rx="5"/><rect class="orange" x="70" y="80" width="301" height="22" rx="5"/><text class="txt body" x="515" y="97">70%</text>
+    <text class="txt body" x="0" y="137">LTP</text><rect class="soft" x="70" y="120" width="430" height="22" rx="5"/><rect class="orange" x="70" y="120" width="172" height="22" rx="5"/><text class="txt body" x="515" y="137">40%</text>
+    <text class="muted small" x="70" y="168">HTP = highest value    LTP = latest input</text>
+  </g>
+
+  <rect class="panel" x="30" y="750" width="1380" height="255" rx="14"/>
+  <text class="txt h" x="50" y="784">Effect - choose type by purpose (horizontal)</text>
+  <g transform="translate(50 812)">
+    <rect class="soft" x="0" y="0" width="150" height="130" rx="12"/><text class="txt h" x="24" y="56">What do</text><text class="txt h" x="18" y="84">you need?</text>
+    <path class="arrow" d="M160 65 H194"/>
+    <g transform="translate(205)">
+      <rect class="soft" x="0" y="0" width="250" height="36" rx="7"/><text class="txt body" x="12" y="23">Sequence fixtures</text>
+      <rect class="soft" x="0" y="45" width="250" height="36" rx="7"/><text class="txt body" x="12" y="68">Sequence fixed values</text>
+      <rect class="soft" x="0" y="90" width="250" height="36" rx="7"/><text class="txt body" x="12" y="113">Move Pan / Tilt</text>
+    </g>
+    <g transform="translate(470)">
+      <rect class="soft" x="0" y="0" width="250" height="36" rx="7"/><text class="txt body" x="12" y="23">Waveform parameter</text>
+      <rect class="soft" x="0" y="45" width="250" height="36" rx="7"/><text class="txt body" x="12" y="68">Change hue / saturation</text>
+    </g>
+    <path class="arrow" d="M735 65 H785"/>
+    <rect x="800" y="0" width="480" height="130" rx="12" fill="#132434" stroke="#f3a712" stroke-width="3"/>
+    <text class="orange title" x="828" y="51">Step Based</text>
+    <text class="muted body" x="828" y="82">Define Channel, On / Off, and Time by step</text>
+    <text class="muted small" x="828" y="108">Result changes with selected purpose</text>
+  </g>
+</svg>

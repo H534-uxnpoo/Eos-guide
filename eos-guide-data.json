@@ -1,0 +1,2842 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "language": "ja",
+  "product": "ETC Eos Family",
+  "source_manual": {
+    "filename": "操作マニュアル 1.1.0 w.pdf",
+    "title": "Eos Family 操作マニュアル",
+    "manual_revision": "1.1.0 w",
+    "eos_version_noted_in_manual": "v3.2.7",
+    "page_count": 150,
+    "publisher": "日本コーバン株式会社"
+  },
+  "ui_model": {
+    "home_style": "button-first",
+    "home_instruction": "最初に目的別ボタンを表示し、タップ後に記事一覧、さらに説明カードへ進む。",
+    "detail_sections": [
+      "ひとことで",
+      "こんなとき",
+      "操作手順",
+      "コマンド例",
+      "注意",
+      "関連項目",
+      "マニュアル参照"
+    ],
+    "home_buttons": [
+      {
+        "id": "start",
+        "label": "はじめる・保存",
+        "icon": "power",
+        "description": "卓の名称、起動、終了、ショーファイル"
+      },
+      {
+        "id": "settings",
+        "label": "設定・ネットワーク",
+        "icon": "settings",
+        "description": "CIA、ECU、Concert"
+      },
+      {
+        "id": "patch",
+        "label": "Patch",
+        "icon": "cable",
+        "description": "一般灯体、LED、ムービングのパッチ"
+      },
+      {
+        "id": "screens",
+        "label": "画面・About",
+        "icon": "monitor",
+        "description": "Live／Blind、タブ、画面表示、情報確認"
+      },
+      {
+        "id": "channels",
+        "label": "チャンネル操作",
+        "icon": "sliders",
+        "description": "明るさ、選択、Sneak、Query、Fanなど"
+      },
+      {
+        "id": "palettes",
+        "label": "パレット・プリセット",
+        "icon": "swatches",
+        "description": "保存、呼び出し、Direct Select、Filter"
+      },
+      {
+        "id": "playback",
+        "label": "Cue・Playback",
+        "icon": "play",
+        "description": "Cueの作成、再生、修正、Time、Mark"
+      },
+      {
+        "id": "submaster",
+        "label": "Submaster",
+        "icon": "faders",
+        "description": "モード、作成、削除"
+      },
+      {
+        "id": "effects",
+        "label": "Effect",
+        "icon": "sparkles",
+        "description": "3種類のEffect、作成、実行、停止"
+      },
+      {
+        "id": "magic-sheet",
+        "label": "Magic Sheet",
+        "icon": "layout",
+        "description": "新規作成、配置、背景、ターゲット"
+      },
+      {
+        "id": "utilities",
+        "label": "便利機能",
+        "icon": "wrench",
+        "description": "Snapshot、Macro、Park、Augment3d"
+      },
+      {
+        "id": "keyboard",
+        "label": "Eosキーボード",
+        "icon": "keyboard",
+        "description": "キーを押して役割と使用例を見る"
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "卓の外観と名称",
+      "category_id": "start",
+      "theme_color": "#ef476f"
+    },
+    {
+      "number": 2,
+      "title": "卓の立ち上げ方、落とし方",
+      "category_id": "start",
+      "theme_color": "#ef476f"
+    },
+    {
+      "number": 3,
+      "title": "ショーファイルの保存、読み込み",
+      "category_id": "start",
+      "theme_color": "#ef476f"
+    },
+    {
+      "number": 4,
+      "title": "CIA、ECUについて",
+      "category_id": "settings",
+      "theme_color": "#7b61ff"
+    },
+    {
+      "number": 5,
+      "title": "Patchの方法",
+      "category_id": "patch",
+      "theme_color": "#3a86ff"
+    },
+    {
+      "number": 6,
+      "title": "About",
+      "category_id": "screens",
+      "theme_color": "#3a86ff"
+    },
+    {
+      "number": 7,
+      "title": "画面の見方",
+      "category_id": "screens",
+      "theme_color": "#3a86ff"
+    },
+    {
+      "number": 8,
+      "title": "チャンネル操作",
+      "category_id": "channels",
+      "theme_color": "#2a9d8f"
+    },
+    {
+      "number": 9,
+      "title": "プリセットとパレット",
+      "category_id": "palettes",
+      "theme_color": "#8ac926"
+    },
+    {
+      "number": 10,
+      "title": "プレイバックの基礎",
+      "category_id": "playback",
+      "theme_color": "#ffca3a"
+    },
+    {
+      "number": 11,
+      "title": "プレイバックの使い方",
+      "category_id": "playback",
+      "theme_color": "#ffca3a"
+    },
+    {
+      "number": 12,
+      "title": "サブマスター",
+      "category_id": "submaster",
+      "theme_color": "#ff924c"
+    },
+    {
+      "number": 13,
+      "title": "エフェクト",
+      "category_id": "effects",
+      "theme_color": "#f77f00"
+    },
+    {
+      "number": 14,
+      "title": "マジックシート",
+      "category_id": "magic-sheet",
+      "theme_color": "#ee9b8f"
+    },
+    {
+      "number": 15,
+      "title": "その他の機能",
+      "category_id": "utilities",
+      "theme_color": "#9b5de5"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1_1",
+      "manual_section": "1-1",
+      "chapter": 1,
+      "chapter_title": "卓の外観と名称",
+      "category_id": "start",
+      "title": "Apex10",
+      "route": "/guide/1_1",
+      "theme_color": "#ef476f",
+      "summary": "Apex 10の各部名称と接続端子を確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Apex10",
+        "卓の外観と名称"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 8,
+        "page_end": 8,
+        "extracted_text": "1-1. Apex10\nフェーダーが１０本なので Apex10 です。\n① 電源ボタン ⑬ ミニエンコーダー\n② USB-A & USB-C ( データ通信 ) ⑭ レベルウィール\n③ 内蔵タッチスクリーン ⑮ キーボード / アクセサリートレイ\n④ キーパッド ⑯ USB-A ( 充電のみ )\n⑤ キーパッドタッチスクリーン ⑰ 台本ライト\n⑥ ターゲットキー (Target Key) ⑱ 本体電源スイッチ / IEC さし口\n⑦ メインプレイバック ⑲ IO garage\n⑧ 電動駆動フェーダー ⑳ Display Port\n⑨ フェーダータッチスクリーン ㉑ SFP+\n⑩ Configurable フェーダーボタン ㉒ Ethernet\n⑪ 無制限フェーダーウィール ㉓ リトライト\n⑫ エンコーダー"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "1_2",
+      "manual_section": "1-2",
+      "chapter": 1,
+      "chapter_title": "卓の外観と名称",
+      "category_id": "start",
+      "title": "Apex5",
+      "route": "/guide/1_2",
+      "theme_color": "#ef476f",
+      "summary": "Apex 5の各部名称と接続端子を確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Apex5",
+        "卓の外観と名称"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 9,
+        "page_end": 9,
+        "extracted_text": "1-2. Apex5\nChapter 1\nフェーダーが 5 本なので Apex5 です。\n卓の外観と名称\n① 電源ボタン ⑬ ミニエンコーダー\n② USB-A & USB-C ( データ通信 ) ⑭ レベルウィール\n③ 内蔵タッチスクリーン ⑮ キーボード / アクセサリートレイ\n目次 01\n④ キーパッド ⑯ USB-A ( 充電のみ )\n⑤ キーパッドタッチスクリーン ⑰ 台本ライト\n⑥ ターゲットキー (Target key) ⑱ 本体電源スイッチ / IEC さし口\n⑦ メインプレイバック ⑲ IO garage\n⑧ 電動駆動フェーダー ⑳ Display Port\n02\n⑨ フェーダータッチスクリーン ㉑ SFP+\n03\n⑩ Configurable フェーダーボタン ㉒ Ethernet\n⑪ 無制限フェーダーウィール ㉓ リトライト\n04\n⑫ エンコーダー\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "1_3",
+      "manual_section": "1-3",
+      "chapter": 1,
+      "chapter_title": "卓の外観と名称",
+      "category_id": "start",
+      "title": "Ion Xe 20",
+      "route": "/guide/1_3",
+      "theme_color": "#ef476f",
+      "summary": "Ion Xe 20のフェーダー、エンコーダー、端子類を確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Ion Xe 20",
+        "卓の外観と名称"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 10,
+        "page_end": 10,
+        "extracted_text": "1-3. Ion Xe 20\n① 20 プレイバックフェーダー ⑪ Type-C ポート× 2\n② メインプレイバック ⑫ Ethernet × 2\n③ エンコーダー ⑬ リモートトリガーポート\n④ USB ポート ⑭ リトライト\n⑤ 電源ボタン ⑮ ケンジントンロック\n⑥ ナビゲーションキー ⑯ DMX ポート× 4\n⑦ レベルホイール ⑰ オーディオ受信端子 （Future Use）\n⑧ コントロールキーボード ⑱ USB ポート× 2\n⑨ レートホイールフェーダーページコントロール ⑲ ディスプレイポート× 2\n⑩ 電源スイッチ ⑳ IEC さし口"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "1_4",
+      "manual_section": "1-4",
+      "chapter": 1,
+      "chapter_title": "卓の外観と名称",
+      "category_id": "start",
+      "title": "キーの配置",
+      "route": "/guide/1_4",
+      "theme_color": "#ef476f",
+      "summary": "Eosの物理キー配置を一覧で確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "キーの配置",
+        "卓の外観と名称"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 11,
+        "page_end": 11,
+        "extracted_text": "Chapter 1 卓の外観と名称 目次 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15\n11\n1-4. キーの配置"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "2_1",
+      "manual_section": "2-1",
+      "chapter": 2,
+      "chapter_title": "卓の立ち上げ方、落とし方",
+      "category_id": "start",
+      "title": "立ち上げ方",
+      "route": "/guide/2_1",
+      "theme_color": "#ef476f",
+      "summary": "卓本体とETCnomadを安全な順序で起動する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [
+        "卓本体にはUPSが搭載されていないため、周辺機器と電源環境を先に確認する。"
+      ],
+      "keywords": [
+        "立ち上げ方",
+        "卓の立ち上げ方、落とし方"
+      ],
+      "subtopics": [
+        {
+          "id": "2-1-1",
+          "title": "卓本体の場合"
+        },
+        {
+          "id": "2-1-2",
+          "title": "ETC Nomad の場合"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 14,
+        "page_end": 14,
+        "extracted_text": "2-1. 立ち上げ方\n2-1-1. 卓本体の場合\n外付けモニターなどシステム周辺機材の配線、 立ち上げを先に行ってください\n※この卓には UPS は搭載されていません。\n卓の背面の電源スイッチを入れ、 前面の電源スイッチ を押すと卓が起動します。\n電源ボタンの場所は 「Chapter 1 卓の外観と名称」 （7 ページ ) を参照してください。\n下記モードがありますので、 選択してください。 各モードについては次項 「2-2. 卓のモード」 （14 ページ）\nを参照してください。\n• Primary( プライマリーモード )\n• Backup （バックアップモード）\n• Client （クライアントモード）\n• Offline （オフラインモード\n卓が起動すると下のような表示が現れます。\n2-1-2. ETC Nomad の場合\nETC Nomad とは Eos を PC/Mac のソフトとして使用する場合のソフトウェア名です。\n2-2. 卓のモード\n2-2-1. Primary Mode（プライマリーモード )\nPrimary Mode はメイン卓のモードです。 ネットワーク上に 1 台だけ存在し、 信号を出力します。\nPrimary で起動した場合、 コマンドラインの右側に Primary と表示され、 別卓で Back up などが同期して\nいるとその右側に Master と表示されます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "2_2",
+      "manual_section": "2-2",
+      "chapter": 2,
+      "chapter_title": "卓の立ち上げ方、落とし方",
+      "category_id": "start",
+      "title": "卓のモード",
+      "route": "/guide/2_2",
+      "theme_color": "#ef476f",
+      "summary": "Primary、Backup、Client、Mirror、Offlineの役割を選ぶ。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "卓のモード",
+        "卓の立ち上げ方、落とし方"
+      ],
+      "subtopics": [
+        {
+          "id": "2-2-1",
+          "title": "Primary Mode（プライマリーモード )"
+        },
+        {
+          "id": "2-2-2",
+          "title": "Backup Mode（バックアップモード）"
+        },
+        {
+          "id": "2-2-3",
+          "title": "Client Mode（クライアントモード）"
+        },
+        {
+          "id": "2-2-4",
+          "title": "Mirror Mode（ミラーモード）"
+        },
+        {
+          "id": "2-2-5",
+          "title": "Offline Mode（オフラインモード）"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 14,
+        "page_end": 15,
+        "extracted_text": "2-1. 立ち上げ方\n2-1-1. 卓本体の場合\n外付けモニターなどシステム周辺機材の配線、 立ち上げを先に行ってください\n※この卓には UPS は搭載されていません。\n卓の背面の電源スイッチを入れ、 前面の電源スイッチ を押すと卓が起動します。\n電源ボタンの場所は 「Chapter 1 卓の外観と名称」 （7 ページ ) を参照してください。\n下記モードがありますので、 選択してください。 各モードについては次項 「2-2. 卓のモード」 （14 ページ）\nを参照してください。\n• Primary( プライマリーモード )\n• Backup （バックアップモード）\n• Client （クライアントモード）\n• Offline （オフラインモード\n卓が起動すると下のような表示が現れます。\n2-1-2. ETC Nomad の場合\nETC Nomad とは Eos を PC/Mac のソフトとして使用する場合のソフトウェア名です。\n2-2. 卓のモード\n2-2-1. Primary Mode（プライマリーモード )\nPrimary Mode はメイン卓のモードです。 ネットワーク上に 1 台だけ存在し、 信号を出力します。\nPrimary で起動した場合、 コマンドラインの右側に Primary と表示され、 別卓で Back up などが同期して\nいるとその右側に Master と表示されます。\n\n2-2-2. Backup Mode（バックアップモード）\nChapter 2\nBackup Mode は同期しているメイン卓に障害が起きた場合に、 代わって出力を行うモードです。\nEos は 1 つの Primary 卓に対して 1 台しか存在できないので、 3 台目以降は ClientMode でしか同ーネッ\nトワークに入れません。\n卓の立ち上げ方、落とし方\nBack up で起動した場合、 コマンドラインの右側に Backup と表示され、 Primary と同期しているとその右\n側に Tracking と表示されます。\nPrimary が抜けて Backup が出力するようになると、 Master となります。\n2-2-3. Client Mode（クライアントモード）\nClient Mode （クライアントモード） とは、 同ーネットワーク内で Primary • Backup に次ぐ 3 台目以降で\n使用する卓のモードです。\nPrimary 卓に同期していれば、 ネットワークを介して Ch をコントロールしたりデータを見ることは出来ます。\nBackup との違いは Primary、 Back up の卓が抜けても代わって出力できないことです。 もし Backup 卓\nがネットワークから抜けても、 Backup 卓に繰り上がることはありません。\n目次 01\nデフォルトでは信号出力はありません。\n変更するには CIA の Setting から System Setting ないの Output とい\nう項目内にある 「Output In Client Mode」 という項目を enable に変更\nし て く だ さ い。 ( 「4-1-1. System Setting （CIA 内 ）」 （25 ペ ー ジ ）\n02\n参照）\n03\n04\n2-2-4. Mirror Mode（ミラーモード）\n05\nMirror Mode ( ミラーモード ) とは、 他の卓の外部ディスプレイをミラーリングするためのモードです。 信号\n06\n出力はなく、 ページキーによるページ移動と電源 ON/OFF のみが使えます。\nミラーされる側の卓はホストと呼ばれます。 ミラーモードのデバイスでページ移動するとホスト卓も同期してペー 07\nジ移動します。\nMirror Mode ( ミラーモード ) とは、 デザイナーや照明助手が、 プログラマーと全く同じ画面を見ることがで\n08\nきるように設計されています。\n09\n2-2-5. Offline Mode（オフラインモード）\n10\nOffline Mode ( オフラインモード ) はネットワークに接続しておらず、 信号出力していない状態です。 データ\nの編集や閲覧は出来ます。\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "2_3",
+      "manual_section": "2-3",
+      "chapter": 2,
+      "chapter_title": "卓の立ち上げ方、落とし方",
+      "category_id": "start",
+      "title": "シャットダウン方法",
+      "route": "/guide/2_3",
+      "theme_color": "#ef476f",
+      "summary": "ショーファイルを保存してから安全に終了する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [
+        "終了前に必ずショーファイルを保存する。"
+      ],
+      "keywords": [
+        "シャットダウン方法",
+        "卓の立ち上げ方、落とし方"
+      ],
+      "subtopics": [
+        {
+          "id": "2-3-1",
+          "title": "CIA を呼び出す"
+        },
+        {
+          "id": "2-3-2",
+          "title": "ショーファイルを閉じる"
+        },
+        {
+          "id": "2-3-3",
+          "title": "確認"
+        },
+        {
+          "id": "2-3-4",
+          "title": "シャットダウン"
+        },
+        {
+          "id": "2-3-5",
+          "title": "シャットダウン確認"
+        },
+        {
+          "id": "2-3-6",
+          "title": "Nomad の場合"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 16,
+        "page_end": 17,
+        "extracted_text": "2-3. シャットダウン方法\n注意\nこの工程の前に必ずショーファイルの保存を行って下さい。 ショーファイルの保存は 「3-1. ショーファイ\nルの保存」 （20 ページ） を参照してください。\n2-3-1. CIA を呼び出す\nDispray キーを使用し、 CIA を呼び出します。\n左画面、 下側に出てくる画面を 「CIA」 と呼称します。\n（詳しくは 「4-1. CIA とは」 （24 ページ） 参照）\n2-3-2. ショーファイルを閉じる\n矢印キーまたはマウスを使用し、 「Exit」 を押してください。\nPage Up、 Down、 Left、 Right は↑↓←→として使用可能です。\nレベルウィールを使用して上下移動をすることができます。\n2-3-3. 確認\n「Do you really want to quit ？ （本当にショーファイルを閉じますか？）」\nと問いかけてくるので\n「OK」 を押してショーファイルを閉じます。\n\n2-3-4. シャットダウン\nChapter 2\n卓の電源を落とす画面に自動で移るので、 「Power Off」 を押してください。\n卓の立ち上げ方、落とし方\n2-3-5. シャットダウン確認\n「Are you sure you want to power off your console? （あなたは\n本当に卓をシャットダウンしますか ?）」 と問われます。 「Yes」 を押すと卓電\n源がシャットダウンされます。\n2-3-6. Nomad の場合\nブラウザの右上の×をおして Eos を終了してください。\n目次 01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "3_1",
+      "manual_section": "3-1",
+      "chapter": 3,
+      "chapter_title": "ショーファイルの保存、読み込み",
+      "category_id": "start",
+      "title": "ショーファイルの保存",
+      "route": "/guide/3_1",
+      "theme_color": "#ef476f",
+      "summary": "上書き、別名、USBへのショーファイル保存を行う。",
+      "when_to_use": [],
+      "commands": [
+        "Shift + Update",
+        "Displays → File → Save / Save As"
+      ],
+      "warnings": [],
+      "keywords": [
+        "ショーファイルの保存",
+        "ショーファイルの保存、読み込み"
+      ],
+      "subtopics": [
+        {
+          "id": "3-1-1",
+          "title": "上書き保存"
+        },
+        {
+          "id": "3-1-2",
+          "title": "卓の中に別名保存"
+        },
+        {
+          "id": "3-1-3",
+          "title": "拡張子を選択して保存"
+        },
+        {
+          "id": "3-1-4",
+          "title": "USB に別名保存"
+        },
+        {
+          "id": "3-1-5",
+          "title": "名前の変更"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 20,
+        "page_end": 21,
+        "extracted_text": "3-1. ショーファイルの保存\nDisplay キーを押します。\nCIA が開きます。 矢印キーを操作し、 「File」 を開きます。\n3-1-1. 上書き保存\n「Save」 （一番上に出てきます） を選択します。\n赤字で 「Do you really want to save ？」 と聞かれるので、 OK を選んでください。\nCIA を開かなくても [Sift+Update] を押すことで上書き保存することができます。\n「Success」 と表示されたら保存完了です。\n工程は 「3-1-5. 名前の変更」 （21 ページ） に進みます。\n3-1-2. 卓の中に別名保存\n「Save As...」 から 「Show File Archive」 または保存するフォルダを選択します。\n赤字で 「Do you really want to save ？」 と聞かれるので、 OK を選んでください。\nOK の下の項目は、 次の 「3-1-3. 拡張子を選択して保存」 （21 ページ） で説明します。\n\n3-1-3. 拡張子を選択して保存\nChapter 3\n保存時にショーファイルの拡張子を選ぶことができます。\nショーファイルの保存、読み込み\n3-1-4. USB に別名保存\n『Save As…』から下の方に進むと、卓に接続されている USB 名が出てくるので、保存する USB を選択します。\nUSB の名前を変更していない場合は、 「E」 「G」 等のアルファベットだけ表示されます。\n目次 01\n赤字で 「Do you really wantto save?」 と聞かれるので OK を選んで下さい。\n02\n03\n04\n05\n「3-1-5. 名前の変更」 （21 ページ） に進みます。\n3-1-5. 名前の変更 06\n07\nキーボードを使用し、 名前の入力を行ってください。 外付けキーボードも使用可能です。\n08\n09\n10\n11\nもし既に入力してある名前を全て消したいときは Label キーを押すと名前がすべて空の状態になります。\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "3_2",
+      "manual_section": "3-2",
+      "chapter": 3,
+      "chapter_title": "ショーファイルの保存、読み込み",
+      "category_id": "start",
+      "title": "ショーファイルの読み込み",
+      "route": "/guide/3_2",
+      "theme_color": "#ef476f",
+      "summary": "本体またはUSBからショーファイルを読み込み、読み込む対象を選ぶ。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "ショーファイルの読み込み",
+        "ショーファイルの保存、読み込み"
+      ],
+      "subtopics": [
+        {
+          "id": "3-2-1",
+          "title": "本体から Show を読み込む"
+        },
+        {
+          "id": "3-2-2",
+          "title": "USB から Show を読み込む"
+        },
+        {
+          "id": "3-2-3",
+          "title": "ファイルに含むターゲット"
+        },
+        {
+          "id": "3-2-4",
+          "title": "ショーファイルを読み込んだ後"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 22,
+        "page_end": 22,
+        "extracted_text": "3-2. ショーファイルの読み込み\nDisplay キーを押します。\nCIA が開くので、 矢印キーを操作し、 「File」 を開き、 「Open」 を選択します。\n3-2-1. 本体から Show を読み込む\nOpen の下から 「Show File Archive」 を選択して、 読み込みたい Showfile を選択します。\n工程は 「3-2-3. ファイルに含むターゲット」 （22 ページ） に進みます。\n3-2-2. USB から Show を読み込む\n「Show File Archive」 より下に行くと USB が出てきます。\nUSB を選択すると、 その USB の下層が出てくるので、 読み込みたい Showfile を選択します。\ne が保存されている USB\n工程は 「3-2-3. ファイルに含むターゲット」 （22 ページ） に進みます。\n3-2-3. ファイルに含むターゲット\n読み込むターゲットが選択できます。 デフォルトでは全てが選択されています。\n理由がなければ、 右側のターゲットが全て黄色で選ばれていることを確認して 「OK」 を押します。\nNote\n全て選ばれていないとショーファイルの全データが読み込まれません。\n3-2-4. ショーファイルを読み込んだ後\nショーファイルを読み込んでも画面は読み込み前のままです。\nSnapshot などで作業画面を呼び出してください。\nSnapshot については 「15-1. スナップショット」 （144 ページ） を参照してください。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "4_1",
+      "manual_section": "4-1",
+      "chapter": 4,
+      "chapter_title": "CIA、ECUについて",
+      "category_id": "settings",
+      "title": "CIAとは",
+      "route": "/guide/4_1",
+      "theme_color": "#7b61ff",
+      "summary": "ショーやユーザーごとの動作をCIAで設定する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "CIAとは",
+        "CIA、ECUについて"
+      ],
+      "subtopics": [
+        {
+          "id": "4-1-1",
+          "title": "System Setting（CIA 内）"
+        },
+        {
+          "id": "4-1-2",
+          "title": "Cue Setting（CIA 内）"
+        },
+        {
+          "id": "4-1-3",
+          "title": "Show Control（CIA 内 )"
+        },
+        {
+          "id": "4-1-4",
+          "title": "User – Record Default (CIA 内 )"
+        },
+        {
+          "id": "4-1-5",
+          "title": "User – マニュアル タイミング・制御 (CIA 内 )"
+        },
+        {
+          "id": "4-1-6",
+          "title": "User – ディスプレイ (CIA 内 )"
+        },
+        {
+          "id": "4-1-7",
+          "title": "Device – Brightness Setting (CIA 内 )"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 24,
+        "page_end": 27,
+        "extracted_text": "4-1. CIA とは\nCIA は Central Information Area （基幹情報エリア） の略で、 このショーファイルでのプログラミングにお\nいてのデフォルト設定、 ネットワークなど Eos ソフト上での設定編集画面です。\nWindows のコントロールパネル、 設定のような機能になります。\nDisplays キー を押すと開きます。\nには現在、 開いているショーファイルのタイトルがここに表示されます。\nの をタッチ、クリックして CIA の収納が出来ます。 で CIA が消えないようにロックすることもできます。\nNote\nCIA を操作する際、 APEX や Ion を使用している方は矢印キーの使用がおすすめです。\n下の画面を Browser と呼びます。\nFile ： ショーファイルの保存、 読み込み、 名付け\nExit ： 卓のシャットダウン、 ECU への移動\nPower Off Device ： 卓のシャッドダウン\nSetup ： システムやデバイスなどの各種設定 詳しくは次ページ\nClear ： キュー、 パッチ、 設定等を削除\nPrint ： Cue データなどを PDF 出力できる\nLogs: Log ファイルを出力できる。 卓に問題が起きた時などに使う。\n\n4-1-1. System Setting（CIA 内）\nChapter 4\nBrowser の Set up をダブルクリックすると Blind で設定画面が開きます。基本的に Set up での設定変更は、\n変更したいマスをクリックするとコマンドラインに自動入力されるので、 その後に数字を入れ、 Enter キーを押\nすと変更完了です。\nCIA、ECU について\n◇マークは Enter を意味します。\nマスを選択するとプルダウンで選択肢が表示されるものもあります。\nここではチャンネル出力数の上限や、 Home キーのプリセットの参照元、 デフォルトのキュータイムな打ち込み\nにおける設定があります。 System 内での各設定は全ユーザー共通の卓全体での設定です。\nプリセットについては 「9-1. プリセット、 パレットの種類」 （80 ページ） を参照してください。\n目次 01\n注意\nEnter キーを押さないと数値は設定されません。\n02\n03\n04\n05\n06\n07\nチャンネル出力数の上限\n08\nHOME キーの参照するプリセット番号\n仮想 Hue と Saturation パラメータの作成を有効 ・ 無効にします。 デフォルトでは無効。\n09\nハイライトのプリセット\n10\nVirtual HSB コントロールを無効にすると、 Table ビューに Hue と Saturation の列が表示されなくなりま\nす。 Hue や Saturation の値だけをキュー、 サブマスター、 プリセット、 パレットに記録するすることができま\n11\nせん。 Hue と Saturation に対して Fan やエフェクトを適用することもできません。\n無効でもエンコーダ、 ML Controls、 Color Picker、 コマンドラインから Hue と Saturation をコントロー\n12\nルすることはできます。\n13\nNote\nPreset、パレットともに 1000 個まで作成することができます。ナンバリングは 0.001 から 9,999.999\n14\nまで使用可能です。 詳しくは 「9-1. プリセット、 パレットの種類」 （80 ページ） を参照してください。\n15\n\n4-1-2. Cue Setting（CIA 内）\n「Enabled」 は有効、 「Disabled」 は無効を意味します。\nAuto-Mark ： ムービングのスタンバイ機能を ON/OFF します。\nムーブインブラックと通称されたりします。「11-8-1. オートマーク」\n（106 ページ） 参照してください。\nCue を Record する際の規定タイム値になります。\nムービングの機能など (Focus, Color...) に対してもデフォル\nトのタイム値を設ける事ができます。 例では全て 4.9 秒に設定され\nています。\n4-1-3. Show Control（CIA 内 )\nMSC やタイムコードなど今後、 使うことになるかもしれない機能です。\n4-1-4. User – Record Default (CIA 内 )\nユーザーごとの Record や Update する際のデフォルト設定を行います。\nRecord の際に Tracking か Q only の既定モードを選択できます。\nRecord や Delete などをする際に意思確認をするかしないかを選択できます。\nUpdate の際に Q で直すだけなのかパレットを更新するのかデフォルトを選べます。\n• All ： 全て更新\n• Make Abs ： Q のみ更新\n• Ref Only ： パレット or プリセットのみ更新\n\n4-1-5. User – マニュアル タイミング・制御 (CIA 内 )\nChapter 4\nEos の中で Manual （マニュアル） はターゲット (CH, Cue 等 ) に手動で変更した値です。\nLevel キー等を押した時のデフォルト設定や Go to Cue のタイム設定などを行います。\nCIA、ECU について\nLevel キー (@@) した際のデフォルトゲージ\n+% キー , -% キーを使用する際のデフォルトゲージ\nハイライトの設定\nSneak した時のタイム\n目次 01\nGo to Cue した時のタイム\n4-1-6. User – ディスプレイ (CIA 内 )\nブラインド ネクスト / ラスト アフェクト ターゲット\n02\n有効にすると、 Blind では、 チャンネル選択がコマンドラインにある場合、 Next と Last\n03\nコマンドは常にチャンネルに適用されます。 デフォルトでは無効です。\n04\n05\n06\n07\n4-1-7. Device – Brightness Setting (CIA 内 )\n08\n画面 ・ リトライトの明るさの設定が出来ます。\nShift + Displays で同じ画面をいつでもポップアップさせることができます。\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "4_2",
+      "manual_section": "4-2",
+      "chapter": 4,
+      "chapter_title": "CIA、ECUについて",
+      "category_id": "settings",
+      "title": "ECUとは",
+      "route": "/guide/4_2",
+      "theme_color": "#7b61ff",
+      "summary": "言語、時計、モニター、ネットワーク、保守をECUで設定する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "ECUとは",
+        "CIA、ECUについて"
+      ],
+      "subtopics": [
+        {
+          "id": "4-2-1",
+          "title": "General（全般）について"
+        },
+        {
+          "id": "4-2-2",
+          "title": "ネットワーク設定（ECU 内）"
+        },
+        {
+          "id": "4-2-3",
+          "title": "Maintenance( メンテナンス ) について"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 28,
+        "page_end": 31,
+        "extracted_text": "4-2. ECU とは\nECU は Eos Configuration Utility （Eos 補助設定画面） の略です。 時計や言語の設定、バージョンアップ、\nタッチモニターの設定、ショーデータの管理などを行うところです。Windows のバイオス設定のような機能です。\n卓を起動すると最初に下のような画面が出ます。 右下の Setting を選ぶと ECU に入ります。\nすでに Primary などで入っている場合は CIA で Exit してください。\n注意\nCIA からこの画面に Exit すると出力が切れます！\n客電 ・ 作業灯などを制御している場合は注意してください。\nSetting 画面に入ると右側にメニューがあるので、 変更したいメニューを選択します。\nGeneral （全般） ： 時計 ・ 言語 ・ バージョン等の全体設定、 モニター設定など\nNetwork （ネットワーク） ： \u0007各ポート、 出力するプロトコル、 IP アドレス等のネットワーク\n設定\nMaintenance （メンテナンス） ： タッチスクリーンテスト、 ショーデータの管理など\nButtons （ボタン） ： Gio、 Ti 等のマクロハードキー設定\n4-2-1. General（全般）について\nGeneral （全般） では時間、 言語、 バージョン等の変更が可能です。\nSetting 画面から General （全般） を選択してください。\n設定を変更したら 了解 （Accept） で設定を保存してください。\n\n言語の変更\nChapter 4\n言語とキーボードを変えたい言語にします。\nプルダウンから言語を選びます。\nCIA、ECU について\n設定を変更したら下部にある 「Accept」 で設定を保存してください。\nバージョンの変更（Software Update）\nソフトウェアの更新を選択します。\nUSB に新しいバージョンのファイルを入れておけば、 「ソフトウェアアップデート」 がポップアップで出ます。\n「インストール」 を選択します。\n目次 01\n02\n03\n04\n05\nモニター配置\nモニターの設定をするにはまず 「モニター配置」 から設定画面に入ります。 06\n07\n08\n09\n10\n11\n① モニターが物理的にどこに配置されているかが設定されています。\n12\n② タッチパネルの場合、 タッチの正確性を高めるためにキャリブレートができます。 ①でキャリブレートしたい\nモニターをまず選んでください。\n13\n14\n15\n\n③ 「確認」 を押すとどの画面の識別が ABCD とアルファベットで表示されます。\n④ タッチモニターを繋ぐときにタッチモニターであることを卓に認識させます。\nタッチスクリーンであれば↑この表示が出ている画面をタッチします。 タッチモニターではない場合 Enter キー\nを押して次の画面に進みます。\nタッチモニターだと認識されたらエンターを押して次の画面に進みます。\n⑤ これまでの設定を適用させます。\n4-2-2. ネットワーク設定（ECU 内）\nNetwork （ネットワーク） では各ポート、 出力するプロトコル、 IP アドレス等のネットワーク設定の変更が可能\nです。\nSetting 画面から Network （ネットワーク） を選択してください。\n注意\nECU にはいった時点で出力が全て途切れます。\n\n4-2-3. Maintenance( メンテナンス ) について\nChapter 4\nMaintenance （メンテナンス） はメモリのクリアやログの保存が出来ます。\nCIA、ECU について\nDeep Clear ( ディープクリア )\nコンソール上のメモリをクリアします。 挙動がおかしかったり、 動きが鈍いときなどに使います。\n注意\nハードドライブの初期化ではありませんが、 工場出荷時の状態までリセットされるので注意してください。\n実行する前に必ず必要なショーファイルの保存を行ってください。\n目次 01\nSave Logs... ( ログを保存 )\nバグなど、 卓の問題を探す際に参照するログファイルを作成します。\nSave Logs を押すと以下の画面が出てくるので、 NEXT で進んでください。\n02\n卓のスキャニング バグ、 問題の起きた日時 ログの保存先\n03\n04\n05\nファイルマネージャー\n06\nファイルマネージャーはショーファイルの管理をします。 ショーファイルの卓からの取り出しや移動、 削除ができ\nます。 新しいフォルダーの作成と削除、 コンソールと USB ドライブ間のファイルの移動とコピーができます。 07\n08\n09\n10\n11\n12\n13\nファイルマネージャーのディスプレイには、 コンソールの ShowArchive フォルダーと、 検出された外付け\n14\nUSB ドライブが表示されます。 表示は 2 つのウィンドウに分割されるため、 2 つの異なるフォルダを同時に表\n示して、 それらの間でデータをコピーまたは移動することができます。\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "4_3",
+      "manual_section": "4-3",
+      "chapter": 4,
+      "chapter_title": "CIA、ECUについて",
+      "category_id": "settings",
+      "title": "Concert",
+      "route": "/guide/4_3",
+      "theme_color": "#7b61ff",
+      "summary": "ConcertでEosネットワーク上の機器を確認・管理する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Concert",
+        "CIA、ECUについて"
+      ],
+      "subtopics": [
+        {
+          "id": "4-3-1",
+          "title": "卓で開く場合"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 32,
+        "page_end": 32,
+        "extracted_text": "4-3. コンサート\nコンサート (Concert) は卓が繋がっているネットワークを管理する為のソフトウェアです。\n卓にはデフォルトでインストールされています。 PC で使用する場合は新たにインストールして下さい。\n4-3-1. 卓で開く場合\nMaintenance （メンテナンス） 画面からコンサート (Concert) を開きます。\nネットワーク上の機材とその設定を、 視覚的に表示させることができます。\nネットワーク内で検出された機器\n選択した機器の設定"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "5_1",
+      "manual_section": "5-1",
+      "chapter": 5,
+      "chapter_title": "Patchの方法",
+      "category_id": "patch",
+      "title": "Patchとは",
+      "route": "/guide/5_1",
+      "theme_color": "#3a86ff",
+      "summary": "チャンネルとDMXアドレスを結びつけるPatchの考え方を理解する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Patchとは",
+        "Patchの方法"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 34,
+        "page_end": 34,
+        "extracted_text": "5-1. Patch とは\n「Patch （パッチ）」 とは、 照明コンソール (Eos) 上で使用する\nコントロール番号 （チャンネル） を、 実際に舞台上の照明機材に\n送る信号の番号 （アドレス） と結びつける作業のことを指します。\nこの設定により、 特定のチャンネル番号を操作することで、 対\n応する照明機材が反応するようになります。\n例えば、 チャンネル 1 をアドレス 3 にパッチすることで、 チャン\nネル 1 を操作するとアドレス 3 に接続された照明が点灯します。\nステージ上のパーライト A を照明卓のチャンネル 1 で操作する場合、 まずパーライト A の接続されてい DMX\nアドレス （例 : 003） を調べ、 そのアドレスをチャンネル 1 にパッチします。 これにより、 照明卓のチャンネル 1\nのインテンシティを動かすことで、 スポットライト A の明るさをコントロールできるようになります。\n5-2. パッチ画面\nPatch 画面を開くには、\n[Display] → Patch Tab12 を選択、 または [Patch Address] をダブルクリックします。\nNote\nEos ではキーをダブルクリックするとその編集画面 (Blind) に入ります。\n5-2-1. デフォルトの Patch 画面 (Blind)\nチャンネル\nアドレス\nInterface( ネットワーク出力設定 )\nOutput( 出力設定 )\nデフォルトの並び順ではチャンネル / アドレスとなっていますが、 [Format] キーを使用してアドレス / チャンネ\nルの順に表示させることもできます。\n[Flexi] キーを使用し、 全表示、 Patch したものの表示、 セレクト表示の切り替えができます。\nNote\nALL にしておかないと未使用 Add、 CH が表示されません。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "5_2",
+      "manual_section": "5-2",
+      "chapter": 5,
+      "chapter_title": "Patchの方法",
+      "category_id": "patch",
+      "title": "Patch画面",
+      "route": "/guide/5_2",
+      "theme_color": "#3a86ff",
+      "summary": "Patch画面の主要項目とネットワーク出力を確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Patch画面",
+        "Patchの方法"
+      ],
+      "subtopics": [
+        {
+          "id": "5-2-1",
+          "title": "デフォルトの Patch 画面 (Blind)"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 34,
+        "page_end": 34,
+        "extracted_text": "5-1. Patch とは\n「Patch （パッチ）」 とは、 照明コンソール (Eos) 上で使用する\nコントロール番号 （チャンネル） を、 実際に舞台上の照明機材に\n送る信号の番号 （アドレス） と結びつける作業のことを指します。\nこの設定により、 特定のチャンネル番号を操作することで、 対\n応する照明機材が反応するようになります。\n例えば、 チャンネル 1 をアドレス 3 にパッチすることで、 チャン\nネル 1 を操作するとアドレス 3 に接続された照明が点灯します。\nステージ上のパーライト A を照明卓のチャンネル 1 で操作する場合、 まずパーライト A の接続されてい DMX\nアドレス （例 : 003） を調べ、 そのアドレスをチャンネル 1 にパッチします。 これにより、 照明卓のチャンネル 1\nのインテンシティを動かすことで、 スポットライト A の明るさをコントロールできるようになります。\n5-2. パッチ画面\nPatch 画面を開くには、\n[Display] → Patch Tab12 を選択、 または [Patch Address] をダブルクリックします。\nNote\nEos ではキーをダブルクリックするとその編集画面 (Blind) に入ります。\n5-2-1. デフォルトの Patch 画面 (Blind)\nチャンネル\nアドレス\nInterface( ネットワーク出力設定 )\nOutput( 出力設定 )\nデフォルトの並び順ではチャンネル / アドレスとなっていますが、 [Format] キーを使用してアドレス / チャンネ\nルの順に表示させることもできます。\n[Flexi] キーを使用し、 全表示、 Patch したものの表示、 セレクト表示の切り替えができます。\nNote\nALL にしておかないと未使用 Add、 CH が表示されません。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "5_3",
+      "manual_section": "5-3",
+      "chapter": 5,
+      "chapter_title": "Patchの方法",
+      "category_id": "patch",
+      "title": "一般照明のPatch",
+      "route": "/guide/5_3",
+      "theme_color": "#3a86ff",
+      "summary": "一般照明を単体・範囲・マルチパッチで登録する。",
+      "when_to_use": [],
+      "commands": [
+        "Channel # At Address # Enter",
+        "Channel # Thru # At Address # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "一般照明のPatch",
+        "Patchの方法"
+      ],
+      "subtopics": [
+        {
+          "id": "5-3-1",
+          "title": "マルチパッチ"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 35,
+        "page_end": 36,
+        "extracted_text": "Interface ( ネットワーク出力設定 )\nChapter 5\nSACN、 DMX、 Artnet への出力の ON/OFF ができます。\nPatch の方法\n表の中で右クリックすると CIA に選択肢が出てきます。\nNote\nInterface の表の中で 「+」 または 「*」 がついていなければ出力されません。 ECU で出力が OFF になっ\nていると、 上の写真の用に Artnet のようにグレー表示になり、 選ぶことができません。\nOutput( 出力設定 )\nOutput の表の中で Patch された CH を右クリックすると CIA に下のような表示が出ます。\n目次 01\n使用アドレス\nチャンネルの詳細\n02\n5-3. 一般照明の Patch\n03\n画面を 「5-2-1. デフォルトの Patch 画面 (Blind)」 （34 ページ） に移動します。\n04\nType など選択しなければ一般照明 (Dimmer) をデフォルト Type でパッチします。\nチャンネル操作の詳細は 「8-1-3. 基本のチャンネル操作 ( テンキー周辺 )」 （61 ページ） を参照してく\n05\nださい。\nデフォルト画面で Ch/Add と表示させている場合 06\n07\n< チャンネル > <at> ＜アドレス＞ < Enter>\n＃ at ＃ Enter\n08\n09\n例\nチャンネル 1 をアドレス 1 にパッチ\n10\n• 1 at 1 Enter\n11\nユニバースのアドレスにパッチする場合\n12\n< チャンネル > <at> ＜ユニバース＞ ＜ / ＞ ＜アドレス No. ＞ < Enter>\n＃ at ＃ / ＃ Enter\n13\n例\n14\nチャンネル 1 をユニバース 6 のアドレス 1 にパッチ\n15\n• 1 at 6 / 1 Enter\n\n範囲を決めてパッチする場合\n< 最初のチャンネル > <thru> ＜最後のチャンネル＞ ＜ at ＞ ＜最初のアドレス＞ < Enter>\n＃ thru ＃ at ＃ Enter\n例\nチャンネル 1 から 10 をアドレス 1 から 10 にパッチ\n• 1 thru 10 at 1 Enter\nFormat キーで Patch 画面を Add/Ch の順に変えることができます。\nその場合、 入力構文は先ほどの例と逆に Add/Ch の順に入れ替わります。\nAdd/Ch と表示させている場合\n< アドレス > <at> ＜チャンネル＞ < Enter>\n＃ at ＃ Enter\n入力例\nアドレス 1 をチャンネル 3 にパッチ\n• 1 at 3 Enter\n5-3-1. マルチパッチ\n一般照明を複数台パッチする場合は下記のように入力します。\n< チャンネル > <at> ＜最初のアドレス No. ＞ <thru> ＜最後のアドレス No. ＞ < Enter>\n＃ at ＃ thru # Enter\n入力例\nチャンネル 11 にアドレス 10 から 16 をパッチ\n• 11 at 10 thru 16 Enter\nチャンネル 11 の中にパート 1 から 7 まで、 パートという形でパッチされます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "5_4",
+      "manual_section": "5-4",
+      "chapter": 5,
+      "chapter_title": "Patchの方法",
+      "category_id": "patch",
+      "title": "デジタル機材のPatch",
+      "route": "/guide/5_4",
+      "theme_color": "#3a86ff",
+      "summary": "機種とモードを選び、LEDやムービングをPatchする。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "デジタル機材のPatch",
+        "Patchの方法"
+      ],
+      "subtopics": [
+        {
+          "id": "5-4-1",
+          "title": "Gobo の変更"
+        },
+        {
+          "id": "5-4-2",
+          "title": "その他の Attribute( 一般照明含む )"
+        },
+        {
+          "id": "5-4-3",
+          "title": "Fixture Type の編集"
+        },
+        {
+          "id": "5-4-4",
+          "title": "Ranges の編集"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 37,
+        "page_end": 40,
+        "extracted_text": "5-4. デジタル ( パラメーター ) 制御されている機材の Patch\nChapter 5\nEos の概念として灯体をコントロールするものは全て CH になります。\nパッチしたい Ch を選んでください。\nPatch の方法\nCIA 画面の Type をクリックしてください。\nCIA に過去にパッチしたことのある Fixture Type が表示されます。\n目次 01\n02\n03\n04\n05\n06\n07\n過去に使用してきた機材の一覧になります。\n初めて使用する機材は 「Search」 から探してください。\n08\nつかう機材の種類、 モードを選び [Enter] すればパッチされます。\n09\n10\n11\n12\n13\n14\n15\n\n灯体、 メーカー関係なくキーワード入力できます。\n★はすでにパッチされている機材です。 3d の表記は３D オブジェクトが含まれた灯体になります。\nCh に Type （機種、 モード） が入ったのでアドレスを与えます。\nコマンドライン、 パッチ画面を見るとすでに Ch が Select されています。 Select されている場合、 Ch# の\n再入力は不要です\n<at> ＜ユニバース No. ＞ </> ＜アドレス No. ＞ < Enter>\nat ＃ / # Enter\n入力例\nスタートアドレス Uni3Add1 からパッチ\n• at 3 / 1 Enter\n5-4-1. Gobo の変更\nムービングの場合 Attribute から Gobo 替えができます。\nCIA の左の Attribute → CIA 右の Gobo Wheel の順で選択してください\n各メーカーのデフォルト Gobo Wheel は Edit できません。 左下の Copy よりコピーしてコピーしたものを\nedit してください。\n変えたい Gobo の C/G を選択し、 Gobo Library に入ることができ\nます。\n全ての編集が終わったら Done ( 終了 ) を押してください 。\n\n5-4-2. その他の Attribute( 一般照明含む )\nChapter 5\nPatch の方法\nPreheat\n唐突なランプ点灯を防ぐために、 フィラメントを温める機能 ( ヒートアップ ) です。\nヒートアップのゲージを入力します。 03 と入力すると 3%、 30 と入力すると 30% の設定になります。\nPSD 内 ( 「10-1. PSD( プレイバック・ステータス・ディスプレイ )」 （90 ページ） 参照 ) で Preheat にマー\nクを入れると、 マークの入っている前のキューでヒートアップが入ります。\nProportion\n0％から 200％の範囲でゲージの FULL(100%) を設定できます。\n65% などに設定したとしても Live で 150%(100% 以上 ) を入力すればその設定値を超えることができます。\nCurve\n目次 01\nディマーカーブの選択です。 ディマーカーブを灯体毎に設定することができます。 リレイカーブ等もあります。\nLD Flags\nPSD(Q) で” L” や” D” などの表示をさせるかを選択します。 ムービングライトなどで Dark Move(MIB)、\n02\nLive Move (MIB の逆 ) を選択します。 デフォルトは enabled( 有効 ) になっています。\n03\nGM Exempt\nDisabled に す る と Grandmaster、 Blackout button、 [Rem Dim]、 [Go To Cue]、 [Out]/[0]、\n04\nIntensity Master から外れます。\n05\nInvert Pan/Tilt\nパン ・ ティルトのインバートです。\nSwap P/T 06\n07\n灯体が横吊りされている場合等で pan と tilt のアトリビュートを交換します。\nColor Path\n08\nデフォルトのカラーパスを設定できます。 キューでカラーパスが設定されない限りそのチャンネルのすべてのカ\n09\nラーフェードに適用されます。\nShutter Order\n10\nA、 B、 C、 D の各ブレード （羽） の並びを変えることができます。\n11\n12\n13\n14\n15\n\n5-4-3. Fixture Type の編集\nPatch 画面より Fixture Type の選択画面→ Edit から編集画面へと入ります。\nライブラリーのデフォルトを崩したくない場合、 Copy より新しいタイプを作成できます。\nCopy を押すとオリジナル名称の後に Copy(1) とついて即複製されます。\n選択している Type の詳細画面になります。\n5-4-4. Ranges の編集\nRanges の編集は一番右端の欄で編集できます。\n例えば、 Gobo の index と rotate の数値の設定を Ranges では行うことができます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "5_5",
+      "manual_section": "5-5",
+      "chapter": 5,
+      "chapter_title": "Patchの方法",
+      "category_id": "patch",
+      "title": "Patchを外す",
+      "route": "/guide/5_5",
+      "theme_color": "#3a86ff",
+      "summary": "Clear、Unpatch、Deleteの違いを理解してPatch情報を外す。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Patchを外す",
+        "Patchの方法"
+      ],
+      "subtopics": [
+        {
+          "id": "5-5-1",
+          "title": "Clear"
+        },
+        {
+          "id": "5-5-2",
+          "title": "Unpatch"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 41,
+        "page_end": 41,
+        "extracted_text": "5-5. Patch を外す\nChapter 5\nパッチを外すには 3 段階あります。\n種類 説明 Fixture Type Q データ\nClear パッチだけ外す 残る 残る\nPatch の方法\nUnpatch Unpatch する 消える 残る\nDelete 完全消去 消える 消える\n5-5-1. Clear\n< チャンネル > <at> < Enter> < Enter>\n# at Enter Enter\n例\nチャンネル 1 を Clear\n• 1 at Enter Enter\nat の後ろが空 ( 値なし ) なのは、 Eos において何も打たないと消えるという構文になります。\nEnter が 2 回必要なのは元々あるデータの上から上書きするためです。\n目次 01\nパッチだけが外れます。\n02\n5-5-2. Unpatch\n03\n[sk4] または {unpatch} を使用します。\n04\n05\n< チャンネル > <unpatch> < Enter> < Enter>\n＃ unpatch Enter Enter 06\n07\n例\n08\nチャンネル 1 を Unpatch\n09\n• 1 unpatch Enter Enter\n10\n11\nPatch と Fixture Type が外れます。\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "5_6",
+      "manual_section": "5-6",
+      "chapter": 5,
+      "chapter_title": "Patchの方法",
+      "category_id": "patch",
+      "title": "Augment3dへの設定",
+      "route": "/guide/5_6",
+      "theme_color": "#3a86ff",
+      "summary": "灯体の位置・向きなどをAugment3d用に設定する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Augment3dへの設定",
+        "Patchの方法"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 42,
+        "page_end": 43,
+        "extracted_text": "5-5-3. Delete\n< チャンネル > <delete> < Enter> < Enter>\n# delete Enter Enter\nまたは\n<delete> < チャンネル > < Enter> < Enter>\ndelete # Enter Enter\n例\nチャンネル 1 を delete\n• 1 delete Enter Enter\n注意\nこの動作で Q データ、 パレットからも完全に消えます。\n5-6. Augment3d への設定\nEos にはビジュアライザー Augment3d が搭載されています。\nAugment3d と書いて Augmented （オーグメンティッド） と呼称されます。\nPatch 画面の Database, Augmetn3d を設定することによって Augment3d での各灯体情報を入力する\nことによって Augment3d 上に表示させることができます。\nしかし、 Augment3d を使用しない場合不必要な情報となります。\n入れる Gobo\n入れる色 ( 一般照明 )\nText に 入 力 す る と Query で 検 索 可 能 ( 「8-6.\nQuery （クエリ）」 （68 ページ） 参照 )\nビジュアライズする為の灯体情報になります。\n吊り位置、 角度、 Gobo の向き、 シャッター、 ボケ方等\n\nChapter 5\n吊り位置は３D 空間での XYZ を入力することによって入力されます。\nもし打ち込みで Focus をパンとチルトに加えて、 XYZ も使用してプ\nログラミングしたい場合、 ポジションの XYZ を入力しないと使用す\nPatch の方法\nることができません。\n目次 01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "6_1",
+      "manual_section": "6-1",
+      "chapter": 6,
+      "chapter_title": "About",
+      "category_id": "screens",
+      "title": "About",
+      "route": "/guide/6_1",
+      "theme_color": "#3a86ff",
+      "summary": "選択したチャンネルの状態、出力、Cue情報、Lamp Controlを調べる。",
+      "when_to_use": [],
+      "commands": [
+        "About",
+        "Channel #"
+      ],
+      "warnings": [],
+      "keywords": [
+        "About"
+      ],
+      "subtopics": [
+        {
+          "id": "6-1-1",
+          "title": "リンクアイコン"
+        },
+        {
+          "id": "6-1-1",
+          "title": "About"
+        },
+        {
+          "id": "6-1-2",
+          "title": "Lamp Controls"
+        },
+        {
+          "id": "6-1-3",
+          "title": "Lamp On、Lamp Off、ソフトリセット"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 46,
+        "page_end": 48,
+        "extracted_text": "6-1. About\n[about] は、 選択した要素に関する詳細情報を表示させる機能です。\nAbout キーを押すと、 コンソールはアバウトモードになり、 チャンネルを選択するだけで、 キュー内情報から信\n号の出力状況まで調べることができます。 開くと CIA に表示され、 閉じるまで、 または他の操作で閉じるまで、\n開いたままになります。 TAB29 を使用してタブでアバウト表示を開くこともできます。\n他にもムービングでランプを持つ灯体に関してはランプの On/Off、 リセットなどの灯体の操作には関わるが\nキューの記録に干渉させたくない機能があります。\n※プログラマーがマジックシートなどにマクロを置いている事が多いので触らないかもしれないです。\n6-1-1. リンクアイコン\nリンクアイコンを押すと、現在の About 表示のコマンドラインへのリンクが解除されます。リンクが解除されると、\nAbout ディスプレイはチャンネル、 アドレス、 プリセットなど現在表示されている情報の種類を表示し続けるよ\nうになります。 リンクされている場合、 アバウト表示はコマンドラインにリンクされ、 どのターゲットが選択され\nているかによって更新されます。\n通常時 → キープ表示状態\n6-1-1. About\nAbou キーを押すと下の画像のような画面になり現在、 その灯体がどのような出力を行っているか、 次以降の\nキューのスタンバイを行っているかなどの出力状態を確認をすることができる画面が表示されます。\nマニュアル出力状態\nマニュアルデータは赤色表示されます。\nキュー表示状態\nキューデータの色もマニュアル画面で表示されている通りの色でデータが表示されます。\n\n6-1-2. Lamp Controls\nChapter 6\n基本パラメーターとは離れた ABOUT の中にランプの On/Off する箇所があります。 ランプの On/Off/\nReset をするには\n① 操作する灯体を選びます。 例） ※最後 Enter まで入力しないと開きません。\nAbout\n② ABOUT を押すと下の画面が開くので、 Lamp Controls を選択します。\nランプのオン ・ オフやその他機能があるので選ぶことができます。\n目次 01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15\n\n6-1-3. Lamp On、Lamp Off、ソフトリセット\nメタルハライドランプ等の放電灯を使用したムービングライトにランプオンの信号を送ることができます。\n① Lamp On/ Off/ Fixture Global Reset をの中から希望の機能を選択します。\n② 押すとコマンドラインで再度確認されます。\n例） ランプオンを押した場合\n③ Enter キーを押すと Lamp On / Off / Reset が実行されます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "7_1",
+      "manual_section": "7-1",
+      "chapter": 7,
+      "chapter_title": "画面の見方",
+      "category_id": "screens",
+      "title": "LiveモードとBlindモード",
+      "route": "/guide/7_1",
+      "theme_color": "#3a86ff",
+      "summary": "実出力を伴うLiveと、記録データを直接編集するBlindを使い分ける。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [
+        "BlindではRecordやUpdateを押さなくても編集内容が記録される。"
+      ],
+      "keywords": [
+        "LiveモードとBlindモード",
+        "画面の見方"
+      ],
+      "subtopics": [
+        {
+          "id": "7-1-1",
+          "title": "Live モードと Blind モード"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 50,
+        "page_end": 50,
+        "extracted_text": "7-1. 画面のモード\n7-1-1. Live モードと Blind モード\nEos ではデータの表示、 編集をするモードとして Live モードと Blind モードがあります。\nLive モード\nLive キーを押すとキーがオレンジに光り Live モードに切り替わります。 コマンドラインの縁取りが金色になり、\nコマンドライン内の表示に” LIVE” と出ます。\nLive モードでは卓から出力されている情報が画面上に表示され、 変更も即時出力に反映されます。\nBlind モード\nBlind キーを押すとキーが青色に光り Blind モードに切り替わります。 コマンドラインの縁取りが青色になり、\nコマンドライン内の表示に” BLIND” と出ます。\nBLIND モードでは選択したキューやプリセット、 Palette などのデータを表示することができます。 これらを\n変更してもライブではない為、 変更は出力には自動的に反映されません。\nまた開くタブ画面によっては Blind モードでしか開かないものもあり、 そのタブ画面を開くと自動的に Blind\nモードに切り替わります。\n注意\nBlind モードでの変更はそのまま保存されます。 Record や Update などの操作を必要としません。\nBlind モードでキューのデータを触ってしまった場合など基本的にトラッキングでそのデータが変更されてし\nまいます。\n7-2. 画面の見方\n7-2-1. 画面の切り替え\nEos の画面は１つのモニターに対し３つの切り替え画面を作ることができます。\nクリックすると画面の設定 （「7-2-2. 画面の設定」 （51 ページ） 参照） に移動します。\n選択すると画面を切り替えることができます。\n歯車マーク ： クリックすると設定画面に入ります。\n各タブを右クリック、 ダブルクリックで設定画面に入ります。\nコマンドライン"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "7_2",
+      "manual_section": "7-2",
+      "chapter": 7,
+      "chapter_title": "画面の見方",
+      "category_id": "screens",
+      "title": "画面とタブ",
+      "route": "/guide/7_2",
+      "theme_color": "#3a86ff",
+      "summary": "画面の切替、フレーム、タブの追加・設定を行う。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "画面とタブ",
+        "画面の見方"
+      ],
+      "subtopics": [
+        {
+          "id": "7-2-1",
+          "title": "画面の切り替え"
+        },
+        {
+          "id": "7-2-2",
+          "title": "画面の設定"
+        },
+        {
+          "id": "7-2-3",
+          "title": "タブについて"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 50,
+        "page_end": 53,
+        "extracted_text": "7-1. 画面のモード\n7-1-1. Live モードと Blind モード\nEos ではデータの表示、 編集をするモードとして Live モードと Blind モードがあります。\nLive モード\nLive キーを押すとキーがオレンジに光り Live モードに切り替わります。 コマンドラインの縁取りが金色になり、\nコマンドライン内の表示に” LIVE” と出ます。\nLive モードでは卓から出力されている情報が画面上に表示され、 変更も即時出力に反映されます。\nBlind モード\nBlind キーを押すとキーが青色に光り Blind モードに切り替わります。 コマンドラインの縁取りが青色になり、\nコマンドライン内の表示に” BLIND” と出ます。\nBLIND モードでは選択したキューやプリセット、 Palette などのデータを表示することができます。 これらを\n変更してもライブではない為、 変更は出力には自動的に反映されません。\nまた開くタブ画面によっては Blind モードでしか開かないものもあり、 そのタブ画面を開くと自動的に Blind\nモードに切り替わります。\n注意\nBlind モードでの変更はそのまま保存されます。 Record や Update などの操作を必要としません。\nBlind モードでキューのデータを触ってしまった場合など基本的にトラッキングでそのデータが変更されてし\nまいます。\n7-2. 画面の見方\n7-2-1. 画面の切り替え\nEos の画面は１つのモニターに対し３つの切り替え画面を作ることができます。\nクリックすると画面の設定 （「7-2-2. 画面の設定」 （51 ページ） 参照） に移動します。\n選択すると画面を切り替えることができます。\n歯車マーク ： クリックすると設定画面に入ります。\n各タブを右クリック、 ダブルクリックで設定画面に入ります。\nコマンドライン\n\nChapter 7\nの歯車には金色と白色の 2 種類の表記があります。\n歯車が金色に設定されていると、 タブを開いた場合基本的にこの画面を開くようになります。\n設定は歯車をクリックし設定に入り” Open New Tabs In This Frame” を選択するとその歯車が金色に変\nマニュアル画面の見方\nわります。\nのタブが金色になっているとそのタブが選ばれています。 Format や Flexi はそ選択されたタブに対して実\n行されます。 （「7-2-3. タブについて」 （52 ページ） 参照）\n１つのバーチャル画面の中に複数のタブを使って複数の CH 表、 パレット等を表示できます。\nのコマンドラインで金色に表示されているのは実行されているキューナンバーになります。\n7-2-2. 画面の設定\n目次 01\n02\n03\n04\n05\n画面内のレイアウトと個数設定\nモニター設定\n06\n07\n各タブレイアウトの編集、 サイズ変更\n08\n物理モニター間の移動\n09\n選択されているモニター内のタブ削除\n10\n\u0007選択択されているモニター内のタブのレイアウト削除、リセット (Channels、PSD のタブ各 1 つはデフォ\nルトなので削除不可） )\n11\nすべてのモニターのタブを削除、 リセット\n12\n\u0007\u0007\n開くことができるタブ一覧です。 タブの中には Blind モードでしか開けないものもあります。 そのタブを開い\n13\nたときには自動的に Blind モードに切り替わります。 Presets や各 Palettes、 Groups や Effects な\nどは基本は Blind です。\n14\nタブ一覧の並べ替えができます。\n15\n\n7-2-3. タブについて\nタブの開き方\n新しくタブを開く場合は、 下記の方法があります。\n画面左上の アイコンを選択\n既に開いているタブの右側の” +” を選択\n空の画面の” +” を選択\nコマンドラインにタブナンバーを入力\nコマンドラインへの入力以外の方法では、 下の画面から開きたいタブを選択して開きます。\nタブナンバーをコマンドラインに入力する場合はこの番号を入力します。\nex) TAB 100 Enter ⇒ マニュアルを開く\n特定のタブはハードキー 2 度押しでも開くことができます。\n• Preset キー 2 度押し ⇒ Presets TAB\n• Color Palette キー 2 度押し ⇒ Color Palettes TAB\n• Group キー 2 度押し ⇒ Groups TAB\n• Effect キー 2 度押し ⇒ Effects TAB\nタブの閉じ方\n開いているタブを閉じる場合は、\n閉じたいタブの名前を右クリック、 またはダブルクリックをすると設定が\n開きます。 （「タブの設定」 （53 ページ） 参照）\nその中の” Close Tab” を選ぶと消せます。\nまた、 閉じたいタブが選択されている状態で Escape キーを押しても閉じ\nることができます。\n\nタブの設定\nChapter 7\n上の説明にもあるようにタブの名前を右クリックまたはダブルクリックをすると、 タブの設定が開きます。\n2 つ開くウィンドウの内、 左側はタブを閉じたりロックやズームしたりなどの設定で、 右側は開いているタブに\n応じた詳細設定です。\nマニュアル画面の見方\nChannels TAB の詳細設定\n何を表示、 非表示させるか選択できます。\nPSD TAB の詳細設定\n目次 01\n何を表示、 非表示させるか選択できます。\nPSD などにおいては表示カテゴリの並び替えができます。\n02\n03\n04\n05\nタブのデフォルト\n06\n07\nEos では、 パレットやプリセット、 エフェクト、 マクロなど、 多くのキーを 2 回押すと、 自\n動でタブが作成され、 ポップアップ画面が表示されることがよくあります。 そのポップアッ\n08\nプをどのフレームでポップアップさせるかを指定することができます。\n① 歯車マークを押して設定を出します。\n09\n② 「このフレームに新しいタブを開く」 を押します。\n10\n11\n12\n13\nタブの移動\n14\nタブを新たに開かずに特定のタブを移動させたい場合は Tab キーを押しながら矢印キーで動かすことができま\nす。\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "7_3",
+      "manual_section": "7-3",
+      "chapter": 7,
+      "chapter_title": "画面の見方",
+      "category_id": "screens",
+      "title": "マニュアル画面の見方",
+      "route": "/guide/7_3",
+      "theme_color": "#3a86ff",
+      "summary": "チャンネル画面の色、記号、表示形式、パラメーター欄を読む。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "マニュアル画面の見方",
+        "画面の見方"
+      ],
+      "subtopics": [
+        {
+          "id": "7-3-1",
+          "title": "表示切り替え"
+        },
+        {
+          "id": "7-3-2",
+          "title": "ビュー画面"
+        },
+        {
+          "id": "7-3-3",
+          "title": "画面の見方"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 54,
+        "page_end": 58,
+        "extracted_text": "7-3. マニュアル画面の見方\nEos では一般灯体、 パラメーター制御のデジタル機材などの隔てなく、 チャンネルという概念によってコントロー\nルします。\n【Channels TAB 画面】 【Patch TAB 画面】\n一般照明は 1 つの有線タイルで表示されます。 (ETC マニュアルでは Tombstone/ 墓石と表記されています )\nNote\nEos で手動で ( キュー以外 ) でチャンネルを制御することをマニュアルコントロールと呼称します。\nそしてそのゲージパラメーターをマニュアルデータと呼称します。\n左上の画像 【Channels TAB 画面】 は必要に応じてレイアウトを変えることができます。\n7-3-1. 表示切り替え\n[Format] キー\nデフォルトの表示またはパラメーター機材もすべてサマリービューの切り替えが出来ます。「7-3-2. ビュー画面」\n（55 ページ） を参照してください。\n[Flexi] キー\n① 全表示\n② Pached: パッチされているチャンネルのみ表示\n③ Manual: マニュアルデータが乗っているチャンネルのみ表示\n④ Show: Show 表示 ( キュー ・ サブマスターに入っているチャンネルのみ )\n⑤ Active: アクティブ表示 ( ゲージが 0 以上か P/T が動いたチャンネルのみ )\n⑥ In Use: ゲージが 0 以上か 0 へと変化した CH、 エフェクトがかかっている CH、 スタンバイやマークが入っ\nている CH のみ表示\n⑦ Selected: 選んだチャンネルのみ表示\n〔Flexi] キーを押していくと左下のタブ表示が変化します。\n\n7-3-2. ビュー画面\nChapter 7\nFormat キーで画面を変更します。\n【テーブルビュー】\nマニュアル画面の見方\n【サマリービュー （一覧）】 (ETC 公式では Tombstone/ 墓石と表記されています )\n目次 01\n02\n03\n04\n05\n画面操作\n06\n07\n• 左キーを使用して矢印キーのように動き回れます。\n• Scroll Lock キーを使うと１行づつページ送りができます。\n08\n09\n• Format キー +Wheel で表の大きさを変更できます。\n• Data キー長押しで CIA 右にフィルターが出てくるので表示させるパラメーターを選択でます。\n10\n11\n12\n13\n14\n15\n\n7-3-3. 画面の見方\nIntensity\nFocus\nColor\nBeam\nデフォルト表示では小数点以下の表示はありません。\nData キーを押すと小数点以下の数値を表示させることができま\nす。\nサマリービューではパレット名と数値が存在していることはわかり\nますが、 それ以上の細かいパラメーターまで視認することはできま\nせん。\nChannels Tab の詳細設定画面\n画面下のターゲットステータスバーの表示\nプリセットや Palette のラベル名での表示\n5 チャンネルごとに少し隙間が入る\n5 ｘ 20 横 20 本の一般卓表示させる\nディスクリート タイミング（Discrete Timing）\nTime キー ( 数値入力テンキー左の Time ではない ) を押すことによっ\nて、 各パラメーターの Discrete Timing （ディスクリート タイミング）\nを見ることができます。\nDiscrete Timing( ディスクリート タイミング ) とは、 他の照明卓で” Individual” (I.Fade ・ 個別など ) と\n呼称されている機能になります。 Focus や Beam などパラメータを持つ機能に対し、 個別にフェードタイムや\nディレイタイムを設定することができる機能、 そのタイム ( 秒数 ) のことをいいます。\n下の写真例では Ch47 だけ Color のディレイタイムが４秒入っています。 詳細は 「10-2-3. タイム」 （91\nページ） を参照してください。\n\nChapter 7\nマニュアル画面の見方\nターゲット（Target）\nこのマニュアルや Eos マニュアルでは Target( ターゲット ) という用語がよく出てきます。\nTarget( ターゲット ) とは、 Eos 構文の頭で指定するチャンネルや Group などパラメータなどの数値やデー\nタを与える対象のことを指します。\nデータ（Data）\nData( ハードキー ) を使用して Table View の詳細数値を見ることができます。 パレット内の数値も表示され\nます。\n目次 01\nキューが走っている時、 各チャンネルにはそのキュー時点での情報 （乗っているパレットやエフェクト、 マーク等）\n02\nが表示されます。\n03\n04\n05\n06\n07\n08\n09\n10\n11\n表示色について\n12\n表示色は以下を示します。\n13\nブルー ： 前のキューより数値が高くなったもの\nマゼンタ ： 前のキューからのトラックしたもの （変化なし）\n14\nホワイト ： ブロックされている数値\nグリーン ： 前のキューから数値が低くなったもの\n15\nイエロー ： サブマスターのデータ\n\nパラメーターの表示制限\nマニュアル画面が選択された状態で卓の場合は Data キー長押し、 PC(Nomad) の場合は CIA フィルターを\n表示させた状態で Data キーを押すと、フィルターの項目を使ってマニュアル画面に表示されているパラメーター\nを消したり増やしたりすることができます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_1",
+      "manual_section": "8-1",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "一般照明",
+      "route": "/guide/8_1",
+      "theme_color": "#2a9d8f",
+      "summary": "一般照明の選択、明るさ、範囲指定、Full、Outなどの基本操作を行う。",
+      "when_to_use": [],
+      "commands": [
+        "1 At 50 Enter",
+        "1 Thru 10 At 10 Enter",
+        "1 + 3 + 5 At + 5 Enter",
+        "1 Full",
+        "1 Out"
+      ],
+      "warnings": [
+        "Clearはコマンドラインを消すだけで、手動出力は消さない。"
+      ],
+      "keywords": [
+        "一般照明",
+        "チャンネル操作"
+      ],
+      "subtopics": [
+        {
+          "id": "8-1-1",
+          "title": "構文の見方"
+        },
+        {
+          "id": "8-1-2",
+          "title": "LIVE モードでの操作"
+        },
+        {
+          "id": "8-1-3",
+          "title": "基本のチャンネル操作 ( テンキー周辺 )"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 60,
+        "page_end": 62,
+        "extracted_text": "8-1. 一般照明\n8-1-1. 構文の見方\n本書では構文を下記のように表示します。 本書では構文を英語で表記していますが、 コンソール本体の設定に\nより日本語で表示することも可能です。\n< ダーゲット > < 操作 > ＜ Enter ＞\nターゲット＃ 操作 Enter\n• ＜ターゲット＞ ： 操作を行いたい対象になります。 チャンネル、 グループ、 キューなどです。 すでに選択され\nている場合、 省略できることがあります。\n• ＃ ： 数字を表します。 チャンネル No. やアドレス No. です。\n• ＆ ： 同時押しを表します。 例 <Shift & /> Shift を押しながら /\n最後に Enter を押すと構文が実行されます。 一部のコマンドは自己終了するため、 Enter を押す必要がない\nものがあります。 これらのコマンドの一部 （すべてではありません） は、 以下のとおりです。\n• Out\n• +%\n• -%\n• Level （At At）\n• ダイレクトセレクトからのアクション\nEnter を押し構文が決定されると、 の様に最後にひし形 が表示されます。\nもし構文に誤りがある場合、 下記のような表示が出ます\n【日本語訳】 エラー : 構文 ( シンタックス ) エラー\nチャンネルの選び方はテンキーで入力しても、 タッチで選択しても同じです。\nマジックシートを使用して複数の Ch を選択する場合、 タッチしたまま指をスライドさせて範囲選択することがで\nきます。\n8-1-2. LIVE モードでの操作\n一般照明で扱うのはインテンシティ （明るさ、 ゲージ） です。 LIVE モードで操作する場合、 テンキー入力は下\n記になります。\nインテンシティの操作\n「チャンネル 1 を 50% の明るさにする」 という操作をする場合、 下記のような構文を入力します。\n1 At 5 Enter\nチャンネルを示します。\nゲージ （明るさの度合） ： 1 ケタで入力すると、 自動的に 10 倍の値になります。 1 ケタの値を入れたい場合\nは 01、 08 などと入力します。 「At5」 は 50% の明りになり、 「At+5」 は明るさを 50% たす、 となります。\nEnter ： Live モードでは Enter を押なければ実行されません。\n\nChapter 8\n明るさ調整\n< ターゲット > <At 数字＞ < Enter>\n# At# Enter\nチャンネル操作\n例\nチャンネル 1 を 50% の明るさにする\n• 1 at 5 Enter\n複数のチャンネルの明るさ調整\n< 最初のチャンネル > <Thru> < 最後のチャンネル > <At 数字＞ < Enter>\n# Thru ＃ At# Enter\n入力例\nチャンネル 1 からチャンネル 10 を 10% の明るさにする\n• 1 thru 10 At 10 Enter\n「Thru」 は through の略で 「〜から〜」 の意味です。 「〜の間」 というニュアンスもふくみます。 チャンネル\n1 から 10、 ゲージ 1％から 10％、 タイム 1s から 10s などで使用します。\n目次 01\n複数のチャンネルの明るさを、 たしたり引いたりする調整\n< チャンネル > <+> < チャンネル > ＜ At ＞ ＜ + または - ＞ ＜数字＞ < Enter>\n# + ＃ At ＜ + または - ＞ # Enter\n02\n入力例\nチャンネル 1、 チャンネル 3、 チャンネル 5 の明るさに 50％たす\n03\n• 1 + 3 + 5 At +5 Enter\n上記に調整した後に明るさを 20％引く場合、 つづけて下記を入力\n04\n• At -2 Enter\n05\n8-1-3. 基本のチャンネル操作 ( テンキー周辺 )\n06\n07\nコマンドラインを 1 単語ずつ消す場合は Clear を、 コマンドラインを全部消す場合は\nShift + Clear を入力します。\n08\nNote\n09\nClear を何回押してもマニュアル出力は消えません。 消したいときは Sneak や\nOut 等を使用します。\n10\n11\n12\n13\n14\n15\n\nFull キー\nゲージを Full にしたいとき\n< ターゲット > <At> <Full> <Enter>\n# At Full Enter\n< ターゲット > <Full> <Enter>\n# Full Enter\n< ターゲット > <Full> <Full>\n# Full Full\n入力例\nチャンネル 1 のゲージを Full にする\n• 1 At Full Enter\n• 1 Full Enter\n• 1 Full Full\nLevel キー\nLevel キーを使用して明るさの調整が出来ます。 Level キーは 「At+At」 でも対応できます。 この調整の場\n合 Enter は不要です。 デフォルトの数値は 80% になります。 Level 値は CIA/User Setting から設定でき\nます。 ( 詳しくは 「4-1-5. User – マニュアル タイミング ・ 制御 (CIA 内 )」 （27 ページ） 参照 )\nLevel を使用しての明るさ調整\n< ターゲット > <Level> < 設定したい明るさ＞\n# Lebel #\n< ターゲット > <At> <At ＞\n# At At\n例\nLevel キーの設定値がデフォルトの 80% の場合、 チャンネル 1 を 80% の明るさにする\n• 1 Level\nLevel キーを 「At+At」 で対応させる場合 （Ch1 が 80% の明るさでつく）\n• 1 At At\n+%、-% キー\n+%、 -% キーの設定値で明るさの調整が出来ます。 この調整の場合 Enter は不要です。\n増減値は CIA/User Setting から設定できます。 ( 詳しくは 「4-1-5. User – マニュアル タイミング ・ 制\n御 (CIA 内 )」 （27 ページ） 参照 )\n+%、 -% は Zoom 等の Intensity 以外のパラメータでも使用できます。\n+%、 -% を使用しての明るさ調整\n< ターゲット > <+%> （または -%）\n# +% （または -%）\n例\n設定値が 10% の場合、 チャンネル 1 の明るさを +20％にする\n• 1 +% +％\nつづけて -% を入力して、 明るさを -10％にする （設定値 10％の場合、 -10％になる）\n• -％"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_2",
+      "manual_section": "8-2",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "ムービング・LED",
+      "route": "/guide/8_2",
+      "theme_color": "#2a9d8f",
+      "summary": "Focus、Color、Beamなどムービング・LEDのパラメーターを操作する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "ムービング・LED",
+        "チャンネル操作"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 63,
+        "page_end": 64,
+        "extracted_text": "Out キー\nChapter 8\nOut キーを使用すると明るさは 0% になります。 Enter は不要です。\nOut キーを使用しての明るさ調整\nチャンネル操作\n< ターゲット > <OUT>\n# Out\n例\nチャンネル 1 の明るさを 0 にする\n• 1 Out\n/ キー\n/ キーを使用して元の明るさをベースに明るさの調整を行います。\n/ キーを使用しての明るさ調整\n< ターゲット > <At> ＜/＞ < 調整したい数値 >\n# At / #\n例\nチャンネル 1 の明るさを元の半分にする\n目次 01\n• At / 5 Enter\nチャンネル 1 の明るさを元の 2 倍にする\n• At / 200 Enter\n02\n注意\n03\n1 At ( 空、 なにも打たない ) Enter\n上記の構文は Ch1 のデータを消す、 データを抜くとなります。 Eos 構文は数値が入力されるべき所に、\n04\n何も入力されていないとデータが消えます。 Cue 実行中の場合、 1 つ前のキューデータが乗り、 トラッキ\nングデータとなります。\n8-2. ムービング・LED( パラメータ機材 ) 05\n06\n07\nムービング ・ LED 等、 Ch の持つ各パラメーターは基本以下の 4 分類に属します。\n• Intensity （インテンシティ）\n08\n• Focus （フォーカス）\n• Color （カラー）\n09\n• Beam （ビーム）\nパレット等の記録ツールもこの４分類が基本になります。\n10\n11\nIntensity（インテンシティ）\n灯体から出力される明るさのパラメーターです。 CS コンソールなど他の照明卓などで Dimmer と呼称される\n12\nパラメーターになります。\n13\n14\n15\n\nFocus（フォーカス）\nムービングライト等の動く機能 (Pan/Tilt) のことをさします。 CS コンソールなど他の照明卓で Position と\n呼称されるパラメーターになります。\nFocus 例\nPan： 首を回す動き Tilt： 首を縦に振る動き\nColor（カラー）\nパラメーターは機種によって変化し CMY の灯体は CMY、 RGB の機材は RGB が表示されます。\nColor 例\nBeam（ビーム）\nBeam のパラメータは上の３つ以外のパラメーターで様々な要素を持ちます。\n小分類として、 Form、 Image、 Shutter の３つがあります。\nForm\n• Zoom\n• Edge\n• Iris\n• Strobe ( ストロボ )\nImage\n• Gobo\n• Animation\n• BeamFx (Prism)\nShutter\n• Shutter( カッター )\n使用している画像は ML Control (ML=Moving Light, エムエル コントロール ) のものです。\n現在選択している灯体の全てのパラメーターが表示され、 ここから操作することもできます。\n画面右上に アイコンが表示されているので、 クリックすると表示されます。\nNote\n画面左下の を押すと、 各パラメーターをコマンドラインの上に表示さ\nせる各エンコーダーに割り当てることができます。\nこの機能は Encoder Maps と呼びます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_3",
+      "manual_section": "8-3",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Sneak",
+      "route": "/guide/8_3",
+      "theme_color": "#2a9d8f",
+      "summary": "手動変更を指定時間でバックグラウンド値またはHomeへ戻す。",
+      "when_to_use": [
+        "元に戻す",
+        "手動値解除",
+        "スニーク"
+      ],
+      "commands": [
+        "Sneak Enter",
+        "Channel # Sneak Enter",
+        "Channel # Sneak Time # Enter"
+      ],
+      "warnings": [
+        "Sneak Enterは全手動データを解除するため、実行前に対象を確認する。"
+      ],
+      "keywords": [
+        "Sneak",
+        "チャンネル操作",
+        "元に戻す",
+        "手動値解除",
+        "スニーク"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 65,
+        "page_end": 65,
+        "extracted_text": "8-3. Sneak ( スニーク )\nChapter 8\nSneak はマニュアルデータを削除し、 バックグラウンド (Cue 又は Submaster)、 もしくはホームへと戻す構\n文です。 Sneak+Enter で全てのマニュアルデータは失われます。\nチャンネル操作\n後ろからあたっているサスのカラーを変えたい場合\n赤はマニュアル値になります。\n元の色に戻したい場合、 Sneak キー＋ Enter をすると、 元のキューに記録された数値に戻\nります。\n目次 01\nSneak Time（スニークタイム）\nSnak する時間を設定できます。\n① Display キーから CIA に入ります。\n② Setting から Manual Control を選択します。\n02\n③ D\u0007 efault Time の中に Sneak があるので、 希望の時間を設定しま\nす。\n03\n左の画像では Sneak Time は 2 秒になっています。\n04\n05\n指定 Sneak\nSneak するチャンネル ・ パラメーターを指定することができます。 構文内で Sneak の前に入れることによっ\n06\nて指定することができます。\n07\n指定して Sneak\n< ターゲット > <Sneak>\n08\nターゲット Sneak\n09\n例\n10\nチャンネル 1 のみをスニーク\n• Ch1 Sneak\n11\n色のみスニーク\n• Color Sneak\n12\nALLNP、 インテンシティ以外をスニーク\n• Sneak Sneak\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_4",
+      "manual_section": "8-4",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Group",
+      "route": "/guide/8_4",
+      "theme_color": "#2a9d8f",
+      "summary": "よく使うチャンネルの組合せをGroupとして記録・呼び出しする。",
+      "when_to_use": [],
+      "commands": [
+        "Group # Enter",
+        "Channel list Record Group # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Group",
+        "チャンネル操作"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 66,
+        "page_end": 67,
+        "extracted_text": "Sneak による呼び出し\nSneak を使用した構文で各チャンネル、 プリセットを Sneak Time や指定のタイムをかけて操作することがで\nきます。\nSneak を使用しての操作\n< ダーゲット > ＜効果＞ <Sneak> ＜ Enter ＞\nターゲット 効果 Sneak Enter\n例\nグループ５にカラーパレット 5 をデフォルトのスニークタイムで適用\n• Group 5 ColorPalette 5 Sneak Enter\nグループ５にカラーパレット 5 を 7 秒で適用\n• Group 5 ColorPalette 5 Sneak Time 7 Enter\nサブマスター４の明るさを 2 秒かけて 50% にする\n• Sub 4 At50 Sneak 2 Enter\n注意\nEos では Clear キーを押してもマニュアルデータは削除できません。 Clear キーはコマンドラインを空に\nするだけです。\nSneak をかけるとマニュアルデータが削除されます。 データを削除するときは SneakTime が適用さ\nれます。 各パラメーター （インテンシティ、 カラーなど一部パラメーター） を指定して OFF する時なども\nSneak キーを使用します。\nClear キー、 Sneak キーにおける違いが大きいので注意してください。\n8-4. Group ( グループ )\nグループは、 複数のチャンネルを 1 つの集団として設定することで、 複数のチャンネルをまとめて呼び出す際に\n便利なツールです。\nGroup List（グループリスト）\nGroup キーを 2 度押すとグループリストが開きます。 ※ Blind モードで開きます。\n\nグループの作り方\nChapter 8\nグループリストで空いているグループ No を確認します。\nそのグループに入れたいチャンネル No を入力し、 Enter を押すと選択したチャンネルがグループに入ります。\n既存のグループを編集する場合は、 Group147 など番号を入力するか、 Next キー、 Last キーでグループを\nチャンネル操作\n選択します。 コマンドラインの 「BLIND:」 の後が選択されているグループになります。\nそのまま chNo を入力し Enter を 2 回押すと、 選んだ ch が上書きされます。 追加、 削除したい場合は ch\nの前に＋やーを付けます。\nグループを作成してから、 チャンネルを入れます\n<Grop> ＜＃＞ ＜ Enter ＞\nGrop ＃ Enter\n<Grop ＃ > ＜グループに入れたいチャンネル No. ＞ ＜ Enter ＞\nGrop# # Enter\n例\nグループ 3 を作成\n• Group 3 Enter\nグループ 3 にチャンネル 1 から 10 をいれる\n• Group3 1 Thru 10 Enter\n目次 01\nSubgroup（サブグループ）\nSubgroup ( サブグループ ) とはグループ内の小グループです。\n02\nShift & / でカッコ () を作ることができます。\n03\nサブグループの作り方\n04\n<Grop ＃ > ＜ Shift & / ＞ ＜サブグループに入れたいチャンネル＞ ＜ Shift & / ＞ ＜ Enter ＞\nGrop# Shift & / # Shift & / Enter\n05\n例\nグループ 2 にチャンネル 1 から 5 のサブチャンネルを作成\n06\n07\n• Group2 Shift & / 1 Thru 5 Shift & / Enter\nエフェクトではサブグループは１つのチャンネルと扱われます。 分割 (Spread) することはできません。\n08\nブロックエフェクト等を作成するのに便利です。 サブグループはエフェクト内で１CH 扱いとなります。\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_5",
+      "manual_section": "8-5",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Selectキー",
+      "route": "/guide/8_5",
+      "theme_color": "#2a9d8f",
+      "summary": "Last、Manual、Activeを使って対象チャンネルを素早く選ぶ。",
+      "when_to_use": [
+        "今ついている灯体",
+        "最後に触った灯体",
+        "手動チャンネル"
+      ],
+      "commands": [
+        "Select Last",
+        "Select Manual",
+        "Select Active"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Selectキー",
+        "チャンネル操作",
+        "今ついている灯体",
+        "最後に触った灯体",
+        "手動チャンネル"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 68,
+        "page_end": 68,
+        "extracted_text": "8-5. Select キー\nSelect キーはマニュアル操作をする際に、 ターゲットを簡単に指定するスピードアップツールです。\nSelect Last、 Select Manual、 Select Active の種類があります。\nSelect Last\n過去に選択したターゲット (Ch,Group, Fx 等 ) を再読み込みします。 5 回まで過去のターゲットにさかのぼれ\nます (=Shift + Enter ⇒ Select Last と同じ )。\nSelect Manual\nマニュアルデータが乗っているものを選択します。\nSelect Active\nIntensity が 0 以上のものを選択します。\nSelect All\nShift + Select Last でソフトキーの Select ALL ＝全チャンネル選択が表示されます。\n8-6. Query（クエリ）\nQuery キーはマニュアル操作をする際に、 ターゲットを簡単に指定する為の検索スピードアップツールです。\nQuery は英語で質問という意味です。 卓のデータベースへの検索要求、 質問をする機能になります。\nQuery キー を押すと CIA への検索条件が表示されます。\nPatch 画面で作成したキーワードがここに\n出 て き ま す。 作 成 方 法 は 「Query で オ\nリジナルのキーワードを使用する場合」\n（70 ページ） を参照してください。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_6",
+      "manual_section": "8-6",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Query",
+      "route": "/guide/8_6",
+      "theme_color": "#2a9d8f",
+      "summary": "機種、状態、データベース情報などを条件にチャンネルを絞り込む。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Query",
+        "チャンネル操作"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 68,
+        "page_end": 69,
+        "extracted_text": "8-5. Select キー\nSelect キーはマニュアル操作をする際に、 ターゲットを簡単に指定するスピードアップツールです。\nSelect Last、 Select Manual、 Select Active の種類があります。\nSelect Last\n過去に選択したターゲット (Ch,Group, Fx 等 ) を再読み込みします。 5 回まで過去のターゲットにさかのぼれ\nます (=Shift + Enter ⇒ Select Last と同じ )。\nSelect Manual\nマニュアルデータが乗っているものを選択します。\nSelect Active\nIntensity が 0 以上のものを選択します。\nSelect All\nShift + Select Last でソフトキーの Select ALL ＝全チャンネル選択が表示されます。\n8-6. Query（クエリ）\nQuery キーはマニュアル操作をする際に、 ターゲットを簡単に指定する為の検索スピードアップツールです。\nQuery は英語で質問という意味です。 卓のデータベースへの検索要求、 質問をする機能になります。\nQuery キー を押すと CIA への検索条件が表示されます。\nPatch 画面で作成したキーワードがここに\n出 て き ま す。 作 成 方 法 は 「Query で オ\nリジナルのキーワードを使用する場合」\n（70 ページ） を参照してください。\n\nChapter 8\nチャンネル操作\nQuery はチャンネルの他にタイム、 キューなどなども検索条件として使用できます。\nマクロなどの中に連携させて使用できます。\nQuery ソフトキー\nIs In ～内に存在する\nIsn’ t In ～内に存在しない\nCan Be ～でありうる\nCan’ t Be ～でありえない\nOr ～か～\nMoves Only 動いたもののみ\nUnpatched パッチされていない\nMark どのキューで Intensity が入ってくるか\nLess Than ～より少ない ( ～も含む )\nGreater Than ～より大きい （～も含む）\nBroken Mark マークキューが壊れている\n目次 01\nMarking (future cue) 今後のキューでマークされる\nTrack トラッキングするもの\nUp Moves 明るくなりながら動く\nDown Moves 暗くなりながら動く\n02\nLive Moves 明るいまま動く\nDark Moves 暗い中動く\n03\nAutoblock オートブロックされている\nBlock ブロックされている\n04\nAssert Assert が入っている\nPart パートがある\n05\nPark パークされている\nTime タイムが＃秒\n06\nDelay ディレイが＃秒\n07\nCapture キャプチャーされている\n08\nソフトキーを利用、 組み合わせして Query 構文を使用します。\n例\n09\nIntensity Palette 2 で Intensity50% の灯体を探す\n• uery IS IN Color Palette 2 At50 Enter\n10\nBeam Palette 25 に含まれていないものを探す\n11\n• Query ISN’ T IN Beam Palette 25\nSola Frame Theatre の中で Focus Palette6 に入っていて Q4 から Q9 に含まれない灯体を探す\n12\n• Query Fixture Type Sola Frame Theatre CAN BE Focus Palette 6 ISN’ T IN Cue 4\nthru 9 Enter\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_7",
+      "manual_section": "8-7",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Undo",
+      "route": "/guide/8_7",
+      "theme_color": "#2a9d8f",
+      "summary": "直前の編集履歴を確認して任意の操作を取り消す。",
+      "when_to_use": [],
+      "commands": [
+        "Undo → edit item → Enter → Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Undo",
+        "チャンネル操作"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 70,
+        "page_end": 70,
+        "extracted_text": "Query でオリジナルのキーワードを使用する場合\n① Patch キーを２回押しし、 Database を選択します。\n② キーワードを挿入したいチャンネルを選択します。\n③ CIA 右側のデータベースを入力します。\nキーワードは英語なら文章で入力できます。\n作成したキーワードは Query キーを押した際のソフトキーとして登録さ\nれます\n例\nColor Pallet6 に入っている 「キーワード」 ターゲットを探す\n• Query キーワード IS IN Color Palette 6 Enter\n8-7. Undo（アンドゥ）\nUndo （アンドゥキー） はマニュアル操作をさかのぼり、 変更を取り消す構文です。\n注意\n全てのコマンドラインが Undo できるわけではありません。 下記では使用できませんので注意してください。\n・ プレイバック (Go など )\n・ エンコーダーによるマニュアル操作\n・ Augment3D の 3D モデル編集\nUndo を使用するには\n① Undo を押すと CIA に過去の編集作業が表示されます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_8",
+      "manual_section": "8-8",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Capture",
+      "route": "/guide/8_8",
+      "theme_color": "#2a9d8f",
+      "summary": "チャンネルの値を一時的に固定し、Cue再生などの影響を受けにくくする。",
+      "when_to_use": [],
+      "commands": [
+        "Channel # Capture Enter",
+        "Channel # Capture Enter (release)",
+        "Channel # Sneak Enter (release)"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Capture",
+        "チャンネル操作"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 71,
+        "page_end": 72,
+        "extracted_text": "Chapter 8\n② さかのぼりたい編集作業を選択し Enter を押します。\n③ 本当に Undo してもよいか確認されるのでもう一度、 Enter を押します。\nチャンネル操作\nNote\nコマンドラインに何かが入っているとき、 Undo は Shift + Clear と同じ働きをします。\nNote\nマルチユーザー環境では、 自分の実行したコマンドのみ Undo 可能です。\n8-8. Capture（キャプチャー）\nCapture は、 指定したチャンネルのマニュアルデータを Capture を解除するまでキープし続ける機能です。\n注意\nCue 再生、 サブマスターの影響は受けませんが、 マニュアルコントロールは可能です。 Park とは違い\nSneak するとデータは失われます。\n目次 01\nキャプチャー方法\n< ターゲット＃ > ＜ Capture ＞ ＜ Enter ＞\nターゲット＃ Capture Enter\n02\n例\nチャンネル 78 から 82 をキャプチャー\n03\n• Chan 78 Thru 82 Capture Enter\nCapture された各チャンネルに黄色で 「C」 が入ります。\n04\n05\n06\n07\n08\n特定パラメーターを Capture する場合 （Ch7 の Focus のみキャプチャー）\n• 7 Focus Capture Enter\n09\n10\n11\n12\n13\n14\n15\n\nCapture 解除\n< ターゲット＃ > ＜ Captur ＞ ＜ Enter ＞\nターゲット＃ Captur Enter\n< ターゲット＃ > ＜ Sneak ＞ ＜ Enter ＞\nターゲット＃ Sneak Enter\n＜ Chaptur ＞ ＜ Enter ＞\nChaptur Enter\n例\nチャンネル 78 から 82 を指定して解除\n• Chan 78 Thru 82 Chaptur Enter\nチャンネル 27 から 29 のインテンシティ、 パラメーターをバックグラウンドステータスへ戻し解除\n• Chan 27 Thru 29 Sneak Enter\n全ての Capture を解除\n• Capture Enter\nCapture 方法の 1 例\nCapture キーを２回押すとコマンドラインに Capture Enable と出ます。 Enter を押すと\nCapture が掛かった状態になり、 Capture キーは緑色に点灯します。\nこの状態で、 もう一度 Capture キーを２回押すとコマンドラインに Capture Disabl と出\nます。 Enter を押すと Capture 機能が OFF になり、 Capture キーの緑色も消えます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_9",
+      "manual_section": "8-9",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Rem Dim",
+      "route": "/guide/8_9",
+      "theme_color": "#2a9d8f",
+      "summary": "選択中のチャンネル以外を一時的に暗くして確認しやすくする。",
+      "when_to_use": [
+        "選択以外を消す",
+        "フォーカス確認"
+      ],
+      "commands": [
+        "Channel # Rem Dim",
+        "Rem Dim (release)"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Rem Dim",
+        "チャンネル操作",
+        "選択以外を消す",
+        "フォーカス確認"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 73,
+        "page_end": 73,
+        "extracted_text": "8-9. Rem Dim( リマインダーディマー、レムディム )\nChapter 8\nRem Dim は選択している CH 以外に対し、 Intensity を 0 にする機能です。 (Park, Sub は除きます )\nデフォルトは 0 ですが、設定で変更できます。 設定方法は「4-1-5. User – マニュアル タイミング・制御 (CIA\n内 )」 （27 ページ） を参照してください。\nチャンネル操作\n< ターゲット＃ > ＜ RemDim ＞ ＜ Enter ＞\nターゲット＃ RemDim Enter\n例 チャンネル 23 以外のインテンシティを 0 にする\nRem Dim したいチャンネルを選択\n目次 01\n02\n• Chan 23 Rem Dim Enter （Rem Dim キー +Enter）\n03\n04\nもう一度、 Rem Dim キーを押すと 0 のデータが失われ、 元の数値に戻ります。\n05\n06\n07\n08\n09\nRem Dim 活用法\n10\nNext キー、 Last キーが使用可能です。 また、 グループに対しても使用可能です。 (Next, Last グループ間\n移動できます )\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_10",
+      "manual_section": "8-10",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Highlight",
+      "route": "/guide/8_10",
+      "theme_color": "#2a9d8f",
+      "summary": "選択灯体を強調し、フォーカスや動作確認をしやすくする。",
+      "when_to_use": [
+        "灯体を見つける",
+        "強調表示"
+      ],
+      "commands": [
+        "Highlight",
+        "Highlight (release)"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Highlight",
+        "チャンネル操作",
+        "灯体を見つける",
+        "強調表示"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 74,
+        "page_end": 75,
+        "extracted_text": "8-10. Highlight ( ハイライト )\nハイライト機能とは、 選択したチャンネルを明確に強調表示することで、 特定の機材の確認や調整を行う際に便\n利な機能です。 使い方によっては操作中のチャンネルのインテンシティが他のすべてのチャンネルよりも強調さ\nれ、 他の照明は暗くなるため、 フォーカスや効果を迅速に確認することができます。\n例えば、 ムービングライトの位置や特定効果が正確に出ているかを確認したい場合、 他のライトの影響を受けず\nにチェックできます。 キューの実行中でも、 視覚的に特定のライトを確認する必要がある際に、 一時的にそのチャ\nンネルを強調して視認性を高めることができます。 キュー間の変化なども選択したチャンネルが意図した通りに\n機能しているかを簡単にテストできます。\nハイライトモードで選択されたチャンネルは、 デフォルト設定、 またはハイライトプリセット （セットアップのマニュ\nアルコントロールで設定） で設定された値になります。 その後、 これらのチャンネルに変更を加えることができ\nます。ハイライトモードを解除しても、変更は維持されます。Eos をハイライトモードにするには、[High] [Enter]\nを押します。 コマンドラインには、 現在ハイライトが使用されていることが表示されます。\nHightlight モードに入ると、 選択されたチャンネルが、 CIA で設定されたプリセットが適応されます。\n< ターゲット＃ > ＜ Hightlight ＞ ＜ Enter ＞\nターゲット＃ Hightlight Enter\n例\nチャンネル 23 をハイライトする場合、 ハイライトしたいチャンネルを選択\n• Chan 23 Hightlight Enter （Hightlight キー +Enter）\nハイライトモードに入るとコマンドラインの ： の前に 「Highlight」 と表示\nHighlight されているチャンネルに 「HL」 と表示\nハイライトのプリセットが適応されます。 プリセットはすべてのパラーメータが入るパレットです。 画像は\nChapter3-1 で指定しているハイライトプリセットが適応されます。 プリセットについては 「9-1. プリセット、\nパレットの種類」 （80 ページ） を参照してください。\n\nChapter 8\nもう一度 Highlight キーを押すとハイライトモードが解除されます。 Enter を押す必要はありません。\nHighlight について\n• デフォルトでは Intensity、 Color、 Image がホームになります。\nチャンネル操作\n• Next キー、 Last キー使用可能です。\n• グループに対しても使用可能です (Next, Last グループ間移動できます )。\n• Lowlight を設定すると、 ハイライトモードで他灯体に Lowlight を適応させ、 Highlight がかかっている\n灯体をより目立たせられます。 Lowlight も Highlight 同様プリセットを設定できます。\n• Eos の構文では範囲を指定しない場合 「全て」 と認識されます。 Ch1 thru 15 のように 「＃〜＃」 と範\n囲を指定し、 Next で送ると Highlight と Lowlight がかかるものが指定できて使いやすいです。\nHighlight の使い方\n① LIVE モードにいることを確認してから、 Highlight キー +Enter キーで、 ハイライトモードに入ります。\n② ハイライトを掛けたいチャンネル範囲を選択します。\n目次 01\n02\n③ NEXT,LAST で前後チャンネル移動できます。 Lowlight されている Ch には LL と表示されます。 終わっ\nたら Highlight キーをもう一度おして、 ハイライトモードを解除します。\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_11",
+      "manual_section": "8-11",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Offset",
+      "route": "/guide/8_11",
+      "theme_color": "#2a9d8f",
+      "summary": "選択順を奇数・偶数・ランダム・反転などの規則で並べ替える。",
+      "when_to_use": [
+        "奇数",
+        "偶数",
+        "ランダム",
+        "順番を逆にする"
+      ],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Offset",
+        "チャンネル操作",
+        "奇数",
+        "偶数",
+        "ランダム",
+        "順番を逆にする"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 76,
+        "page_end": 76,
+        "extracted_text": "8-11. Offset ( オフセット )\nOffset はチャンネルの選び方、 選び順に対して規則性を後位的に与える機能です。\nch# Offset Enter で選択すると offset モードになります Offset モードに入ると、 CIA に Offset のか\nけ方が表示されます。\nOffset 例 Ch1-9 に Offset をかけた例\nOffset なし Reverse( 逆順 )\nMirror In Mirror out\nランダム (Random Channels) Reorder( 並び替え ) を押すとランダムを\n並び替え別のランダムを作成します。\n奇数 (Odd) 偶数 (Even)\nEnter を押すと適応されます。\nソフトキー\n上記の CIA の画面はいちいち開く必要はなく、 Offset を押した段階で右下のソフトキーに表示されます。\nCIA は自動で開かない設定にもできます。\n「MoreSK」 を押すと、 上のグレー字が白字と入れ替わり選択できるようになります。\n8-12. Fan ( ファン )\nFan は選択された複数のチャンネルのパラメーター、 タイムなどに対して規則性を与える機能です。 デフォルト\nの始点は最初に選択されている Ch です。\nコマンドを打った後に 「FAN」 を入力すると、 画面右下のソフトキーの項目に FAN の種類が表示されるのでそ\nこから選択します。\n< ターゲット＃ > ＜ Fan ＞ ＜ Fan の種類＞ ＜効果＞ ＜ Enter ＞\nターゲット＃ Fan Fan の種類 効果 Enter"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "8_12",
+      "manual_section": "8-12",
+      "chapter": 8,
+      "chapter_title": "チャンネル操作",
+      "category_id": "channels",
+      "title": "Fan",
+      "route": "/guide/8_12",
+      "theme_color": "#2a9d8f",
+      "summary": "複数灯体の値を中心・端・方向などの規則で扇状に分散する。",
+      "when_to_use": [
+        "値を広げる",
+        "グラデーション",
+        "扇状"
+      ],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Fan",
+        "チャンネル操作",
+        "値を広げる",
+        "グラデーション",
+        "扇状"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 76,
+        "page_end": 77,
+        "extracted_text": "8-11. Offset ( オフセット )\nOffset はチャンネルの選び方、 選び順に対して規則性を後位的に与える機能です。\nch# Offset Enter で選択すると offset モードになります Offset モードに入ると、 CIA に Offset のか\nけ方が表示されます。\nOffset 例 Ch1-9 に Offset をかけた例\nOffset なし Reverse( 逆順 )\nMirror In Mirror out\nランダム (Random Channels) Reorder( 並び替え ) を押すとランダムを\n並び替え別のランダムを作成します。\n奇数 (Odd) 偶数 (Even)\nEnter を押すと適応されます。\nソフトキー\n上記の CIA の画面はいちいち開く必要はなく、 Offset を押した段階で右下のソフトキーに表示されます。\nCIA は自動で開かない設定にもできます。\n「MoreSK」 を押すと、 上のグレー字が白字と入れ替わり選択できるようになります。\n8-12. Fan ( ファン )\nFan は選択された複数のチャンネルのパラメーター、 タイムなどに対して規則性を与える機能です。 デフォルト\nの始点は最初に選択されている Ch です。\nコマンドを打った後に 「FAN」 を入力すると、 画面右下のソフトキーの項目に FAN の種類が表示されるのでそ\nこから選択します。\n< ターゲット＃ > ＜ Fan ＞ ＜ Fan の種類＞ ＜効果＞ ＜ Enter ＞\nターゲット＃ Fan Fan の種類 効果 Enter\n\nFan の種類\nChapter 8\n• Center （センター） ： 選択されたチャンネルの真ん中を始点とし、 広めたり、 縮めたりします。\n• Reverse （リバース） ： 規則性を与える前に入力すると、 選択されたチャンネルの順番を逆転させます。\nチャンネル操作\n• Mirror out （ミラーアウト） ： 中央の Ch を始点とし広げたり縮めたりします。\n• Repeat （リピート） ： 選択した複数のチャンネルを、 設定した数分割しファンを繰り返します。\n• Cluster （クラスター） ： クラスターは集団という意味でチャンネルを指定した数の集団に分割し、 集団ごと\nにファンをかけます。\n目次 01\n• Random Channels （ランダムチャンネル） ： ランダムにファンをかけます。\n02\n• Forward （フォワード） ： 選んだチャンネルが選んだ順にファンがかかります。\n03\n04\n05\nTime への Fan のかけ方\n06\nタイムもパラメーター同様にファンをかける事ができます。 タイムの変更に関しては 「10-2-3. タイム」 （91\nページ） を参照してください。 07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "9_1",
+      "manual_section": "9-1",
+      "chapter": 9,
+      "chapter_title": "プリセットとパレット",
+      "category_id": "palettes",
+      "title": "プリセット・パレットの種類",
+      "route": "/guide/9_1",
+      "theme_color": "#8ac926",
+      "summary": "Presetと各Paletteの保存対象の違いを理解する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "プリセット・パレットの種類",
+        "プリセットとパレット"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 80,
+        "page_end": 80,
+        "extracted_text": "9-1. プリセット、パレットの種類\nプリセット\n複数のパラメーターを一度に保存できる機能です。 パレットが 1 つの属性 （色、 位置、 ビームなど） に特化して\nいるのに対し、 プリセットはそれらをすべて組み合わせた 「全体の状態」 を保存することができます。 プリセッ\nトにより、 照明の全体的な設定 （色、 位置、 明るさ、 ビームなどの組み合わせ） を保存し、 複数の照明機材に\n同じ設定を適用することができます。\nパレット\n照明のグループや特定の属性ごと （色やフォーカスなど） に管理するためのもので、 さまざまな照明の設定を\n簡単に使えるように整理したものです。 IFCB(Intensity,Focus,Color,Beam) パレットは、 他の照明卓の\nように他のアトリビュートを含めた保存は一切できません。複数の属性アトリビュートを保存したい場合はプリセッ\nトを使用してください。\nEos にはデータが保存できるプリセットと複数のパレットが存在しています。\nPreset 全てのパラメーターを保存\nIntensity Palettes Intensity のみ保存\nFocus Palettes Focus のみ保存\nColor Palettes Color のみ保存\nBeam Palettes Beam のみ (Form, Image, Shutter) 保存\nNote\nナンバリングは Preset、 パレットともに 10,000 まで作成することができます。\n（ナンバリングは 0.001 から 9,999.999 まで使用可能）\n9-2. プリセット、パレットの機能\nプリセット、 パレットには 3 つの機能があります。 下記機能は画面でプリセットや IFCB の各 Palettes のタブ\nを開くと確認が出来ます。\n9-2-1. By Type（バイタイプ）\n「ByType」 （バイタイプ） とはプリセット • IFCB パレットで使用される設定で、 同じ機種を使用する際のデフォ\nルトを設定できます。\nBy Type が設定されると小さく T が入ります。\nBy Type Channels に登録機種の元チャンネルが表示されています。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "9_2",
+      "manual_section": "9-2",
+      "chapter": 9,
+      "chapter_title": "プリセットとパレット",
+      "category_id": "palettes",
+      "title": "プリセット・パレットの機能",
+      "route": "/guide/9_2",
+      "theme_color": "#8ac926",
+      "summary": "By Type、Absolute、Locked、参照階層の働きを理解する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "プリセット・パレットの機能",
+        "プリセットとパレット"
+      ],
+      "subtopics": [
+        {
+          "id": "9-2-1",
+          "title": "By Type（バイタイプ）"
+        },
+        {
+          "id": "9-2-2",
+          "title": "Absolute ( 絶対化 )"
+        },
+        {
+          "id": "9-2-3",
+          "title": "Locked( ロック )"
+        },
+        {
+          "id": "9-2-4",
+          "title": "参照ヒエラルキー"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 80,
+        "page_end": 81,
+        "extracted_text": "9-1. プリセット、パレットの種類\nプリセット\n複数のパラメーターを一度に保存できる機能です。 パレットが 1 つの属性 （色、 位置、 ビームなど） に特化して\nいるのに対し、 プリセットはそれらをすべて組み合わせた 「全体の状態」 を保存することができます。 プリセッ\nトにより、 照明の全体的な設定 （色、 位置、 明るさ、 ビームなどの組み合わせ） を保存し、 複数の照明機材に\n同じ設定を適用することができます。\nパレット\n照明のグループや特定の属性ごと （色やフォーカスなど） に管理するためのもので、 さまざまな照明の設定を\n簡単に使えるように整理したものです。 IFCB(Intensity,Focus,Color,Beam) パレットは、 他の照明卓の\nように他のアトリビュートを含めた保存は一切できません。複数の属性アトリビュートを保存したい場合はプリセッ\nトを使用してください。\nEos にはデータが保存できるプリセットと複数のパレットが存在しています。\nPreset 全てのパラメーターを保存\nIntensity Palettes Intensity のみ保存\nFocus Palettes Focus のみ保存\nColor Palettes Color のみ保存\nBeam Palettes Beam のみ (Form, Image, Shutter) 保存\nNote\nナンバリングは Preset、 パレットともに 10,000 まで作成することができます。\n（ナンバリングは 0.001 から 9,999.999 まで使用可能）\n9-2. プリセット、パレットの機能\nプリセット、 パレットには 3 つの機能があります。 下記機能は画面でプリセットや IFCB の各 Palettes のタブ\nを開くと確認が出来ます。\n9-2-1. By Type（バイタイプ）\n「ByType」 （バイタイプ） とはプリセット • IFCB パレットで使用される設定で、 同じ機種を使用する際のデフォ\nルトを設定できます。\nBy Type が設定されると小さく T が入ります。\nBy Type Channels に登録機種の元チャンネルが表示されています。\n\nChapter 9\nByType 使用時でも個別にデータを保存することができます。 その場合、 個別に保存した灯体のデータはディ\nスクリートデータ （個別データ） として扱われます。 ディスクリートデータが入ると 「＋」 が T の横 に入ります。\nNote\n「By Type」 を使用していると同じ機種ならチャンネルが違っても適用できます。\nプリセットとパレットについて\n「By Type」 をかけていないと、 記録したチャンネルのみが適用できるパレット ・ プリセットとなります。\n※ 「9-6. フィルター」 （85 ページ） で説明するフィルターと組み合わせて使用する場合もあります。\n9-2-2. Absolute ( 絶対化 )\n「Absolute」 はプリセット、パレットを適応した際、数値でデータは乗りますが、キューにおいてプリセット、パレッ\nトを参照しません。 Absolute が設定されると A が入ります\n目次 01\n02\n9-2-3. Locked( ロック )\n03\n「Locked」 はライブ編集をする際、 アクシデントや誤った編集から保護する機能です。 Locked が設定される\nと L が入ります。\n04\n※ Blind モードでは保護されません。\n05\n06\n07\n08\n09\n9-2-4. 参照ヒエラルキー\n10\nプリセットは各パレットを参照出来ますが、 数値を引っ張ってくるという意味合いです。 パレットはプリセットを\n11\n参照することは出来ません。\nパレットの値を参照しているプリセットを修正し、Update する際に Break Nested( 入れ子の解除 ) をすると、\n12\n参照していたパレットとの繋がりが絶たれて、 プリセットとパレットの関係が解消されます。\nしたがって、 プリセットの中見はパレットの参照ではなく数値になります。\n13\n（Update の詳細については 「11-4-1. アップデート」 （100 ページ） を参照）\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "9_3",
+      "manual_section": "9-3",
+      "chapter": 9,
+      "chapter_title": "プリセットとパレット",
+      "category_id": "palettes",
+      "title": "Direct Select",
+      "route": "/guide/9_3",
+      "theme_color": "#8ac926",
+      "summary": "Palette、Preset、EffectなどをDirect Selectから素早く呼び出す。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Direct Select",
+        "プリセットとパレット"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 82,
+        "page_end": 82,
+        "extracted_text": "9-3. ダイレクトセレクト\nダイレクトセレクト （Direct Select、 以下 DS) はパレット ・ プリセット ・ エフェクト等、 実際にプログラミング\nを行う際、 呼び出す為の物です。\nCustom はカスタム内で設定した複数の DS を表示させることができます。\nColor Direct Select Custom Direct Select\n9-4. Apex Custom Direct Select\nApex にあるターゲットキーには Custom Direct Select を入れられます。\n9-5. パレット・プリセットの作り方\n9-5-1. 使用できる空のパレット＃、プリセット＃が分かっている場合\nプリセットを保存するときは下記構文を使用します。\n< ターゲット > <Record Only ＞ ＜ Preset# ＞ < Enter>\nターゲット Record Only Preset# Enter\n例\nチャンネル 4 から 7 をプリセット 277 に保存\n• Chan 4 Thru 7 Record Only Preset277 Enter"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "9_4",
+      "manual_section": "9-4",
+      "chapter": 9,
+      "chapter_title": "プリセットとパレット",
+      "category_id": "palettes",
+      "title": "Apex Custom Direct Select",
+      "route": "/guide/9_4",
+      "theme_color": "#8ac926",
+      "summary": "ApexのカスタムDirect Selectへ必要な項目を配置する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Apex Custom Direct Select",
+        "プリセットとパレット"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 82,
+        "page_end": 82,
+        "extracted_text": "9-3. ダイレクトセレクト\nダイレクトセレクト （Direct Select、 以下 DS) はパレット ・ プリセット ・ エフェクト等、 実際にプログラミング\nを行う際、 呼び出す為の物です。\nCustom はカスタム内で設定した複数の DS を表示させることができます。\nColor Direct Select Custom Direct Select\n9-4. Apex Custom Direct Select\nApex にあるターゲットキーには Custom Direct Select を入れられます。\n9-5. パレット・プリセットの作り方\n9-5-1. 使用できる空のパレット＃、プリセット＃が分かっている場合\nプリセットを保存するときは下記構文を使用します。\n< ターゲット > <Record Only ＞ ＜ Preset# ＞ < Enter>\nターゲット Record Only Preset# Enter\n例\nチャンネル 4 から 7 をプリセット 277 に保存\n• Chan 4 Thru 7 Record Only Preset277 Enter"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "9_5",
+      "manual_section": "9-5",
+      "chapter": 9,
+      "chapter_title": "プリセットとパレット",
+      "category_id": "palettes",
+      "title": "パレット・プリセットの作り方",
+      "route": "/guide/9_5",
+      "theme_color": "#8ac926",
+      "summary": "RecordとRecord Onlyを使い分けてPalette／Presetを作成・修正する。",
+      "when_to_use": [],
+      "commands": [
+        "Record [Palette/Preset] # Enter",
+        "Record Only [Palette/Preset] # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "パレット・プリセットの作り方",
+        "プリセットとパレット"
+      ],
+      "subtopics": [
+        {
+          "id": "9-5-1",
+          "title": "使用できる空のパレット＃、プリセット＃が分かっている場合"
+        },
+        {
+          "id": "9-5-2",
+          "title": "ラベル"
+        },
+        {
+          "id": "9-5-3",
+          "title": "既存のプリセット・パレットの修正"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 82,
+        "page_end": 84,
+        "extracted_text": "9-3. ダイレクトセレクト\nダイレクトセレクト （Direct Select、 以下 DS) はパレット ・ プリセット ・ エフェクト等、 実際にプログラミング\nを行う際、 呼び出す為の物です。\nCustom はカスタム内で設定した複数の DS を表示させることができます。\nColor Direct Select Custom Direct Select\n9-4. Apex Custom Direct Select\nApex にあるターゲットキーには Custom Direct Select を入れられます。\n9-5. パレット・プリセットの作り方\n9-5-1. 使用できる空のパレット＃、プリセット＃が分かっている場合\nプリセットを保存するときは下記構文を使用します。\n< ターゲット > <Record Only ＞ ＜ Preset# ＞ < Enter>\nターゲット Record Only Preset# Enter\n例\nチャンネル 4 から 7 をプリセット 277 に保存\n• Chan 4 Thru 7 Record Only Preset277 Enter\n\nRecord VS Record Only\nChapter 9\nRecord キーと RecordOnly キー、 この 2 つのボタンには違いがあります。\nRecord キーは記録する際、「デフォルト値以外のデータが乗っているもの全て」を記録します。\nマニュアルデータに限らず、 実行しているキューやサブも含めた全てです。\nプリセットとパレットについて\n対して、 RecordOnly は 「マニュアルデータのみ」 を記録します。 どちらで記録する場合も、\n先にチャンネルやアトリビュートを指定してそのデータのみを記録することも出来ます。\n例\nチャンネル 4 から 7 をプリセット 277 に保存\nRecord Only の前に Ch4 thru7 とチャンネルを指定しています。\nそのため、 下の画像のように Ch4 から 7 のマニュアルデータだけが Preset 277 に記録されます。\n目次 01\n9-5-2. ラベル\nプリセットやパレットを記録した後 Label キーを押すと、 そのままラベリングが出来ます。 ※日本語入力の設定\n02\nをしていれば日本語を打ち込むことが出来ます。 もし既に入力してあるラベルを全て消したいときは Label キー\nを押すと名前がすべて空の状態になります。\n03\n04\nPC はここに入力\n05\n06\n07\n9-5-3. 既存のプリセット・パレットの修正\n08\n既存のプリセットやパレットなどを修正する場合、 ブラインドモードでの修正が便利です。\n① Blind モードに入ります。 Preset を修正したい場合 Preset キーを 2 度押し、 各パレットを修正したい場\n09\n合、 各パレットのキーを２度押しするとブラインドモードのリスト画面に入ります。\n10\n11\n12\n13\n14\n15\n\n② 編集したいプリセット ・ パレットに入ります。 コマンドラインに編集したいプリセット又はパレットの番号を入\n力します。 この時、 コマンドラインの頭が 「ブラインド : プリセット #」 「ブラインド ： ビームパレット＃」 など\nと表示されていることを確認してください。\n③ マニュアル画面が指定したプリセット ・ パレットの中身になるので修正を加えます。 この画面では Record\nや Update などの記録コマンドを入力する必要はありません。 ブラインドモードは編集に特化したモードな\nので編集した数値 ・ データは直ちに反映 ・ 記録されます。\n④ ブラインドーモードを出て修正を終了します。 続けて修正をしたい場合、 Next キー、 Last キーを使用して\n前後のプリセット ・ パレットを修正する事ができます。\nNote\n例えばプリセットに誤ってインテンシティーのパラメーターまで入力してしまった場合、 「At Enter」 （空を\n打つ） という方法が便利です。\n① 修正したいプリセットに入って、 修正するプリセットを指定します\n② ＜修正したい CH ＃＞ ＜インテンシティ＞ ＜ At ＞ ＜ Enter ＞\n③ 修正したいチャンネルのインテンシティに空を打ち込むことによって、これでプリセットからインテンシティ\nのパラメーターを消すことができました。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "9_6",
+      "manual_section": "9-6",
+      "chapter": 9,
+      "chapter_title": "プリセットとパレット",
+      "category_id": "palettes",
+      "title": "Filter",
+      "route": "/guide/9_6",
+      "theme_color": "#8ac926",
+      "summary": "記録対象のパラメーターをFilterで限定する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Filter",
+        "プリセットとパレット"
+      ],
+      "subtopics": [
+        {
+          "id": "9-6-1",
+          "title": "フィルターのかけ方①"
+        },
+        {
+          "id": "9-6-2",
+          "title": "フィルターのかけ方②（継続的にフィルターをかけ続けたい場合）"
+        },
+        {
+          "id": "9-6-3",
+          "title": "スナップショットにフィルターを保存する"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 85,
+        "page_end": 87,
+        "extracted_text": "9-6. フィルター\nChapter 9\nフィルターは、 プリセット、 パレットを保存する際に、 記録するアトリビュートを限定する方法です。\n例えば、 ムービングの Intensity と Focus と Color と Zoom を操作し、 この状態の Focus と Zoom の\nプリセットとパレットについて\nみをプリセットに保存したい場合、 プリセットには Focus と Zoom 以外のアトリビュートも保存されてしまいま\nす。\nこのまま保存したプリセットを呼び出すと、 Focus と Zoom のデータを呼びたいだけなのに、 Intensity と\nColor の不要なデータも一緒に呼び出されてしまいます。 つまり、 マニュアルデータが乗っていると、 Preset\nは全て、 各種パレットは複数のアトリビュートを１つのパレットに記録してしまいます。\nこのようなことを解消するために使用するのがフィルター機能です\n目次 01\nAllNPs ： All Non-Intensity Parameters (Intensity 以外全てのアトリビュート )\n△を押すと今見えていないアトリビュートを表示します\nここで選択するとその上のアトリビュートをまとめて選択も出来ます。\n02\nInt Palette ： Intensity\nFocus Palette ： Pan, Tilt, XYZ Focus など\n03\nColor Palette ： RGBW, Amber, Lime, Color Wheel, CTO など\nBeam Palette ： \u0007Strobe, Zoom, Edge, Iris, Diffusion,Gobo 系 全 て、 Prism,Animation\n04\nEffect,Shutter など\n05\n9-6-1. フィルターのかけ方①\n06\n自分のフィルターをかけたいアトリビュートをタッチして、 そのままプリセット、 パレットに記録します。\n※複数のアトリビュートを選んでフィルターをかけることもできます。 07\n08\n09\n10\n11\n12\n13\n14\n15\n\n9-6-2. フィルターのかけ方②（継続的にフィルターをかけ続けたい場合）\n① 「Filters」 を押します。\n② 「ApplyFilter」 に変わり点滅し選択モードになります。\n③ この状態でアトリビュートを選択します。 Gobo だけを変更したい場合、 「Gobo Select」 を選択します。\nすると赤字で 「Fileter On」 となります。\n④ 「ApplyFilter」 を押し決定します。 この状態で Snapshot にフィルターを記録できます。\n(Snapshot については Chapter 「15-1. スナップショット」 （144 ページ） を参照）\n9-6-3. スナップショットにフィルターを保存する\n<Record Snapshot ＞ < ターゲット > < Enter>\nRecord Snapshot ターゲット Enter\n9-6-2 の状態から と入力すると下の画面になります。\n\nChapter 9\nNote\nion には Snapshot の物理キーがありません。 Record キーを押すと画面右下のソフトキー （画面上の\nキー） に 「Snapshot」 と出るのでそこをタッチします。\nプリセットとパレットについて\nクリックして画面の記録をしないようにします。\nチェック （白丸） を外します。\nフィルター以外の項目のチェックを外し、 フィルターのみチェックを入れます。\n目次 01\nこの状態で Enter キーを押すと、 Gobo Select のみの記録フィルターが Snapshot に作成されます。\n画面の記録を入れていないため、 この Snapshot を選んでも画面が切り替わらず、 フィルターをかけてパレッ\nトやプリセットを作ることができます。 Snapshot については 「15-1. スナップショット」 （144 ページ） を\n参照してください。\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "10_1",
+      "manual_section": "10-1",
+      "chapter": 10,
+      "chapter_title": "プレイバックの基礎",
+      "category_id": "playback",
+      "title": "PSD",
+      "route": "/guide/10_1",
+      "theme_color": "#ffca3a",
+      "summary": "Cueリストの状態をPSDで読み、再生位置や待ち状態を確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "PSD",
+        "プレイバックの基礎"
+      ],
+      "subtopics": [
+        {
+          "id": "10-1-1",
+          "title": "プレイバックとは"
+        },
+        {
+          "id": "10-1-2",
+          "title": "PSD（プレイバック・ステータス・ディスプレイ）とは"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 90,
+        "page_end": 90,
+        "extracted_text": "10-1. PSD( プレイバック・ステータス・ディスプレイ )\n10-1-1. プレイバックとは\nEos はプレイバックという概念が搭載されています。\nプレイバックとは、照明プログラムを記録して、そのプログラムを繰り返し再生できる機能のことです。 たとえば、\nミュージカルや演劇では、 同じ照明の変化を何度も公演毎正確に再現する必要があります。 このとき、 照明卓\nにプログラムされたキュー （Cue） を 「プレイバック」 することで、 ボタン一つで何度でもその照明を再現でき\nます。\n具体的には、照明デザイナーが設定した明かりや色の変化をコンソールに記録し、それをキューとして保存します。\nそして、 舞台の進行に合わせて 「GO」 ボタンを押すと、 そのキューに沿って照明が自動的に変化します。 これ\nにより、 照明操作を簡単かつ正確に行うことができ、 舞台演出がスムーズに進行します。\n10-1-2. PSD（プレイバック・ステータス・ディスプレイ）とは\nPSD （プレイバック ・ ステータス ・ ディスプレイ） は、 Eos コンソールの画面で、 照明のキュー （あらかじめ設\n定された照明の変化の順序） を管理するためのものです。 これにより、 現在のキューの状態や次に実行される\nキューが視覚的に確認でき、 操作がスムーズになります。\n例えば、 ミュージカルで異なるシーンの照明を切り替える際、 PSD は現在のシーンの照明がどのように設定さ\nれているか、 そして次にどのシーンの照明が実行されるのかを表示します。 これにより、 本番のオペレーター ・\nプログラマーは状況を把握しやすく、 照明のタイミングを正確に調整できます。\nPSD 画面設定\nTAB の歯車 ( )、 PSD の TAB を右クリックすると PSD の表示設定を変える事ができます。 左側が表示の\nON/OFF で右側が、 表示させる順番です。\nチェックを入れると表示し、 外すと非表示になります。\n表示させる項目の表示 ・ 非表示と順番を変えることができま\nす。 動かしたい項目を選んだ後、 の△▽で上下で並べ替えを\n行います。\n並べ替えを行います。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "10_2",
+      "manual_section": "10-2",
+      "chapter": 10,
+      "chapter_title": "プレイバックの基礎",
+      "category_id": "playback",
+      "title": "照明変化のTime",
+      "route": "/guide/10_2",
+      "theme_color": "#ffca3a",
+      "summary": "Time、Delay、Part、Discrete Timeで照明変化の時間を設計する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "照明変化のTime",
+        "プレイバックの基礎"
+      ],
+      "subtopics": [
+        {
+          "id": "10-2-3",
+          "title": "タイム"
+        },
+        {
+          "id": "10-2-4",
+          "title": "ディレイ"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 91,
+        "page_end": 91,
+        "extracted_text": "10-2. 照明変化のタイム設定\nChapter 10\n10-2-3. タイム\nタイム （Time） とは、 キューが実行されたときに、 照明の状態がどのくらいの時間をかけて変化するかを指定\nプレイバックの基礎\nするものです。 Hog4 など他の照明卓では 「フェード （Fade）」 と呼ばれることもあります。\n具体的には、 キューが GO ボタンでスタートすると、 このタイム設定に従って照明の明るさや色などがゆっくり\nと変わっていきます。 たとえば、 あるシーンが終わって次のシーンに移るときに、 照明が徐々に暗くなるように\nしたい場合、 このタイムを使ってその変化をコントロールします。\nGO Time 完了\nEos の PSD はデフォルト設定で IFCB 別でタイムが分かれています。\n• インテンシティの Up タイム ： そのキューで明るくなるチャンネルのタイム\n• インテンシティの Down タイム ： そのキューで暗くなる、 消えていくチャンネルのタイム\n• フォーカス ： そのキューでパン ・ チルトなどが動くタイム\n• カラー ： そのキューでの色の変化のタイム\n• ビーム ： ゴボやシャッター、 エッジの調整など、 ビームの形状に関する変化にかかる時間\n下の画像でオレンジで囲まれている箇所が Time となります。 P1 の場合、 下記のような設定となります。\nIntensity Up 6s\nIntensity Down 7s\n目次 01\nFocus 8s\nColor 9s\nBeam 10s\n02\n10-2-4. ディレイ\n03\nDelay とは、 キューを GO してからタイムが走り出すまでに待機時間を設ける場合の設定です。\nTime の左側に小さく表示される数字がディレイ （Delay） です。 Delay は 『Time』 項目で紹介した全パラメー\n04\nターにかけることができます。\nP1 の場合、 下記のような設定となります。\n05\nInt Up Delay 1s\nInt Down Delay 2s\n06\nFocus Delay 3s\nColor Delay 4s 07\nBeam Delay 5s\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "10_3",
+      "manual_section": "10-3",
+      "chapter": 10,
+      "chapter_title": "プレイバックの基礎",
+      "category_id": "playback",
+      "title": "CueのFlag",
+      "route": "/guide/10_3",
+      "theme_color": "#ffca3a",
+      "summary": "Mark、Block、Auto-Block、AssertなどCueの状態表示を読む。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "CueのFlag",
+        "プレイバックの基礎"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 92,
+        "page_end": 93,
+        "extracted_text": "10-2-5. マルチパートキュー\n1 つのキューは最大 20 のパートに分割することができ、 個別にタイムを割り当てることができます。 また、 全\nてのパートは同時の GO で進行します。\nTime 完了 Part1\nGO Time 完了 Part2\nDelay Time 完了 Part3\nマルチパートキューはディスクリートタイムをグループ化したような機能です。 異なる動きやゲージ変化に対して\n異なるタイムを適用できるため、 照明機材の機種や目的別にキューの内容を整理し、 修正しやすくするために使\nうことができます。 例えば複数のパラメーターに本キューのタイムとは別の、 同じタイムを割り当てたい場合や\nMark の On/Off を灯体別に設定したい場合など、 タイムをグループ化するのに使います。\n左画像の Q192 では 1,2,3,4,5,6,10,20 の計 8 つの Part が 1 度の GO\nで進行します。。\nP1,P10 などと表記されているのがパートキューです。\nパートを作成すると本キューのデータは自動的に P1 に移されるため P1 以\n外のナンバーで Part を作成します。\nNote\nタイムをずらすなどキュー進行を前後させたい場合は Part ではなく、 Q121.1 などのようにポイント\nキュー （コンマキュー） にする方が分かりやすいです。\n10-2-6. ディスクリートタイム\nディスクリートタイムとは Ch 毎に設定される個別のパートタイムです。 「7-2. 画面の見方」 （50 ページ）\nでも紹介しています。 個別タイムや Individual と一般的に呼ばれているものです。\n10-3. キューの設定 フラッグ\n右の写真の項目を Flags （フラッグス） といいます。 下記 7 つの設定に関して表示されています。\n• M( マーク、 Mark)\n• B( ブロック、 Block)\n• A( アサート、 Assert)\n• P( プリヒート、 Preheat)\n• AF( オールフェード、 AllFade)\n• MV( ムーブ、 Moves)\n• R( リリース、 Release)\n注意\nElement Classic で は、 Block （Element Classic）、 Preheat、 Moves （Element Classic）\nでフラグを設定できます。\n\nマーク (Mark)\nChapter 10\nマークとはムービングや LED をスタンバイさせる機能です。 一般的に MoveInBlack(MIB) やマーク、 スタン\nバイと呼ばれることが多いです。 M や R のマークが入っているところのキューで灯体のスタンバイが行われてい\nます。 （「11-8. マーク （Mark）」 （106 ページ） 参照）\nプレイバックの基礎\nブロック (Block)\nEos 卓における 「ブロック」 機能は、 特定のキュー （シーン） 内の設定が他のキューに影響を与えるのを防ぐ\nためのものです。 通常、キューを編集すると、その変更は次のキューにも自動的に反映されることがあります （こ\nれを 「トラッキング」 と呼びます）。 しかし、 ブロックを使うことで、 その変更が次のキューに影響しないように\nすることができます。\nたとえば、 Q1 と Q2 でチャンネル 1 の明るさが 100% に設定されている場合、 Q1 を編集しても Q2 がその\nまま 100% であることを保証したい場合に、 Q2 にブロックを設定します。 これにより、 Q1 の変更が Q2 に\n目次 01\n影響しません。\nまた、 ブロックは、 再生時に照明の動きを強制的に指示することもあります。 たとえば、 ブラックアウト （全消灯）\nシーンでは、 すべてのライトが確実に消えるようにブロックを ( アサートなども併用 ) 設定することがよくありま\nす。\n02\nブロックは、 特定のキュー全体や個々のチャンネル、 さらにはパラメータ （明るさ、 色など） にも適用すること\nができます。 ブロックされた項目は白色で表示され、 ブロックされたデータには後から変更を加えても影響があ\n03\nりません。\n自動的にブロックがかかる「オートブロック」という機能もあり、不要な変更からデータを守ってくれます。 例えば、\n04\nあるキューで設定したライトの明るさが、 その前のキューでも同じ場合でも、 オートブロックによって照明の動き\nが確実に保持されます。\n05\nブロック機能を使うことで、 意図しない照明の変化を防ぎ、 プログラムの安定性を確保することができます。\n使い方の詳細は 「11-9. ブロック」 （110 ページ） 参照ください。\nアサート (Assert) 06\n07\nAsser はキューを追い打ちした時などに完了していないキューのタイムを無視し、 次の明かりを再生します。 詳\n細は 「11-10. アサート」 （111 ページ） 参照ください。\n08\nプリヒート (Preheat)\n09\nプリヒートとはぬすみともよばれ１つ前のキューから軽くつけておくことができる機能です。 キューに設定する\nと P が表示され、 そのキューで点いている灯体の Preheat （ぬすみ） がひとつ前のキューに自動で入ります。\n10\nPreheat のゲージは ch ごとに設定できます。\n11\nオールフェード (AllFade)\nキューのデータに元々のっていない ch をマニュアルで送っていても Allfade を設定するとインテンシティデー\n12\nタが払われます。 ＊が入っていると AllFade が入っている状態です。\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "10_4",
+      "manual_section": "10-4",
+      "chapter": 10,
+      "chapter_title": "プレイバックの基礎",
+      "category_id": "playback",
+      "title": "CueのAttribute",
+      "route": "/guide/10_4",
+      "theme_color": "#ffca3a",
+      "summary": "CueのFollow、Hang、Link、Loop、Labelなどの属性を理解する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "CueのAttribute",
+        "プレイバックの基礎"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 94,
+        "page_end": 95,
+        "extracted_text": "ムーブ (Moves)\nムービングの動きに関しての表示が出ます。 L が LiveMove, D が DarkMove (MIB), ＋は両方の表示です。\nリリース (Release)\nリリース (ch やパラメーターをバックグラウンド値に戻す） データが入っているキューに R の表示が出ます。\n10-4. キューの設定 アトリビュート\nフォロー / ハング (Follow/ Hang) • リンク (Link) • ループ (Loop) • カーブ (Curve) • レート (Rate) •\nラベル (Label) • ノート (Notes) • シーン (Scenes) が Cue の Attributes です。\nフォロー\nキューを Go してから指定の秒数待って、 次のキューが自動的に Go します。 フォローはキューを繋げる時に使\n用します。 F# と表示され、 アルファベットの後ろは秒数になります。\nQ1 完了\nGO\nFollow Time Q2 完了\nハング\nキューのタイムがパートを含めてすべて決まってから、 指定の秒数待って次のキューが自動的に Go します。 ハ\nングはキューを繋げる時に使用します。 H# と表示され、 アルファベットの後ろは秒数になります。\nGO Q1 Hang Time Q2 完了\nNote\nフォローとハングはキューを繋げる時に使用するため、考え方によっては同じことができます。 照明卓によっ\nてフォローやハングは考え方が違うので注意してください。\nFollow/Hang タイムは繋ぐキューの頭のキューに入れます。\n例） Q1 と Q2 を Follows 秒で繋ぐ場合は Q1 に F5 タイムを入力する。 など。\nリンク・ループ\nリンクやループを組むことができます。 このアトリビュート内の数字はキューナンバーです。\nレート\nキューのタイムにレートを入れることができます。 入っていない状態は Rate100％です。\nカーブ\nカーブパレットから適応でき、 割り当てられたカーブに応じてキューの出力の変化の割合が変わります。 数字は\nパレット No です。\nノート\nキューにメモをすることができます。 PSD のオプションで DisplayNotes を on にしておくと PSD の下部に\nメモした内容が表示されます。\n\nラベル\nChapter 10\nキューに名前をつけることができます。\nシーン\nシーン番号 ・ M ナンバー等をラベルのようにつけることができます。 ラベルと違うのは Go To Cue キーでシー\nプレイバックの基礎\nンの頭のキューヘ行けます。\nScenes\nScenes\n目次 01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_1",
+      "manual_section": "11-1",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Cueを作る前に",
+      "route": "/guide/11_1",
+      "theme_color": "#ffca3a",
+      "summary": "Live／BlindとRecord／Record Onlyの違いを確認してから記録する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [
+        "Blindで不用意に値を触ると即時に記録データが変わる。"
+      ],
+      "keywords": [
+        "Cueを作る前に",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 98,
+        "page_end": 98,
+        "extracted_text": "11-1. キューを作る前に\n注意\nEos には Live モードと Blind モードがあります。\nBlind モードだと Record や Update をしなくても記録されます。 不用意に触ると即時記録されるので\n注意してください。\nトラッキング（Tracking）\nトラッキングとは、 記録したキューから新たなデータを打たれているキューまでは同じデータが引き継がれます。\n下のトラッキングのイメージ例では、 と はデータを表しています。\nSpot1 Spot2\nSpot1 はトラッキングにより Cue2 から 4 まで、 Cue1 のデータ\nCue1 を参照します。 Cue2.3.4 で出力されているデータは Cue1 を参\nCue1を\n参照 Cue1を 照したデータになります。\n参照\nCue2\nSpot2 は、 まず Cue1 のデータを Cue2 は参照します。 Cue2\nで出力されているデータは Cue1 を参照したデータになります。\nCue3\nCue3 で デ ー タ が 変 更 さ れ、 Cue4 は Cue3 を 参 照 し ま す。\nCue3 を\n参照 Cue4 のデータは Cue3 を参照したデータになります。\nCue4\nキューオンリー (Q Only)\nキューオンリーとは、 選択されている Cue のみが記録される事です。\nSpot1 Spot2\nCue1 左の例の場合、 トラッキングの時とは違いデータは各キューにそれぞれ記録され\nています。\nCue2 キューオンリーでアップデートした場合、 アップデートしたキューのみ変更点が記\n録されます。\nCue3\nCue4\n11-2. キューの作り方\nキューを作ることをキューを記録すると言います。 記録を行う前にまず記録したいキューの明かりを作ります。\n明かりの作り方は 「10-1. PSD( プレイバック ・ ステータス ・ ディスプレイ )」 （90 ページ） を参照して\nください。\n11-2-1. Record と Record Only を使用して記録\nRecord と Record Only はキューを記録する際に使用するキーですが、 記録方法が異なります。 「Record\nVS Record Only」 （83 ページ） 参照してください。\nレコード（Record）\nRecord はデフォルト値以外のデータが乗っているものを全て記録します。 客電や作業灯もサブで上がってい\nるデータは記録されます。 “What you see is what you record” 「あなたが見ているものがあなたが記録\nするもの」 というコンセプトです。 （「12-3. サブマスターの消し方」 （119 ページ） を参照）"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_2",
+      "manual_section": "11-2",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Cueの作り方",
+      "route": "/guide/11_2",
+      "theme_color": "#ffca3a",
+      "summary": "現在の照明状態をCueへ記録し、必要なら新しいCue Listを作る。",
+      "when_to_use": [],
+      "commands": [
+        "Record Cue # Enter",
+        "Record Only Cue # Enter",
+        "Record Cue List # / Cue # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Cueの作り方",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [
+        {
+          "id": "11-2-1",
+          "title": "Record と Record Only を使用して記録"
+        },
+        {
+          "id": "11-2-2",
+          "title": "新規 Cuelist を作成する場合"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 98,
+        "page_end": 99,
+        "extracted_text": "11-1. キューを作る前に\n注意\nEos には Live モードと Blind モードがあります。\nBlind モードだと Record や Update をしなくても記録されます。 不用意に触ると即時記録されるので\n注意してください。\nトラッキング（Tracking）\nトラッキングとは、 記録したキューから新たなデータを打たれているキューまでは同じデータが引き継がれます。\n下のトラッキングのイメージ例では、 と はデータを表しています。\nSpot1 Spot2\nSpot1 はトラッキングにより Cue2 から 4 まで、 Cue1 のデータ\nCue1 を参照します。 Cue2.3.4 で出力されているデータは Cue1 を参\nCue1を\n参照 Cue1を 照したデータになります。\n参照\nCue2\nSpot2 は、 まず Cue1 のデータを Cue2 は参照します。 Cue2\nで出力されているデータは Cue1 を参照したデータになります。\nCue3\nCue3 で デ ー タ が 変 更 さ れ、 Cue4 は Cue3 を 参 照 し ま す。\nCue3 を\n参照 Cue4 のデータは Cue3 を参照したデータになります。\nCue4\nキューオンリー (Q Only)\nキューオンリーとは、 選択されている Cue のみが記録される事です。\nSpot1 Spot2\nCue1 左の例の場合、 トラッキングの時とは違いデータは各キューにそれぞれ記録され\nています。\nCue2 キューオンリーでアップデートした場合、 アップデートしたキューのみ変更点が記\n録されます。\nCue3\nCue4\n11-2. キューの作り方\nキューを作ることをキューを記録すると言います。 記録を行う前にまず記録したいキューの明かりを作ります。\n明かりの作り方は 「10-1. PSD( プレイバック ・ ステータス ・ ディスプレイ )」 （90 ページ） を参照して\nください。\n11-2-1. Record と Record Only を使用して記録\nRecord と Record Only はキューを記録する際に使用するキーですが、 記録方法が異なります。 「Record\nVS Record Only」 （83 ページ） 参照してください。\nレコード（Record）\nRecord はデフォルト値以外のデータが乗っているものを全て記録します。 客電や作業灯もサブで上がってい\nるデータは記録されます。 “What you see is what you record” 「あなたが見ているものがあなたが記録\nするもの」 というコンセプトです。 （「12-3. サブマスターの消し方」 （119 ページ） を参照）\n\nレコードオンリー（Record Only）\nChapter 11 プレイバックの使い方\nRecord Only はマニュアルデータのみを記録します。\n例\n• Ch3 Record Only Cue 1 Enter\nチャンネルを指定した場合は他のチャンネルにマニュアルデータが記録されていても、 チャンネル 3 のマニュ\nアルデータしか Cue1 には記録されません。\n11-2-2. 新規 Cuelist を作成する場合\nキューリストとキューの作成\n<Record> <Cue> < 記録したいキューリスト / コピー先キュー＞ < Enter>\nRecord Cue Cuelist No./Cue No. Enter\n例\nCuelist1 の Cue3 に記録\n• Record Cue 1/3\n他の CuelistNo． と被らないようにします。\n目次 01\n既存の MainFader に入っている Cuelist にキューを作成\n<Record> <Cue> < Enter>\nRecord Cue# Enter\n02\n例\n03\nCue3 に記録\n• Record Cue 3\n04\nCue# だけ入力すれば大丈夫です。\n05\n次番号のキューを作成\n06\n<Record> <Cue> ＜ Next ＞ < Enter>\nRecord Cue# Next Enter 07\nQ12 状態で入力すれば Q13 ができます。\n08\nNote\n09\nEos で使用できる番号は 0.01 から 9999.99 までです。\n「Record + Cue + 6」 のようにナンバーを指定して入力できます。\n10\nCue5 状態で 「Record + Cue + Next」 と入力しても Cue6 となります。\nCue 3.1 状態で 「Record + Cue + Next」 と入力すると Cue 3.2 となります。\n11\nコンマキューは Next により 0.1/0.01 毎に増加します。\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_3",
+      "manual_section": "11-3",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Cueの再生",
+      "route": "/guide/11_3",
+      "theme_color": "#ffca3a",
+      "summary": "GO、Back、Go To CueでCueを再生・移動する。",
+      "when_to_use": [],
+      "commands": [
+        "GO",
+        "Back",
+        "Go To Cue # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Cueの再生",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 100,
+        "page_end": 100,
+        "extracted_text": "11-3. キューの再生方法\n作成したキューは再生することができます。 キューの再生には GO ボタンを使用します。\nを押すと次のキューが再生されます。 を押すと１つ前のキューに戻ります。\nキューを指定して実行するには 「Go To Cue キー」 （移行キュー） を使用します。\nキューを指定して実行する場合\n<GoToCue> <Cue 番号の指定 > < Enter>\n移行キュー Cue# Enter\n例\nCue3 を実行\n• GoToCue 3 Enter\n実行されるタイムはキューのタイムで実行されます。\n11-4. キューの修正（アップデート）\n11-4-1. アップデート\nアップデートするキューやプリセットが表示されています。\nアップデート方法を選択します。\nUpdate Style\n• ALL ： キュー、 パレット、 プリセット全てがアップデートされます。\n• Make Absolute: アップデートされる値はマニュアルデータに変換され、 キューのみアップデートする。 パ\nレットはアップデートされません。 つまりキューに保存されている照明の設定が 「参照」 されているデータか\nら独立させる記録です。\n• Ref Only （参照限定） ： パレット、 プリセットのみアップデートされます。\nNote\nパレットを書き換えたくないときは Make Absolute、 書き換えたい時は ALL を使用します。\nUpdate Modifier\n• Last Ref （前参照） ： 最後に実行されたアップデートと同じ条件でアップデートします。 つまり、 キューに存\n在する値の元の参照ではなく、 コマンドラインで適用された最後の参照を使用して更新します。\n• Break Nested （ブレイクネスト）：アップデートする cue がプリセットを参照していて、 さらにそのプリセッ\nトが Focus など他パレットを参照している場合、 プリセットのみがアップデートされ、 パレットはアップデー\nトされません。 プリセットのパレット参照の繋がりは絶たれます。 ( 「9-2. プリセット、パレットの機能」 （80\nページ） 参照してください。）\n• Intensity Cue Only: Intensity のみ QOnly で記録し、 他パラメーターは Tracking で記録します。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_4",
+      "manual_section": "11-4",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Cueの修正",
+      "route": "/guide/11_4",
+      "theme_color": "#ffca3a",
+      "summary": "Liveで変更したIntensityや各パラメーターをUpdateでCueへ反映する。",
+      "when_to_use": [
+        "Cueを直す",
+        "キュー修正",
+        "アップデート"
+      ],
+      "commands": [
+        "Update Enter",
+        "Update → selected parameters → Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Cueの修正",
+        "プレイバックの使い方",
+        "Cueを直す",
+        "キュー修正",
+        "アップデート"
+      ],
+      "subtopics": [
+        {
+          "id": "11-4-1",
+          "title": "アップデート"
+        },
+        {
+          "id": "11-4-2",
+          "title": "インテンシティのみのキュー修正（Live モード）"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 100,
+        "page_end": 101,
+        "extracted_text": "11-3. キューの再生方法\n作成したキューは再生することができます。 キューの再生には GO ボタンを使用します。\nを押すと次のキューが再生されます。 を押すと１つ前のキューに戻ります。\nキューを指定して実行するには 「Go To Cue キー」 （移行キュー） を使用します。\nキューを指定して実行する場合\n<GoToCue> <Cue 番号の指定 > < Enter>\n移行キュー Cue# Enter\n例\nCue3 を実行\n• GoToCue 3 Enter\n実行されるタイムはキューのタイムで実行されます。\n11-4. キューの修正（アップデート）\n11-4-1. アップデート\nアップデートするキューやプリセットが表示されています。\nアップデート方法を選択します。\nUpdate Style\n• ALL ： キュー、 パレット、 プリセット全てがアップデートされます。\n• Make Absolute: アップデートされる値はマニュアルデータに変換され、 キューのみアップデートする。 パ\nレットはアップデートされません。 つまりキューに保存されている照明の設定が 「参照」 されているデータか\nら独立させる記録です。\n• Ref Only （参照限定） ： パレット、 プリセットのみアップデートされます。\nNote\nパレットを書き換えたくないときは Make Absolute、 書き換えたい時は ALL を使用します。\nUpdate Modifier\n• Last Ref （前参照） ： 最後に実行されたアップデートと同じ条件でアップデートします。 つまり、 キューに存\n在する値の元の参照ではなく、 コマンドラインで適用された最後の参照を使用して更新します。\n• Break Nested （ブレイクネスト）：アップデートする cue がプリセットを参照していて、 さらにそのプリセッ\nトが Focus など他パレットを参照している場合、 プリセットのみがアップデートされ、 パレットはアップデー\nトされません。 プリセットのパレット参照の繋がりは絶たれます。 ( 「9-2. プリセット、パレットの機能」 （80\nページ） 参照してください。）\n• Intensity Cue Only: Intensity のみ QOnly で記録し、 他パラメーターは Tracking で記録します。\n\n11-4-2. インテンシティのみのキュー修正（Live モード）\nChapter 11 プレイバックの使い方\n① Live モードにいることを確認します。\n② 修正したいキューへ行きます。 (Go to Cue # Enter)\n③ 修正したいチャンネルを選択しゲージを入力します。\n例\nCh51 から 57 を 60％、 Ch58 から 64 を 30% に修正\n• Ch51 thru 57 At 6 ◆ Ch58 thru 64 At 3 ◆\n④ Update キーを押すと、 CIA にアップデートの画面が表示されます。 表示されるアップデートオプションを\n確認します。\n目次 01\n⑤ Q only を押します。\nNote\n現場などでの修正は Qonly でのアップデートを推奨します。 （実行されているキューのみに変更が適用され\nるので前後のキューに影響を与えることが少ないからです。）\n02\nプログラマーで前後のキューの繋がりとトラッキングを把握している場合、 Tracking でのアップデートを判\n断し行ってください。\n03\n⑥ Enter を押します。 （アップデートが実行されます）\n04\nNote\n05\nRecord Only と Qonly の文字は似ていますが、 機能は違います。\nRecord Only は 「 レ コ ー ド オ ン リ ー （Record Only）」 （99 ペ ー ジ ） を 参 照 し て く だ さ い。\n06\nQonly は 「キューオンリー (Q Only)」 （98 ページ） を参照してください。\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_5",
+      "manual_section": "11-5",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Cueのコピー",
+      "route": "/guide/11_5",
+      "theme_color": "#ffca3a",
+      "summary": "Cueを同じCue Listまたは別のCue Listへコピーする。",
+      "when_to_use": [],
+      "commands": [
+        "Cue # Copy To Cue # QOnly Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Cueのコピー",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 102,
+        "page_end": 103,
+        "extracted_text": "11-4-3. ムービング等含むキューの修正方法\n① Live モードにいることを確認します。\n② 修正したいキューへ行きます。 (Go to Cue # Enter)\n③ 修正したいチャンネルを選択しパラメーターを入力します。\n例\nCh1+3+5 を Int50%, 地明かりプリセット＃ 76\nCh12 から 14 を Int50% #71 color\nCh21 から 24 を Int30% #78 colo\n上記のように編集すると、 マニュアルデータになり赤い値で表示されます。\n④ Update キーを押すと、 CIA にアップデートの画面が表示されます。 表示されるアップデートオプションを\n確認します。\n⑤ Q only を押します。\n⑥ Enter を押します。 （アップデートが実行されます）\n11-5. キューのコピー\nCopy To キーを使用し、 キューをコピーすることができます。\nCue のコピー\n< コピー元 > <Copy To> < コピー先 > <Qonly> <Enter>\nCue# Copy To Cue# Qonly Enter\nTrack でコピーしたい場合は QOnly を省略します。\n例\nCue6 を Cue13 にコピー\n• Cue 6 Copy To Cue 13 Enter\nCue 範囲のコピー\n< コピー範囲の最初 > <thru> < コピー範囲の最後 > <Copy To> < コピー先 > <Qonly> <Enter>\nCue# thru Cue# Copy To Cue# Qonly Enter\nTrack でコピーしたい場合は QOnly を省略します。\n例\nCue 6 から 10 を Cue 13 以降にコピー\n• Cue 6 thru 10 Copy To Cue 13 Enter\n\nChapter 11 プレイバックの使い方\nCue リストを超えたコピー\n＜コピー元キューリスト / コピーしたいキュー＞ <Copy To> ＜コピー先キューリスト / コピー先キュー＞ <Qonly> <Enter ＞\nCue #/# Copy To Cue#/# Qonly Enter\nTrack でコピーしたい場合は QOnly を省略します。\n例\nCuelist2 の Cue3 を Cuelist5 の Cue8 にコピー\n• Cue2/3 Copy To Cue 5/8 Qonly Enter Enter\n同じキューの別灯体のパラメーターをコピー\n＜コピー元チャンネル＞ <Copy To> ＜コピー先チャンネル＞ <Enter ＞\nCh# Copy To Ch# Enter\nコピー先にデータが乗るのでキューに書きたい場合はアップデートします。\n例\nチャンネル１のパラメーターをチャンネル３にコピー\n• Ch1 Copy To Ch3 Enter\n目次 01\n• Update Enter\n02\n別のキューにコピー\n＜コピー元チャンネル＞ <Copy To> ＜コピー先のキュー＞ <Qonly> <Enter ＞\n03\nCh# Copy To Ch#Cue(#/)# Qonly Enter\n04\n別のキューにコピーする場合、 そのままデータが書かれるのでアップデートの必要はありません。\n05\n例\nキュー 452 のチャンネル 1-5 をキュー 13 にコピー\n06\n• Ch1 thru 5 Copy To thru 5 Cue 13 Qonly Enter\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_6",
+      "manual_section": "11-6",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Time",
+      "route": "/guide/11_6",
+      "theme_color": "#ffca3a",
+      "summary": "Cue、Part、パラメーターへTimeやDelayを設定する。",
+      "when_to_use": [],
+      "commands": [
+        "Cue # Time # Enter",
+        "Cue # Delay # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Time",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 104,
+        "page_end": 104,
+        "extracted_text": "11-6. タイム\nPSD で様々なパラメータ、 キュー、 パート、 チャンネルに対し各タイムを割り振ることができます。\nタイムは 0 から 99:59(99 分 59 秒 ) まで割り振る事ができます。 0.01 や 0.1 などの小数タイムも入力でき\nます。\nタイムキー\nTime を押す回数で変更するタイムが変わります。\n① 全部の Time\n② Int Down Time\n③ Focus Time\n④ Color Time\n⑤ Beam Time\n⑥ Int Up Time\n7 回目以降は” Int Down Time” に戻ります。\nタイムを変えたいキューを実行している場合\n＜ Time ＞ ＜変更タイム＞ <Enter ＞\nTime # Enter\n例\nQ200 を実行しているときに、 タイムを 8 秒に変更\n• Time 8 Enter\nコマンドラインには Time を押すと自動で Cue200 が入ります。\nタイムを変えたいキューを実行していない場合\n＜変更したい Cue ＞ ＜ Time ＞ ＜変更タイム＞ <Enter ＞\nCue# Time # Enter\n例\nキュー 200 にいる時、 キュー 204 のタイムを 2 秒に変更\n• Cue 204 Time 2 Enter"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_7",
+      "manual_section": "11-7",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Discrete Time",
+      "route": "/guide/11_7",
+      "theme_color": "#ffca3a",
+      "summary": "特定のチャンネル／パラメーターだけに個別のTimeを設定する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Discrete Time",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 105,
+        "page_end": 105,
+        "extracted_text": "Chapter 11 プレイバックの使い方\n注意\nEos ではタイムの入力に分と秒を使用しており、 長いタイムの入力の場合注意が必要です。\n・ 0 秒～ 99 秒まで\nそのまま入力しても自動的に 0 秒～ 1 分 39 秒と変換されて反映されます。\n・ 100 秒以上\nそのまま入力すると自動的に 3 ケタ目から分に変換されます。 150 秒のつもりで Time150 と打つと卓側\nでは 1 分 50 秒と変換されてしまう為、 分に変換し Time230(2 分 30 秒） と打たなければなりません。\nTime 150 Time 230\nPSD 上で変更する場合\n① 変えたいタイムをタッチしてください。 コマンドライン上で選択され\nているか確認します。\n② タイムを入力します。\n③ Enter で記録します。\n11-7. ディスクリートタイム\n目次 01\nディスクリートタイムとは Ch 毎に設定される個別のパートタイムです。 「ディスクリート タイミング （Discrete\nTiming）」 （56 ページ） でも紹介しています。\n① マニュアル画面を開く\n02\n03\n04\n05\n② チャンネルを指定する\n06\nマニュアル画面やマジックシートでタッチしても、 物理キーで入力しても OK です。 例では Chl-4 にディスクリー\nトタイムを入れていきます。 07\n08\n09\n10\n11\nもし Focus のみ Color のみなどをパラメーターに入れたい場合、 チャンネルの後ろに Focus や Color など\nパラメーターを入力します。\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_8",
+      "manual_section": "11-8",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Mark",
+      "route": "/guide/11_8",
+      "theme_color": "#ffca3a",
+      "summary": "消灯中にムービングやLEDを次の状態へ先回りさせる。",
+      "when_to_use": [
+        "ムーブインブラック",
+        "MIB",
+        "スタンバイ"
+      ],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Mark",
+        "プレイバックの使い方",
+        "ムーブインブラック",
+        "MIB",
+        "スタンバイ"
+      ],
+      "subtopics": [
+        {
+          "id": "11-8-1",
+          "title": "オートマーク"
+        },
+        {
+          "id": "11-8-2",
+          "title": "オートマーク設定"
+        },
+        {
+          "id": "11-8-3",
+          "title": "オートマークの OFF"
+        },
+        {
+          "id": "11-8-4",
+          "title": "マークタイム"
+        },
+        {
+          "id": "11-8-5",
+          "title": "手動でマークする方法 (Referenced Mark)"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 106,
+        "page_end": 109,
+        "extracted_text": "③ タイムを入力する\nタイムを入力します。\nディスクリートタイムが入ったチャンネルに t がつきます。\n赤字の状態ではマニュアルデータが乗っただけなので Record もしくはアップデートするまでタイム\nはまだ記録されていません。\n④アップデートをして記録をする\n11-8. マーク（Mark）\n11-8-1. オートマーク\nNote\nプレイバックをメインで使用する場合、 オートマークは OFF( 無効 ) にしてプログラマーがマークを指定す\nる方法 （「11-8-5. 手動でマークする方法 (Referenced Mark)」 （107 ページ） 参照） を推奨し\nています。\nオートマーク （AutoMark） とはキューでインテンシティが上がり始める直前のキューに対し、 ムービング ・\nLED 等パラメーター機材のスタンバイを自動で行う機能です。\n設定でオンになっていれば自動でマークをキューに入れていきますが、 オートでは直前のキューにしかマークは\nかかりません。 （直前のキューでスタンバイがかかります。）\nAuto Mark が入ったキュー （点く直前のキュー） には M が入ります。\nディスクリートタイムが設定されない限り、 マークが入っているキューと同じタイムでスタンバイがかかります。\nサブマスター等他でインテンシティーが上がっている場合、 効かなくなります。\nチャンネルのインテンシティに MK と入ります。\n11-8-2. オートマーク設定\nCIA の SystemSetting 内 の CueSetting に ON/OFF の 設 定 が あ り ま す。 詳 細 は 「4-1-1. System\nSetting （CIA 内）」 （25 ページ） を参照してください。\nEnabled: 有効／ Disabled: 無効\n\n11-8-3. オートマークの OFF\nChapter 11 プレイバックの使い方\nAutoMark をキュー単位で OFF にすることができます。\nMark が入っているキューを選択するとソフトキーに 『AutoMarkOff』 が表示されるので、 選択す\nると OFF になります。\nAutoMark が消えると D が入ります。\nパートキューを作成し、 AutoMark させるキューとライブ変化させるキューに分けて使用することができます。\n11-8-4. マークタイム\nAuto Mark が Enabled の時は、 ディスクリートタイムが設定されない限り、 CIA で設\n目次 01\n定された MarkTime でスタンバイします。 Mark Time が Disabled になっている場合、\n各キューのタイムでスタンバイされます。 詳細は詳細は 「4-1-1. System Setting （CIA\n内）」 （25 ページ） を参照してください。\n02\n11-8-5. 手動でマークする方法 (Referenced Mark)\n03\nAutoMarkOFF 時に Mark する⽅法\n04\nAutoMark が Off になっている場合、Mark するキューを指定することが可能です。この機能を『Referenced\nMark』 (RM) と言います。 AutoMark と同時に使用はできません。\n05\nRM には２つのキューでの指定が必要です。\n① Marked Cue: インテンシティ以外のパラメーターが変化するキュー ( 実際にスタンバイさせるキュー )\n06\n② Source Cue: インテンシティが上がるキュー ( スタンバイ ・ インテンシティアップが記録されているキュー )\n07\n下は Q2 のポジションでスタンバイして、 Q4 で明るくしたい場合のイメージです。\n08\nQ1\nQ2 Marked Cue\n09\nQ3\nQ4 Source Cue\n10\nQ5\n11\n12\n13\n14\n15\n\n① Marked Cue: まず Marked Cue を指定します。\nMarked Cue を指定\n＜指定する Cue ＞ <Mark> <Enter ＞\nCue# Mark Enter\n例\nキュー 1 を Marked Cue に指定\n• Cue1 Mark Enter\nPSD に M または m が入力されます。\nM: Mark が入っていて実行されます。\nm: Mark が入っているが実行するものがない状態です。\n② Source Cue: そのキュー実行状態で Mark するチャンネルを指定します。\nSource Cue を指定\n＜指定するチャンネル＞ <Mark> <Enter ＞\nCh# Mark Enter\n例\nチャンネル 1-4 に Source Cue を指定\n• Chan4 Thru 6 Mark Enter\nMark 指定されたチャンネルに M が入ります。\n赤字は Record またはアップデートでキューに記録されます。\n\nMark の Priority\nChapter 11 プレイバックの使い方\nMark は複数ポイントに設定することができます。 Mark の Priority （優先順位） を使うと、 どのタイミングで\nそのスタンバイ （Mark） が行われるかを制御できます。\nMark の Priority は高優先順位 (mh)、 通常の Mark(m)、 低優先順位の (ml) で設定できます。\nQ1\nQ2 Marked Cue mh 優先度 高\nQ3\n高優先順位 (mh) の Mark をキュー 2 に設定。\nQ4 Marked Cue m 優先度 中 通常の Mark(m) をキュー 4 に設定。\nQ5 低優先順位の Mark(ml) をキュー 6 に設定。\nQ6 Marked Cue ml 優先度 低\nQ7\nQ8\nQ9 Source Cue\nQ10\nもしキュー 9 でチャンネルが Mark される場合、最も高い優先順位の Mark（この場合はキュー 2）が使われます。\nただし、 キュー 2 ですでにそのチャンネルが使われていない場合に限ります。\nもし、 キュー 1 〜 4 の間ですでにチャンネルが使われている場合、 次に高い優先順位の Mark （キュー 4） が\n選ばれます。\n低優先順位の Mark （キュー 6） は、 必要な場合にのみ使われます。\n目次 01\n小文字 m はマークが実際に入ると大文字の M になります。 mh は Mh、 ml は Ml になります。\nNote\n低優先順位の活用\n02\n低優先順位の Mark は、 シーンの始めで主なスタンバイを行いたいが、 シーンの途中でもいくつか準備ポイ\nントを設定したいときに便利です。 シーン途中に設定された低優先順位の Mark は、 シーンの冒頭でスタン\n03\nバイが完了していれば無視されます。 これにより、 必要以上の Mark が行われず、 効率的に照明の準備が\n進みます。\n04\nこのように、 Mark の Priority を使うことで、 効率的かつ意図的に照明の動作タイミングをコントロールで\nきるようになります。\nMark Earliest 05\n06\n07\nSource Cue の Mark する灯体を指定する際” Earliest” 又は” Earliest M” を選べます。\n• Earliest は、 マークのフラグを無視してスタンバイできる一番早いキューでスタンバイされます。\n08\n• Earliest M は、 マークのフラグが入っている一番早いキューでスタンバイされます。\n09\nQ1 ① ① Earliest の場合、 フラグを無視してスタンバイでき\n10\nQ2 Marked Cue mh ② る一番早いキューの Q1 でスタンバイされます。\nQ3\n11\n② Earliest M の場合、 フラグが入っている一番早い\nQ4 Marked Cue m\nキューの Q2 でスタンバイされます。\n12\nQ5\nQ6 Marked Cue ml\n13\nQ7\nQ8\n14\nQ9 Source Cue ①Earliest\n15\n②Earliest M"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_9",
+      "manual_section": "11-9",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Block",
+      "route": "/guide/11_9",
+      "theme_color": "#ffca3a",
+      "summary": "Cueへの追従値を止め、編集の波及を制御する。",
+      "when_to_use": [],
+      "commands": [
+        "Cue # Block Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Block",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 110,
+        "page_end": 110,
+        "extracted_text": "Source Cue に Earliest を指定\n＜指定するチャンネル＞ <Mark> <Earliest> <Enter ＞\nCh# Mark Earliest Enter\n例\nチャンネル 5-6 と 8-9 に” Earliest” をつけて Source Cue を指定\n• Chan5 Thru 6 + 8 Thru 9 Mark\nMark まで打つとソフトキーに Earliest がでるので選択します。\n11-8-6. マークキューの確認方法\nキューを進行している中で、 ムービングや LED 機材がどのキューの時点でマーク （スタンバイ） を行ったか確\n認するには About キーと Mark キーを同時に押します。 以下の画像はチャンネル 103 が Q0.5 でマークを行\nいました。\n11-9. ブロック\nキューのデータが Block されていると、 トラッキングだったデータもこのキューで改めてデータが書かれる為、\n前のキューからトラッキングでデータを修正してもこのキューはその影響を受けません。 ブロックされている\nキューでは、 キューデータは白色で表示されます。 B はキューに、 小文字 b は一部のチャンネル、 パラメーター\nにブロックが入っています。\nこの状態では前キューからのトラッキングの影響を受けなくなります。 つまり、 前のキューなどでトラッキングで\n修正を行っても、 このキューにはその修正が入ることはなく、 Block を入れた時の値が優先されます。\nBlock を入れる\n＜ブロックしたい Cue ＞ <Block> <Enter ＞\nCue# Block Enter"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_10",
+      "manual_section": "11-10",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Assert",
+      "route": "/guide/11_10",
+      "theme_color": "#ffca3a",
+      "summary": "Cue Listの再生時に、指定Cueの内容を改めて適用する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Assert",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 111,
+        "page_end": 111,
+        "extracted_text": "Chapter 11 プレイバックの使い方\n例\nキュー 10 にブロックを入れる\n• Cue10 Block Enter\n• Shift キー＆ Block キーでインテンシティーブロックを打ち込むことができます。\n• Block を解除したい場合は再度同じ構文を打ち込むと解除されます。 Block されているデータを修正した\nい場合は、 このキューを実行して修正してください。\n11-10. アサート\nAssert はキューを追い打ちした時などに完了していないキューのタイムを無視し、 次の明かりを再生します。\nもし 1 つ前のキューの進行がまだ完了していない場合でも、 Assert の入っているキューの進行を強制的に実\n行し完了させます。 ※完了していないキューの進行は無視されます。\nA はキューに対して、 小文字 a は一部のチャンネル ・ パラメーターにアサートが入っています。\nAssert を入れる\n＜アサートしたい Cue ＞ <Assert > <Enter ＞\nCue# Assert Enter\n例\n目次 01\nキュー 11 にアサートを入れる\n• Cue11 Assert Enter\nAssert が入っているキューは PSD に A と表示されます。\n02\n03\n04\n例\n05\n演者が 6 秒かけてゆっくり歩く、 ムービングはそれに合わせて P/T で追いかける\n06\n07\n演者がキメ、 照明もキメ明かりになる\n08\n突然に演者が 3 秒位できっかけのキメ動作を行ってしまった場合、Q.2 に Assert が入っていなければ、Q.2\nの明かりが決まっても、Q.1 進行中の 2 秒分 P/T の動きが見えてしまいます。 Assert が入っていれば、Q.2\n09\nを実行しただけで Q.2 の Time の 1 秒と共に Q.2 の完了状態まで強制的に進行させます。\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "11_11",
+      "manual_section": "11-11",
+      "chapter": 11,
+      "chapter_title": "プレイバックの使い方",
+      "category_id": "playback",
+      "title": "Preview",
+      "route": "/guide/11_11",
+      "theme_color": "#ffca3a",
+      "summary": "前後のCueにおけるチャンネルのIntensity変化を一覧で確認する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Preview",
+        "プレイバックの使い方"
+      ],
+      "subtopics": [
+        {
+          "id": "11-11-1",
+          "title": "プレビューの見方"
+        },
+        {
+          "id": "11-11-2",
+          "title": "プレビューの表示させ方"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 112,
+        "page_end": 112,
+        "extracted_text": "11-11. プレビュー\nプレビュー (Preview) とはマニュアル画面に各チャンネルに対し前後のキューのインテンシティーを表示させる\n機能です。\n11-11-1. プレビューの見方\n以下はプレビュー表示をペンディングで表示している状態です。 例えばチャンネル 101 から 105 は次のキュー\nでフルになります。 チャンネル 103 はフルをトラッキングします。 チャンネル 111 から 118 は消えています。 チャ\nンネル 121 から 123 まで 70％をトラッキングします。\n11-11-2. プレビューの表示させ方\n① まず右下のソフトキーでプリビューを選択します。 表示されていない場合、 モア SK から表示させることが\nできます。\n② 次に前のキューのインテンシティを表示させるか次のキューのインテンシティを表示させるかを選択します。\n「以前」 を選択すると前のキュー、 ペンディングを選択すると次のキューの表示になります。\n③ これでサマリー画面 （墓石） でインテンシティが表示されるようになります。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "12_1",
+      "manual_section": "12-1",
+      "chapter": 12,
+      "chapter_title": "サブマスター",
+      "category_id": "submaster",
+      "title": "Submasterとは",
+      "route": "/guide/12_1",
+      "theme_color": "#ff924c",
+      "summary": "Additive、Inhibitive、Effect、Group MasterなどSubmasterのモードを理解する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Submasterとは",
+        "サブマスター"
+      ],
+      "subtopics": [
+        {
+          "id": "12-1-1",
+          "title": "サブマスターのモード"
+        },
+        {
+          "id": "12-1-2",
+          "title": "マスター設定"
+        },
+        {
+          "id": "12-1-3",
+          "title": "HTP と LTP"
+        },
+        {
+          "id": "12-1-4",
+          "title": "Restore（復元）"
+        },
+        {
+          "id": "12-1-5",
+          "title": "プライオリティ"
+        },
+        {
+          "id": "12-1-6",
+          "title": "タイム"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 114,
+        "page_end": 116,
+        "extracted_text": "12-1. サブマスターとは\nサブマスター (Submaster) は、 特定のチャンネルやそのチャンネルに設定されたパラメーター （例 ： 照明の\n明るさ、 色、 エフェクトなど） を保存し、 その設定を簡単に呼び出して操作できるようにするためのものです。\n客電や作業灯の操作にも便利です。\n例えば、 ある場面で特定の照明効果を強調したい場合、 あらかじめその設定をサブマスターに保存しておけば、\nフェーダーを上げるだけでその効果を呼び出すことができます。 これにより、 ショーの進行中に複雑な操作を行\nう必要がなくなり、 迅速かつスムーズなパフォーマンスをサポートします。\n注意\n• ページにフェーダーを張り付ける、 ページを切り替えても特定のフェーダーはいなくならないようにする\n等の設定はありません。 各ページに同じフェーダーを貼り付けてください。\n• サブマスターを複数フェーダーに割り当てていても各種設定は同期されます。 設定を変えるにはサブマス\nター自体を複製し、 別のサブとして作成する必要があります。\nNote\nサブマスターは、 ①サブを作成 ②フェーダーに割り当て ③モード設定でマスターやサブフェーダーに設定\nという考え方です。\n②と③はフェーダー構成 (Fader Configuration) で行います。\n12-1-1. サブマスターのモード\nサブマスターには 3 種類のモードがあります。\n• アディティブ （Additive） （黄色） ： ライブ出力に何かを記録したものを足すフェーダー （サブフエーダー）\n• インヒビティブ （Inhibitive） （赤色） ： ライブ出力に制限を設けるフェーダー ( グループマスターなどのマ\nスターフェーダー）\n• エフェクト （Effect） : エフェクトを走らせるフェーダー\nアディティブが設定されているフェーダー\nインヒビティブが設定されているフェーダー\nキューリストが設定されているフェーダー\n\nChapter 12 サブマスター\n各モードの設定は Fader Configuration または [Sub] [Sub] を開いて選択します。\n＜ Fader Config 内＞\nを選択\nからモードを選択\n＜ SUB 編集画面内＞\n[Sub] [Sub] で編集画面に入ったあとに\nモードを選択します。\n12-1-2. マスター設定\nアディティブとインヒビティブのモードでプロポーショナルマスター （Proportional Master） とイ\nンテンシティマスター （Intensity Master） の切り替えができます。\nプロポーショナル・マスター（Proportional Master）\n目次 01\nフェーダーが 0 から操作された際に、 インテンシティと共に Pan/Tilt など他パラメーターも同様に\nフェーダーが適応されるモードです。 フェーダーを 0 に戻すと全て使用前の数値に戻ります。\nインテンシティ・マスター（Intensity Master）\n02\nフェーダーで操作できるのがインテンシティのみになります。 バンプボタンでインテンシティ以外の数値をスタン\nバイ (Mark) させることができます。\n03\nフェーダーを上げる前にスタンバイさせなかった場合、 自動でインテンシティ以外のパラメーターを保存されたタ\nイムで実行します。 この時 【Unmark ０】 を ON にしておくと、 フェーダーが０になると直ちにインテンシティ\n04\n以外のパラメーターが解放されます。\n05\nインテンシティ ・ マスター使用例\nコールフェーダーに MV が別ポジションで入っている場合に、 一度バンプボタンでスタンバイさせてから、 コー\n06\nルフェーダーをあげます。 フェーダーを０まで下げると元の実行 Q のポジションへスタンバイし、 客出し Q へ\n進めます。\n07\n08\n09\n10\n11\n12\n13\n14\n15\n\n12-1-3. HTP と LTP\nHTP\nHTP(Highest Takes Precedence) は最も高いインテンシティ値が優先されます。\nインテンシティが 100％ （DMX 数値で 255） により近い値が低い値よりも優先されます。\nLTP\nLTP (Latest Takes Precedence) は最も新しい値が、 古い値より優先されます。\n例えばコンソール A でムービングライトでパンとチルトを動かす際、 新しい値が前の値よりも （最新の変更が）\n優先されます。\n例\nサブマスター ・ キューでのインテンシティが 80%(DMX 値 205) で、 別サブマスターでのインテンシティが\n50%(DMX 値 128) の時、 HTP が適用されていると最初のサブマスター ・ キューが 2 番目のサブマスター\nより優先され、 フィクスチャーのインテンシティは 80% をキープします。\n12-1-4. Restore（復元）\n最小 (Min) とバックグラウンド (Bkgrd) があります。\n最小（Min)\nフェーダーが０になったときにインテンシティ、 カラー、 ビーム、 フォーカス、 すべてのデータが失われ、\n出力が０になります。\nバックグラウンド (Bkgrd)\nフェーダーが０になったときに元々のデータに戻ります。\n12-1-5. プライオリティ\nP1-P10 まであります。 P10 が最も優先されます。 デフォルトは P4 です。\n12-1-6. タイム\nUP/DOWN のタイムを０、 Dwell をマニュアルに設定した場合、 バンプボタンを Flash として使用できます。\nアップタイム（Up Time）\nサブマスターのコントロールするゲージ ・ パラメーターがホームポジションからターゲットポジションまでフェード\nする時間です。 アディティブの場合は 0 から Full、 インヒビティブの場合は Full から 0 になります。 デフォル\nトの時間は 0 です。\nデュエルタイム（Dwell Time）\nダウンフェードを開始する前にサブマスターが明かりをキープする時間です。\n• ホールド＝もう一度 Go するまで KEEP\n• マニュアル＝バンプを押している間のみ KEEP\nDown Time\nサブマスターのコントロールするゲージ、 パラメーターがターゲット位置からホーム位置まで戻りフェードする時\n間です。 デフォルトの時間は 0 です。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "12_2",
+      "manual_section": "12-2",
+      "chapter": 12,
+      "chapter_title": "サブマスター",
+      "category_id": "submaster",
+      "title": "Submasterの作り方",
+      "route": "/guide/12_2",
+      "theme_color": "#ff924c",
+      "summary": "Group Masterや通常のSubmasterをLive／Blindで作成しフェーダーへ割り当てる。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Submasterの作り方",
+        "サブマスター"
+      ],
+      "subtopics": [
+        {
+          "id": "12-2-1",
+          "title": "ブラインドモードでの Group Master の作り⽅"
+        },
+        {
+          "id": "12-2-2",
+          "title": "ライブモードでの Group Master の作り⽅"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 117,
+        "page_end": 118,
+        "extracted_text": "12-1-7. 除外（Exclude）\nChapter 12 サブマスター\nExclude を設定すると、 Record,Solo, Inhibitive, Grand Master からの制御を受けなくなります。\nNote\nサブマスターは、 ①サブを作成 ②フェーダーに割り当て ③モード設定でマスターやサブフェーダーに設定\nという考え方です。\n②と③はフェーダー構成 (Fader Configuration) で行います。\n客電 ・ 作業灯の除外\n作業灯や客電のフェーダーは Record を除外しておくことが多いです。 なぜなら、 必要に応じて客電 ・ 作業\n灯を上げますが、 キューを記録した際、 ステージ上の演出照明のみを記録できるからです。\n12-2. サブマスターの作り方\n12-2-1. ブラインドモードでの Group Master の作り⽅\nサブ 1 をムービング機材のグループマスターにしたい場合、 Inhibitive モードを使用します。\n① ライブモードでマニュアル画面でチャンネルテーブルを表示させブラインドモードに入ります。\n② 編\n\u0007 集したいサブ＃に入ります。 サブ 1 に入るには と入力します。 編集してい\nる Sub# とその設定が出てきます\n目次 01\n③ モードをインヒビティブ （Inhibitive） にします。\n02\n03\n04\n05\n④ サブに入れたいチャンネルにインテンシティを与えると IN と入ります。 これでサブの中にチャンネルが入り\n06\nました。\n07\n<Blind> <Sub> ＜サブに入れたいチャンネル＞ ＜与えたい項目＞ < Enter>\n08\nBlind Sub# Chan# Level Enter\n09\n例\n10\nサブ 1 のチャンネル 1-9 にインテンシティを与える\n• Blind Sub1 Chan1 Thru 9 Level Enter\n11\n12\n13\n14\n15\n\n誤って入力したチャンネルを Sub から削除する\n削除したいチャンネルを選択します。\n< 削除するチャンネル > < Enter>\nChan# Enter\nMake Null を使用して実行します。\n< 削除するチャンネル > <Make Null> < Enter>\nChan# Make Null Enter\n例\nチャンネル 5-9 を削除する\n• Chan5 Thur 9 Enter\n• Chan5 Thur 9 Make Null Enter\nBlind モードで複数の Sub を thru を使用してまとめて作る方法です。\nBlind モードでの thru について\n< 最初のサブ No.> <Thru> <Thru> < 最後のサブ No.> < Enter>\nSub# Thru Thru # Enter\n他のターゲット、 プリセットやグループなども Blind では thru thru と入力します。\n12-2-2. ライブモードでの Group Master の作り⽅\n① サブに入れたいチャンネルを選択し、 何か数値を入れます。\n② Sub に RecordOnly で記録します。 下の例では Sub774 に記録されました。\n③ タブでフェーダー構成 （Fader Configuration） を開きます。\n割り当てたい空フェーダーの 「unmapped」 （未割当） を押して、 ポップアッ\nプ内で Sub# を設定します。\ntarget を sub にして、 ID に入れたいサブ No# ( 例は Sub774) を入力し\nます。\n④ 下記をクリックしポップアップを出します。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "12_3",
+      "manual_section": "12-3",
+      "chapter": 12,
+      "chapter_title": "サブマスター",
+      "category_id": "submaster",
+      "title": "Submasterの消し方",
+      "route": "/guide/12_3",
+      "theme_color": "#ff924c",
+      "summary": "フェーダーからUnloadするか、Submasterデータ自体を削除する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Submasterの消し方",
+        "サブマスター"
+      ],
+      "subtopics": [
+        {
+          "id": "12-3-1",
+          "title": "アンロード"
+        },
+        {
+          "id": "12-3-2",
+          "title": "削除"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 119,
+        "page_end": 119,
+        "extracted_text": "Chapter 12 サブマスター\n⑤ インヒビティブ （Inhibitive） を選択します。\n12-2-3. サブフェーダーの作り方\n① Sub に入れたいチャンネルを選択して任意の数値を入力します。\n② 「12-2-2 ライブモードでの Group Master の作り方」 ② - ⑤と同じです。\n③ アディティブを選択します。\n12-2-4. メインプレイバック\nメインプレイバックを指定する際は、フェーダー構成 （FaderConfiguration） の右上にある 「メインフェーダー」\nに入ります。 設定の仕方は 「12-2-2 ライブモードでの Group Master の作り方」 ④⑤と同じです。\n目次 01\n02\n03\n04\n12-3. サブマスターの消し方\n05\n12-3-1. アンロード\n06\nShift ＋ Load キーを押すとアンロードとなり、 フェーダーからサブマスターが失われます。\nアンロードしてもフェーダーから消えただけなのでサブ自体はリストに残っています。\n07\n注意\n08\nion には Load キーがありません。 フェーダー下の□▷を同時押しをすると Load となります。\n09\n12-3-2. 削除\n10\n11\n<Delete> < 削除したい Sub No.> < Enter>\nDelete Sub# Enter\n12\nサブマスターが消去され、 リストからも消えます。\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_1",
+      "manual_section": "13-1",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Effectとは",
+      "route": "/guide/13_1",
+      "theme_color": "#f77f00",
+      "summary": "Step Based、Absolute、Relativeの3種類のEffectを目的別に選ぶ。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Effectとは",
+        "エフェクト"
+      ],
+      "subtopics": [
+        {
+          "id": "13-1-1",
+          "title": "エフェクトとは"
+        },
+        {
+          "id": "13-1-2",
+          "title": "エフェクトの種類"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 122,
+        "page_end": 122,
+        "extracted_text": "13-1. エフェクト\n13-1-1. エフェクトとは\nエフェクト (Effect) とは、 照明機材の動きや色、 明るさ、 形状などのパラメーター変化を自動的に行い視覚的\nな演出を強化するためのツールです。 エフェクトは、 特定のシーンやパフォーマンスの部分を際立たせたり、 全\n体の雰囲気を変えたりするために使用されます。 パンやチルトにエフェクトを適用すれば動き、 カラーにエフェク\nトを適用すれば色などさまざまなパラメーターにエフェクトを適用することができます。\n13-1-2. エフェクトの種類\neos には Effect のタイプが大きく分けて 3 タイプあります。\nチャンネルを指定していして作成するタイプのエフェクトです。\nパレットで Step を組んで作成するタイプのエフェクトです。\n\u0007 ターンカーブ ( 波形 ) を使用したエフェクトになります。 Focus Effect、 Linear\nパ\nEffect、 Color Effect の 3 種類あります。\nNote\nEos のデフォルトのエフェクトとして Effect901 番以降が存在しています。\n最初はこのデフォルトのエフェクトを元に編集していくとエフェクトを作りやすいです。\n< デフォルトのエフェクト >"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_2",
+      "manual_section": "13-2",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Effectの基本と設定",
+      "route": "/guide/13_2",
+      "theme_color": "#f77f00",
+      "summary": "Effect Editorと各プロパティーで動き方、周期、対象、開始・終了を設定する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Effectの基本と設定",
+        "エフェクト"
+      ],
+      "subtopics": [
+        {
+          "id": "13-2-1",
+          "title": "エフェクトエディター"
+        },
+        {
+          "id": "13-2-2",
+          "title": "エフェクトプロパティー"
+        },
+        {
+          "id": "13-2-3",
+          "title": "エフェクトプロパティーの項目"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 123,
+        "page_end": 126,
+        "extracted_text": "13-2. エフェクトの基本と設定\nChapter 13 エフェクト\n13-2-1. エフェクトエディター\nエフェクトを作るにはまずエフェクトエディターに入ります。 Effect キーを２度押すと （ダブルクリック） すると\nBlind モードで Effect タブが開き、 エフェクトリストが開き、 エフェクトエディター （Effect Editor) 画面に\n入ります。\n13-2-2. エフェクトプロパティー\nエフェクトプロパティー （Effect Properties） には１つのエフェクトの中で設定できる項目がさまざまあります。\nNote\n目次 01\nエフェクトプロパティーの項目は、 下記となります。\nType( タイプ ), Scale( スケール ), Cycle Time( サイクルタイム ),Duration/Cycle( デュレーション\n/ サイクル ), Parameters( パラメーターズ ),Attributes( アトリビューツ ), Entry( エントリー ),Exit( イ\nグジット ),Time( タイム ), Grouping( グルーピング ), Trail( トレイル )\n02\n03\nラベルの名称を編集できます。\n04\nこれらの値、 設定を変更してエフェクトを作成し\nていきます。\n05\n06\n07\nエフェクトエディターを開くと４つのエンコーダーは Scale, Horizontal/Vertical, Axis, Cycle Time の表\n08\n示になります。\n09\nRelative Effect の編集をする場合は、エンコーダーを使用し各数値を変えられます。 PC の場合は Shift キー\n10\nで Horizontal と Vertical の切り替えができます。 （Relative Effect については「13-5. リラティブエフェ\nクト」 （129 ページ） 参照）\n11\nNote\n12\n表示の意味は下記になります。\n• Scale: エフェクトの大きさ ・ 規模\n13\n• Horizontal( ホリゾンタル ): エフェクトの横 Scale\n14\n• Vertical( ヴァーティカル ): エフェクトの縦 Scale\n• Axis: エフェクトパターンの軸\n15\n\n13-2-3. エフェクトプロパティーの項目\nタイプ（Type）\neos には 3 種類の Effect の Type があります。（各タイプの詳細は「13-3. ステッ\nプベースエフェクト」 （127 ページ）、 「13-4. アブソリュートエフェクト」 （128\nページ）、 「13-5. リラティブエフェクト」 （129 ページ） を参照）\n• StepBased Effect （ステップベースド）\n• Absolute Effect （アブソリュート）\n• Relative Effect （リラティブ） ⇒ Focus, Linear （リニア）， Color\nスケール（Scale）\nRelative Effect で の み 使 用 す る 要 素 で す。 こ れ は\nEffect をかける前のベースになる値から変化する度合 （増\n減値） を設定します。 他の照明卓ではサイズなどと呼ばれ\nている要素になります。 クリックして値を入力またはエンコー\nダーで調節することができます。\nサイクルタイム（Cycle Time）\nEffect の 1 周にかかる時間を設定します。\n• Relative Effect:1 つのチャンネルがエフェクト 1 周に\nかかる時間です。\n• StepBased / Absolute Effect: エフェクト （全ての\nStep) の 1 周にかかるトータルの時間です。 （トータル\nの時間なので個々のステップ ・ チャンネルの持ち時間は\n比例して増減します）\nデュレーション / サイクル（Duration/Cycle）\nEffect が流れる時間を設定します。\n• デュレーション（Duration）: 時間を設定するとエフェクトは指定された時間内のみ流れます。\nex)Duration 5:00 → 5 分間エフェクトが流れ続けます。\n• インフィニティ （Infinite ・ 永久） : キューやマニュアルで止めるまで永久に流れ続けます。\n• ナンバーサイクル （Num Cycles ・ 周期数） ： 回数を設定します。 エフェクトは指定された\n回数だけ繰り返します。\nex)Num Cycles 10 → 10 回エフェクトが流れて止まります。\n\nパラメーター（Parameters）\nChapter 13 エフェクト\nEffect をどのパラメータに適用するか選択します。 それぞれの△を押すと現在表示されていない他のパラメー\nタを表示させることができます。\n① Intens: インテンシティーにエフェクトがかかります。\n② Focus: Pan/Tilt にエフェクトがかかります。\n③ Color: Color にエフェクトがかかります。 (RGBWACMY,\nCTO, Hue, Saturation, Color Wheel 等）\n④ Form: Form に入っている機能にエフェクトがかかります。\n(Shutter Strobe, Zoom, Edge, Iris, Diffusion 等）\n⑤ Image: Gobo やアニメーションにエフェクトがかかります。\n⑥ Shutter: カッター （羽 ・ ブレード） とその角度にエフェクトがかかります。\nアトリビュート (Attributes)\nEffect の流れ方を設定します。 設定は右下のエフェクトソフトキーからも選択することができます。\n目次 01\n• Bounce （バウンス） ： 指定したチャンネル内でエフェクトが往復して流れます。\n• Forward （フォワード） ： 選んだ Ch 順にエフェクトが流れます。 Step Based や Absolute ではプログ\n02\nラムした順番で流れます。 Edit 内のパターンでは矢印の方向がフォワードになります。\n• Reverse （リバース） ： 選んだ順番の逆にエフェクトが流れます。\n03\n例\n04\nチャンネル 1 から 6 で上記エフェクトを設定\nBounce （バウンス） ： 1.2.3.4.5.6 の順番で点灯した後、 5.4.3.2.1 に戻って点灯します。\n05\nForward （フォワード） ： 1.2.3.4.5.6 の順番で点灯した後、 もう一度 1.2.3.4.5.6 の順番で点灯します。\nReverse （リバース） ： 6.5.4.3.2.1 の順番で点灯します。\n• Continuous Run ： 連続再生します。 エフェクトに Stop がかかるまで流れ続けます。 06\n07\n• Repeat On Go ： 繰り返し再生します。\n• Random Group ： Step がランダムなグループで再生されます。\n08\n• Random Rate ： ランダムなスピードで再生されます。 レートは設定可能です。\nex) Random Rate 100 thru 200\n09\n• Negative ： StepBased のエフェクトで、 OnState/Off State を逆にします。\n• Build ： だんだん増える。 OnState が外れても OnState の値を保持し続けます。\n10\n11\n12\n13\n14\n15\n\nエントリー（Entry）\nエフェクトがどのように開始されるか設定します。\n• Cascade （カスケード） ： 各 Ch は Trail と Cycle タイムに合わせてエフェク\nトが流れ始めます。\n• Immediate （イミディエイト） ： 即座にエフェクトが流れます。\n• Fade by Size （サイズ依存フェード） ： エフェクトのサイズにタイムをかけます。\n• Fade by Size and Rate （サイズ / レート依存フェード） ： エフェクトサイズと\nスピードにタイムをかけます。\n• Fade by Rate（レート依存フェード）：エフェクトのスピードにタイムをかけます。\n• Entry Time （開始時間） ： エフェクトの開始タイムです。\nデフォルトタイムはキューのタイムまたはサブです。\nイグジット (Exit)\nエフェクトがどのように停止 ・ 終了されるか設定します。\n• Fade by Size and Rate: エフェクトの終了時にエフェクトサイズとスピードにタイムをか\nけます。\n• Fade by Rate: エフェクトのスピードにタイムをかけます。\n• Stop and Fade （フェード停止） ： エフェクトの流れが止まり、 元々 Q にレコードされた状\n態に ExitTime で設定された時間で戻ります。\n• Stop and Hold （ホールド停止） ： エフェクトが停止され、 エフェクトの乗っていた Ch は\n停止した時の状態のまま残されます。\n• Exit Time （終了時間） ： エフェクトを停止するタイムです。\nデフォルトタイムはキューのタイム又はサブです。\nグルーピング (Grouping)\nAbsolute と RelativeEffect でのみ使用します。\nエフェクトに入れる Ch を何個のグループに分けて流すかを設定します。 デフォルトは Spread （均等分配） で、\nSpread= Group 0 です。 Spread の場合、各 Ch は 1 つの Ch を保持した Group とみなされます。 (Group\nに対しエフェクトをかけると、 サブグループなど既に作られた Grouping 機能が適用されます。 Editor で\nGrouping をクリックすると下の画像のような画面が開きます。\nトレイル（Trail）\nAbsolute と RelativeEffect でのみ使用します。 Ch がエフェクトの中\nでどのように繋がっていくか、 どのようにサイクルタイムを分割 (0-200％\n内で） するかを設定します。\n• Even ： パターンに沿って均等分割します。 デフォルトは Even です。\n• Solo：1 つのグループ／ Ch のエフェクトが流れ切ってから、 次のグルー\nプ／ Ch のエフェクトが流れ始めます。\n• 数値 （％） ： 例えば 10％を選択した場合\n最初のグループ／ Ch がサイクルの 10％まで進みます。\n次のグループ／ Ch がエフェクトを始めます。\nこのように数値％分、 他グループ／ Ch が待機します。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_3",
+      "manual_section": "13-3",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Step Based Effect",
+      "route": "/guide/13_3",
+      "theme_color": "#f77f00",
+      "summary": "チャンネルとステップを指定するチェイス型Effectを作る。",
+      "when_to_use": [
+        "チェイス",
+        "順番に点滅"
+      ],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Step Based Effect",
+        "エフェクト",
+        "チェイス",
+        "順番に点滅"
+      ],
+      "subtopics": [
+        {
+          "id": "13-3-1",
+          "title": "ステップベースエフェクトの作り方"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 127,
+        "page_end": 127,
+        "extracted_text": "13-3. ステップベースエフェクト\nChapter 13 エフェクト\nステップベースエフェクト （StepBased Effect） は Ch を指定して、 ステップを組むエフェクトです。 照明用\n語でチェイスという概念に近いです。\n13-3-1. ステップベースエフェクトの作り方\n① Effect キーをダブルクリックしエフェクトエディターに入ります。\n② 新しく作成する場合、 新規のパレットナンバーを入力します。\nBlind モードなので 301 など数字だけ入力すれば作成できます。\n③ StepBased を選択します ( タイプの選択 )\n④ 下の画像のような Editor が開きます （矢印キー操作推奨）。 各値を入力し Step を作成します\n目次 01\n02\nステップ （Step） : ステップ番号。 {Step 1 thru 6} と入力してまとめて step を作ることも可能です。\n03\nチャンネル （Channels） : ステップで使用するチャンネルを入れます。 グループ入力も可能です。\n04\n05\n06\nパラメーター （Parameters） : 組みたいエフェクトで使用するパラメーターを選択します。 デフォルトはイン\nテンシティです。 07\nタイム （Time） ： 各タイムを設定します。 タイムのコンセプトは以下のようになります。\n① Step Time: 次のステップが始まるまでのタイム\n08\n② In Time: On State になるまでのタイム (Fade Time)\n③ Dwell Time: On State をキープするタイム\n09\n④ Decay Time: Off State になるまでのタイム (Fade Time)\n10\n※ Cycle Time を変えることによって各タイムを自動計算させることも可能\nオンステイト / オフステイト （On State / Off State） ： そのステップで選択されている Ch の On State\n11\n/ Off State の値、 または参照パレットを入れます。\nNote\n12\nステイトに数字を入力すればデフォルトでインテンシティ （ゲージ） になりますが、 プリセットや各パレットを\n13\n入力、 またはダイレクトセレクトから選択して入れることも可能です。 ソフトキーにもある Bkgrd とは\nバックグラウンド （Background） つまりキューにレコードされた状態 ( エフェクトをかける前のベース値 )\n14\nのことです。\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_4",
+      "manual_section": "13-4",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Absolute Effect",
+      "route": "/guide/13_4",
+      "theme_color": "#f77f00",
+      "summary": "Palette、Preset、数値をActionとして連続させるEffectを作る。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Absolute Effect",
+        "エフェクト"
+      ],
+      "subtopics": [
+        {
+          "id": "13-4-1",
+          "title": "アブソリュートエフェクトの作り方"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 128,
+        "page_end": 128,
+        "extracted_text": "13-4. アブソリュートエフェクト\nアブソリュートエフェクト （Absolute Effect） は 「パレット ・ プリセット ・ 指定されたパラメーター値」 を\nAction として連続させるエフェクトです。\nこれで作成すると、Action でチャンネルを指定する必要なく、灯体が Action で指定されたパラメーターを持っ\nていればエフェクトを適用できます。 カラーエフェクト等で便利です。\n13-4-1. アブソリュートエフェクトの作り方\n① Effect キーをダブルクリックしエフェクトエディターに入ります。\n② 新しく作成する場合、 新規のパレットナンバーを入力します。\n③ 「Absolute」 を選択します。\n④ 下の画像のような Editor が開きます。 （矢印キー操作推奨） 各値を入力し Action を作成します。\nアクション （Action） ： アクション番号\nパラメーター （Parameters） ： 使用するパラメーターを選択します。 （入力しなくても Level にプリセット ・\nパレット等を適用可能です。）\nステップタイム （Step Time） ： アクションを実行してから次のアクションを実行するまでの時間になります。\nタイム （Time） ： アクションへのフェードインする時間になります。\nデュエル （Dwell） ： 次のアクションに移るまでのアクションの持続時間です。\nレベル （Level） ： 各アクションでパレット ・ プリセット ・ 指定されたパラメータの値を入れます。\n※ Cycle Time を変えることによってタイム、 デュエル時間を自動計算させることも可能です。\n例\n下の画像のように設定をした場合、 下記のエフェクトが繰り返されます。\nアクション 1 ： [Blue] が 1 秒でフェードイン、 1 秒キープ\nアクション 2 ： [#76LBG] が 1 秒でフェードイン、 1 秒キープ\n下の画像は、 レベルにプリセットを入れて、 フライアウトのエフェクトを作成しています。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_5",
+      "manual_section": "13-5",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Relative Effect",
+      "route": "/guide/13_5",
+      "theme_color": "#f77f00",
+      "summary": "Focus、Linear、Colorなど連続変化型Effectを作る。",
+      "when_to_use": [
+        "サークル",
+        "パンチルト",
+        "レインボー",
+        "カラーエフェクト"
+      ],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Relative Effect",
+        "エフェクト",
+        "サークル",
+        "パンチルト",
+        "レインボー",
+        "カラーエフェクト"
+      ],
+      "subtopics": [
+        {
+          "id": "13-5-1",
+          "title": "フォーカスエフェクト"
+        },
+        {
+          "id": "13-5-1",
+          "title": "リニアエフェクト"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 129,
+        "page_end": 131,
+        "extracted_text": "Action を利用したレベル分散割合の調節\nChapter 13 エフェクト\nアブソリュートエフェクトを作成する際、 アクションの数を使用してレベル （出力） の割合を調節することができ\nます。\n例\nRed/White の２色のカラーエフェクトで、 Red の割合を多くしたい場合は Red の Action を多くするこ\nとで、Level の分散割合を調節出来ます。 （White と Red はどちらもカラーパレットに保存されたものです）\n① Red/White が均等\n② Red が多く、 White が少ない\n13-5. リラティブエフェクト\n目次 01\nリラティブエフェクト（Relative Effect）はパターンカーブ ( 波形 ) を使用したエフェクトです。 フォーカスエフェ\nクト （Focus Effect） ・ リニアエフェクト （Linear Effect） ・ カラーエフェクト （Color Effect） の 3 種類\nあります。\n02\n13-5-1. フォーカスエフェクト\n03\nRelative Effect の中で Focus は PAN と Tilt に対してのみエフェクトをかけるものです。\n作り方\n04\n① Effect キーをダブルクリックしエフェクトエディターに入ります。\n05\n② 新しく作成する場合、 新規のパレットナンバーを入力します。\n③ 「Focus」 を選択します。\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15\n\n④ Edit から編集画面に入ります\n自分の作りたい Effect のパターン （Pattern、 動き )、 スケールなどその他の設定をします。\nRelative Effect の編集をする際、 エンコーダーを使用して各数値を変えれます。 PC で使用する時は Shift\nキーで Horizontal と Vertical を切り替えできます。\n⑤ 編集が終わったら適用でエフェクトエディターに戻ります。\nデフォルトのパターン\nパターンの中にフォーカスエフェクトのデフォルトのパターンがあります。 まずデフォルトのパターンを適用し、 そ\nこから編集をかけていくのが最初はおすすめです。\nEdit から編集画面に入ります。\n「パターン」 からデフォルトのパターンを選択できます。\nツールを使用してパターンを自作することができます。\n13-5-1. リニアエフェクト\nLinear Effect はどのパラメーターにも使用することができます。 基本的に直線的なパターンがあり、 選択し\nたパラメーターにエフェクトをのせます。\n作り方\n① Effect キーをダブルクリックしエフェクトエディターに入ります。\n② 新しく作成する場合、 新規のパレットナンバーを入力します。\n③ 「リニア」 を選択します。\n\nChapter 13 エフェクト\n④ Edit から編集画面に入ります\n自分の作りたい Effect のパターン （Pattern、 動き ) を設定します。 スケールなどその他の設定をします。\n⑤ 編集が終わったら適用でエフェクトエディターに戻ります。\nデフォルトのパターン\nパターンの中にリニアエフェクトのデフォルトのパターンがあります。 まずデフォルトのパターンを適用し、 そこか\nら編集をかけていくのが最初はおすすめです。\n目次 01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_6",
+      "manual_section": "13-6",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Effectの実行",
+      "route": "/guide/13_6",
+      "theme_color": "#f77f00",
+      "summary": "選択したチャンネルやGroupへEffectを適用する。",
+      "when_to_use": [],
+      "commands": [
+        "Channel # Effect # Enter",
+        "Group # Effect # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Effectの実行",
+        "エフェクト"
+      ],
+      "subtopics": [],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 132,
+        "page_end": 132,
+        "extracted_text": "13-5-1. カラーエフェクト\nカラーエフェクト （Color Effect） は Hue( 色相 ) と Saturation( 彩度 ) に対して Effect をかけます。\n作り方\n① Effect キーをダブルクリックしエフェクトエディターに入ります。\n② 新しく作成する場合、 新規のパレットナンバーを入力します。\n③ 「カラー」 を選択します。\n④ Edit から編集画面に入ります\n13-6. エフェクトの実行\nエフェクトの実行は Live モードにて行います。 エフェクトを実行するにはまずエフェクトリストに登録されている\nエフェクトでなければ実行することはできません。\nエフェクトのかけ方\n＜指定するチャンネル＞ <Effect 番号 > <Enter ＞\nCh# Effect# Enter\n例\nチャンネル 1 から 5 にエフェクト 401 をかける\n• Ch1 thru 5 Effect 401 Enter\n※ダイレクトセレクトで押してエフェクトをかけることもできます。\nステップベースエフェクトはチャンネルがエフェクトの中で指定されているので Recall From キーを使用してエ\nフェクトをかけることができます。\nステップベースエフェクトのかけ方\n＜ Recall From ＞ <Effect 番号 > <Enter ＞\nRecall From Effect# Enter\n例\nステップベースエフェクト 21 をかける\n• Recall From Effect 21 Enter\n13-7. エフェクトの修正\n13-7-1. エフェクトステータスディスプレイ\nLive 画面でのエフェクトの修正方法です。 パターンなど根本的なエフェクトの編集は Blind モードのみですが、\nLive モードではスピードやサイズ、 グルーピングなど一部の数値の編集をすることができます。\nエフェクトステータスディスプレイでは元々のエフェクト自体を編集しているのではなく、 そのキューで編集され\nるので、 同じエフェクトを使用している別のキューには影響しません。\n① エフェクトが動いているキュー ・ マニュアル操作時に Effect キーを押します。 または Display キーを押し、\nソフトキーのエフェクトステイタスを押します。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_7",
+      "manual_section": "13-7",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Effectの修正",
+      "route": "/guide/13_7",
+      "theme_color": "#f77f00",
+      "summary": "実行中EffectのRate、SizeなどをEffect Status Displayから調整する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Effectの修正",
+        "エフェクト"
+      ],
+      "subtopics": [
+        {
+          "id": "13-7-1",
+          "title": "エフェクトステータスディスプレイ"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 132,
+        "page_end": 132,
+        "extracted_text": "13-5-1. カラーエフェクト\nカラーエフェクト （Color Effect） は Hue( 色相 ) と Saturation( 彩度 ) に対して Effect をかけます。\n作り方\n① Effect キーをダブルクリックしエフェクトエディターに入ります。\n② 新しく作成する場合、 新規のパレットナンバーを入力します。\n③ 「カラー」 を選択します。\n④ Edit から編集画面に入ります\n13-6. エフェクトの実行\nエフェクトの実行は Live モードにて行います。 エフェクトを実行するにはまずエフェクトリストに登録されている\nエフェクトでなければ実行することはできません。\nエフェクトのかけ方\n＜指定するチャンネル＞ <Effect 番号 > <Enter ＞\nCh# Effect# Enter\n例\nチャンネル 1 から 5 にエフェクト 401 をかける\n• Ch1 thru 5 Effect 401 Enter\n※ダイレクトセレクトで押してエフェクトをかけることもできます。\nステップベースエフェクトはチャンネルがエフェクトの中で指定されているので Recall From キーを使用してエ\nフェクトをかけることができます。\nステップベースエフェクトのかけ方\n＜ Recall From ＞ <Effect 番号 > <Enter ＞\nRecall From Effect# Enter\n例\nステップベースエフェクト 21 をかける\n• Recall From Effect 21 Enter\n13-7. エフェクトの修正\n13-7-1. エフェクトステータスディスプレイ\nLive 画面でのエフェクトの修正方法です。 パターンなど根本的なエフェクトの編集は Blind モードのみですが、\nLive モードではスピードやサイズ、 グルーピングなど一部の数値の編集をすることができます。\nエフェクトステータスディスプレイでは元々のエフェクト自体を編集しているのではなく、 そのキューで編集され\nるので、 同じエフェクトを使用している別のキューには影響しません。\n① エフェクトが動いているキュー ・ マニュアル操作時に Effect キーを押します。 または Display キーを押し、\nソフトキーのエフェクトステイタスを押します。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "13_8",
+      "manual_section": "13-8",
+      "chapter": 13,
+      "chapter_title": "エフェクト",
+      "category_id": "effects",
+      "title": "Effectの止め方",
+      "route": "/guide/13_8",
+      "theme_color": "#f77f00",
+      "summary": "Stop EffectまたはEffectキーでEffectを停止する。",
+      "when_to_use": [
+        "エフェクト停止",
+        "動きを止める"
+      ],
+      "commands": [
+        "Stop Effect Enter",
+        "Channel # Effect Enter"
+      ],
+      "warnings": [
+        "停止方法により対象範囲が変わるため、実行中のチャンネルとEffect番号を確認する。"
+      ],
+      "keywords": [
+        "Effectの止め方",
+        "エフェクト",
+        "エフェクト停止",
+        "動きを止める"
+      ],
+      "subtopics": [
+        {
+          "id": "13-8-1",
+          "title": "エフェクト停止（StopEffect）を使用する場合"
+        },
+        {
+          "id": "13-8-2",
+          "title": "エフェクト（Effect）キーを使用する場合"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 133,
+        "page_end": 134,
+        "extracted_text": "Chapter 13 エフェクト\n② 画面下部の Effect Status Display に実行中のエフェクトが表示されます。 コマンドラインでエフェクトを\n指定し、 編集したい Effect の数値を変えます。 例の写真では [Effect 11] [Enter] と入力すると各エ\nンコーダーでエフェクトのレートなどを触ることができるようになります。 編集したい Effect の数値を変え\nることができます。\nエフェクト番号\nレコードされているキュー\n中身のチャンネル\nエフェクト数値\n13-7-2. エフェクトの数値\nエフェクトステータスディスプレイで編集できるエフェクトの数値を紹介します。\n• Rate ： エフェクトのサイクルスピードの速さ (0-2000%)\n目次 01\n• BPM ： エフェクトの速さ\n• Size ： エフェクトの大きさ、 スケール (0-2000%)\n• HForm/VForm ： Focus Effect のみに使用します。 H は Pan、 V は Tilt の大きさにかかります。\n• Axis ： エフェクトパターンの傾き角度 (-180°～ +180° )\n02\n03\n04\n05\n13-8. エフェクトの止め方\nエフェクトを止めるには複数の方法があります。 06\n07\n13-8-1. エフェクト停止（StopEffect）を使用する場合\n08\nコマンドラインで Shift を押しながら Effect キーを押すと「エフェクト停止（StopEffect）」が出ます。 エフェ\nクト番号を入力して Enter で確定してください。エフェクト番号を入力しないと、全てのエフェクトが止まります。\n09\nエフェクト停止 （StopEffect）\n10\n＜ Shift ＆ Effect キー＞ <Effect 番号 > <Enter ＞\nShift ＆ Effect キー # Enter\n11\n12\n例\nエフェクト 912 を停止\n13\nStopEffect 912 Enter\n14\n15\n\n13-8-2. エフェクト（Effect）キーを使用する場合\nEffect がかかっている CH/Group が分かっている場合は、 Effect キーでも止めることができます。\nエフェクト停止 （Effect キー）\n＜チャンネル番号＞ <Effect> <Enter ＞\nCh# Effect Enter\n例\nチャンネル 21 から 37、 39， 40、 71、 73 にかかったエフェクトを停止\nChan21 Thru37 + 39 Thru 40 + 71 +73 Effect Enter\nエフェクトはパラメーターで指定することもできます。 Focus + Effect、 Color + Effect などのマクロを作\n成し使用すると便利です。 マクロについては 「15-2. マクロ」 （144 ページ） を参照してください。\n＜マクロ画面 （赤で囲んである箇所がマクロ構文です） ＞"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "14_1",
+      "manual_section": "14-1",
+      "chapter": 14,
+      "chapter_title": "マジックシート",
+      "category_id": "magic-sheet",
+      "title": "Magic Sheetとは",
+      "route": "/guide/14_1",
+      "theme_color": "#ee9b8f",
+      "summary": "灯体やPaletteを視覚的に配置し、直感的に操作できる画面を作る。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Magic Sheetとは",
+        "マジックシート"
+      ],
+      "subtopics": [
+        {
+          "id": "14-1-1",
+          "title": "マジックシートとは"
+        },
+        {
+          "id": "14-1-2",
+          "title": "ターゲットとは"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 136,
+        "page_end": 137,
+        "extracted_text": "14-1. マジックシート\nMagic Sheet( マジックシート、 MS) とは、 打ち込みをする際にプログラマーやオペレーターが直感的に素早\nく操作をすることができるように、 灯体や色等のパレットを配置して操作しやすい、 打ち込みがしやすい画面を\n作る為の機能です。\nインターネットや ETC 公式ページにマジックシートの例があるので色々と見て、 自分が打ち込み、 本番オペがし\nやすい画面を作ることが大切です。\n他の照明卓などではレイアウトなど呼ばれたりしています。\n\n14-1-1. マジックシートとは\nChapter 14 マジックシート\nそもそも 「マジックシート」 とは海外の舞台照明の現場でよく用いられる書類の 1 つです。 視覚的に灯具の機材\nを表示させ明かり作りには欠かせない書類となっています。\nどこに何の灯体がつられているか、 Gobo やカラーフィルターは何が入っているか、 ビームの方向などが載っ\nているので照明デザインをより直感的にすることができます。 日本ではフェーダー表が近い存在です。\nEos で搭載されているマジックシートという機能はその電子化を図ったものになります。\n目次 01\n14-1-2. ターゲットとは\nマジックシートでのターゲットとは、 ある図形やシンボルを選択したときにチャンネルやマクロ、 その他の卓の操\n作にかかわる構文全てのことを指します。 例えば、 あるチャンネルがターゲットとして設定された図形をクリック\n02\nすると、 指定したチャンネルが選択されます。 テンキーでチャンネル＃を入力することなく視覚的にチャンネルを\n選択することができます。\n03\n04\n05\nNote\nジックシートに貼り付けれるターゲットは下記になります。 06\n07\nAddress ・ Beam Palette ・ Channel ・ Color Palette ・ Cue ・ Effect ・ Fader\nFocus Palette ・ Group ・ Intensity Palette ・ Macro ・ Magic Sheet ・ Pixel Map\n08\nPreset ・ Response IO Relay ・ Scene ・ Snapshot ・ Submaster ・ User ・ Console Button\nソフトキー ・ コマンド ・ コマンドライン ・ 時計 ・ 全ての物理キー\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "14_2",
+      "manual_section": "14-2",
+      "chapter": 14,
+      "chapter_title": "マジックシート",
+      "category_id": "magic-sheet",
+      "title": "Magic Sheetの作成",
+      "route": "/guide/14_2",
+      "theme_color": "#ee9b8f",
+      "summary": "新規作成、オブジェクト配置、整列、背景画像、ターゲット割当を行う。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [
+        "Magic SheetのUndoは操作を1工程ずつ戻せず、左下のクイックセーブ時点へ戻る。"
+      ],
+      "keywords": [
+        "Magic Sheetの作成",
+        "マジックシート"
+      ],
+      "subtopics": [
+        {
+          "id": "14-2-1",
+          "title": "新規作成"
+        },
+        {
+          "id": "14-2-2",
+          "title": "編集画面の入り方"
+        },
+        {
+          "id": "14-2-3",
+          "title": "オブジェクトの配置"
+        },
+        {
+          "id": "14-2-4",
+          "title": "連続した複数のオブジェクトの配置"
+        },
+        {
+          "id": "14-2-5",
+          "title": "オブジェクトの整列"
+        },
+        {
+          "id": "14-2-6",
+          "title": "オブジェクトの順番"
+        },
+        {
+          "id": "14-2-7",
+          "title": "画像の取り込み"
+        },
+        {
+          "id": "14-2-8",
+          "title": "画像を背景に設定"
+        },
+        {
+          "id": "14-2-9",
+          "title": "ターゲットの設定"
+        },
+        {
+          "id": "14-2-10",
+          "title": "連続したターゲットの設定"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 138,
+        "page_end": 142,
+        "extracted_text": "14-2. マジックシートの作成方法\n14-2-1. 新規作成\n① マジックシートのタブ （Tab3） を開きます\n② 「New Magic Sheet」 から新規作成します\n③ 新規のマジックシートから始めることができます。\n14-2-2. 編集画面の入り方\nの矢印からマジックシートの編集画面に入ります。 矢印が画面にない場合は、 ロックされているので、 タブ左\n下の歯車マークから設定に入り、 ロックを解除してください。\nレイアウトツール\nマジックシートオブジェクト\nマジックシートオブジェクトプロパティ\nクイックセーブボタン\nこの空間で、 オリジナルマジックシートを作成、 カスタムします\nNote\nマジックシートは Undo で編集を 1 工程ずつ戻すことはできません。\nUndo で戻すことができるのは左下にあるクイックセーブボタンを押した時点のみとなります。\n\n14-2-3. オブジェクトの配置\nChapter 14 マジックシート\nオブジェクトをマジックシートに張り付けるには、 マジックシート下部にある から使用するオブジェクト\nを選択し、 マジックシートの配置したい場所をクリックすると配置されます。\n＜パレット、 プリセットや図形を選択＞ ＜灯体のシンボルを選択＞\n14-2-4. 連続した複数のオブジェクトの配置\n1 つのオブジェクトを複数配置させたい時は の矢印を押して EditMode に入ります。\nで QuickLayout を選択します。 その後、 複数配置させたいオブジェクトを選んでくだ\nさい。\n貼り付け後に右下に出てくる （終了） を押して QuickLayout から出ます。\n※キーボードの Shift や Ctrl を使用し、 複数のオブジェクトを選択したり、 コピー、 ペー\nストが出来ます。 （テンキーの Shift では出来ません。）\n目次 01\n14-2-5. オブジェクトの整列\n灯体の配置を整えたい時は Alignment （整列） を使います。\n02\n① まず整列させたい灯体をドラッグし選択します。\n03\n04\n05\n② 下記画像 の整列メニューを開き、 から整列方法を選択します。\n06\n07\n08\n09\n10\n11\n③ 下の画像では AlignBottom で下に整列させ、 Distribute Horizontally で灯体間隔をそろえました。\n12\n13\n14\n15\n\n14-2-6. オブジェクトの順番\nオブジェクトは作成するたびに後から作成したものが上の階層に貼り付けられます。\n下の画像は○のあとに△を描いたので△が上の順番に重なって配置されています。\nこの階層順位を変更するには から Ordering を選択して で階層順位を整えます。\n14-2-7. 画像の取り込み\nEos では自分の好きな画像を取り込み、 表示させることができます。\n画像を読み込むにはまず 押して画像配置の画面を開きます。\n枠内に出てくる画像は過去に使用したりすでに取り込んだものです。 USB 等から新たに読み込\nむ場合、 を押してください。\nフォルダ画面になるので、 使用したい画像を選択し OK を押します。\nShift や Ctrl を使用し、 複数のオブジェクトを選択できます。\nフェーダー表、 ネタ表等も同じように取り込めます。\nNote\nEos マジックシートで使用することのできる画像の拡張子は以下の物になります。\n.bmp, .gif, .ico, .jpg, .pbm, .pgm, .png, .ppm, .svg, .svgz, .tga, .tiff, .xbm, and .xpm.\n最大サイズ 1920 x 1920\n\n14-2-8. 画像を背景に設定\nChapter 14 マジックシート\n歯車マークを選択します。\nライブバックグラウンドに設定します。\nプルダウンからイメージを選択します。\n下に画像アイコンがあるので、 選択します。\nプルダウンから背景にしたい画像を選択します。\n14-2-9. ターゲットの設定\n目次 01\nマジックシートでオブジェクトを使用して灯体を操作するには、 オブジェクトに対してターゲットを設定する必要が\nあります。 自分が使用したい図形やシンボルを画面に出した後、 ターゲットを設定することになります。\nターゲットに設定することができる対象は 「14-1-2. ターゲットとは」 （137 ページ） を参照してください。\nターゲットの選択\n02\nターゲットを与えたい （変更したい） オブジェクトを選択します。\n03\n\u0007 ブジェクト情報の Target のプルダウンで色々な種類が出るので、 希望\nオ\n04\nの種類を選択します。\n05\n\u0007 hannel1 にしたい場合はここに 1 を入力します。 各種類のナンバー、\nC\nパレット番号、 グループ番号等もここで入力します。\n06\n07\nターゲットの表示情報\n08\n09\nオブジェクトに与えられたターゲットの情報を左のように表示させることができます。\n左の画像は Intensity: 50%, Color: #76, Beam: Zoom Open Sharp2 となっています。\n10\n11\n12\n文字サイズ ・ 色 ・ フォント設定\n13\n表示場所の設定\n14\n15\n表示場所がオブジェクト外の場合、 左図から近さを変える事ができます。\n\n14-2-10. 連続したターゲットの設定\n1 つ 1 つオブジェクトに対しターゲットの設定を入力するのは大変なので、 連番になる場合、 クリックするだけで\nターゲットを設定する方法があります。\nEdit Mode を押します。\nQuick Target を押すと写真の画面が開きます。\nターゲットの種類を選びます\nオブジェクトに与えるターゲットナンバーの頭の数字\n数字にオフセットをかけてナンバリングしたい場合使用します\n『OK』 を押すとナンバリングが始まります。\nマウスのカーソルにターゲットナンバーが表示されるのでそのナンバーを与えたいオブジェクトを押し\nてください。\nを押して終了になります。\n設定\n• \u0007Interactive( 相互作用 ) ： ここのチェックが外れていると、 Live モードに戻ってターゲットが\n設定されているオブジェクトを押しても何も反応しません。\n• High Quality ： レンダリングの解像度の設定です。\n• L\u0007 ive Background & Blind Background：Live モード （プログラミング時） と Blind モー\nド ( 編集時 ) に背景画に何を表示させるかの設定です。\n• Solid ： 単色背景\n• Gradient ： 階調度。 2 色によるグラデーション\n• Image ： 画像\n• Import/Export ： マジックシート自体のインポート、 エクスポート"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "15_1",
+      "manual_section": "15-1",
+      "chapter": 15,
+      "chapter_title": "その他の機能",
+      "category_id": "utilities",
+      "title": "Snapshot",
+      "route": "/guide/15_1",
+      "theme_color": "#9b5de5",
+      "summary": "画面レイアウトと表示状態をSnapshotとして保存・呼び出しする。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Snapshot",
+        "その他の機能"
+      ],
+      "subtopics": [
+        {
+          "id": "15-1-1",
+          "title": "記録できるもの"
+        },
+        {
+          "id": "15-1-2",
+          "title": "画面の出し方"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 144,
+        "page_end": 144,
+        "extracted_text": "15-1. スナップショット\nスナップショット (Snapshot) とは操作画面を保存するものです。 他のソフトでビューや登録画面等と呼ばれ\nている機能です。 右上の を押すと、 保存されている画面が表示されます。\n15-1-1. 記録できるもの\n• Direct Select のページや設定 ・ 配置\n• エンコーダーの割り当て ・ ページ\n• フエーダーの割り当て ・ ページ\n• 内部モニター ・ 外部モニターの表示 ・ 配置\n• レコードフィルター\n• Live モード、 Blind モード\nスナップショットの記録\n＜ Record> <Snapshot キー＞ < 空いているスナップショット番号 > <Enter ＞\nRecord キー Snapshot キー # Enter\n実行されていた画面がスナップショットに保存されます。 ion ではスナップショットのハードキーはないのでソフ\nトキーで入力します。\n15-1-2. 画面の出し方\nSnapshot キー + #( 保存した snapshot ナンバー） + Enter で保存した画面を表示できます。 その場合、\nSnapshot 構文はコマンドラインに出ずに、 タブ下に赤字で出てきます。\n右上の から画面を選択して表示させることもできます。\n15-2. マクロ\nMacro( マクロ ) とは、 何度も同じキー操作やプログラム行程を踏まず済むように簡略化する為のツールです。\n自分が操作したコマンドの手順を記憶させ、 キューのリンクやシステムを実行させることができます。\n15-2-1. マクロの作り方\nMacro の作り方は 2 通りあります。\n① Learn キーを使用したマクロの作成 (Live モード )\n② Macro Editor Display( 編集画面 ) より Macro Contents を編集する方法 (Blind モード )\nLearn を使用したマクロの作り方\nマクロの記録\n＜ Learn キー＞ < 空いているマクロ番号 > <Enter ＞\nLearn キー # Enter\n① 上記構文で 「Macro#」 の作成を開始します。 Learn の構文はスナップショットと同様でタブ下に赤字で\n表示されます。\nもし Macro# が重複している場合、 以下のように言われます。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "15_2",
+      "manual_section": "15-2",
+      "chapter": 15,
+      "chapter_title": "その他の機能",
+      "category_id": "utilities",
+      "title": "Macro",
+      "route": "/guide/15_2",
+      "theme_color": "#9b5de5",
+      "summary": "一連のキー操作をMacroとして記録し、ワンタッチで実行する。",
+      "when_to_use": [],
+      "commands": [
+        "Macro # Enter"
+      ],
+      "warnings": [],
+      "keywords": [
+        "Macro",
+        "その他の機能"
+      ],
+      "subtopics": [
+        {
+          "id": "15-2-1",
+          "title": "マクロの作り方"
+        },
+        {
+          "id": "15-2-2",
+          "title": "マクロの構文例"
+        },
+        {
+          "id": "15-2-3",
+          "title": "マクロの実行と使用例"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 144,
+        "page_end": 146,
+        "extracted_text": "15-1. スナップショット\nスナップショット (Snapshot) とは操作画面を保存するものです。 他のソフトでビューや登録画面等と呼ばれ\nている機能です。 右上の を押すと、 保存されている画面が表示されます。\n15-1-1. 記録できるもの\n• Direct Select のページや設定 ・ 配置\n• エンコーダーの割り当て ・ ページ\n• フエーダーの割り当て ・ ページ\n• 内部モニター ・ 外部モニターの表示 ・ 配置\n• レコードフィルター\n• Live モード、 Blind モード\nスナップショットの記録\n＜ Record> <Snapshot キー＞ < 空いているスナップショット番号 > <Enter ＞\nRecord キー Snapshot キー # Enter\n実行されていた画面がスナップショットに保存されます。 ion ではスナップショットのハードキーはないのでソフ\nトキーで入力します。\n15-1-2. 画面の出し方\nSnapshot キー + #( 保存した snapshot ナンバー） + Enter で保存した画面を表示できます。 その場合、\nSnapshot 構文はコマンドラインに出ずに、 タブ下に赤字で出てきます。\n右上の から画面を選択して表示させることもできます。\n15-2. マクロ\nMacro( マクロ ) とは、 何度も同じキー操作やプログラム行程を踏まず済むように簡略化する為のツールです。\n自分が操作したコマンドの手順を記憶させ、 キューのリンクやシステムを実行させることができます。\n15-2-1. マクロの作り方\nMacro の作り方は 2 通りあります。\n① Learn キーを使用したマクロの作成 (Live モード )\n② Macro Editor Display( 編集画面 ) より Macro Contents を編集する方法 (Blind モード )\nLearn を使用したマクロの作り方\nマクロの記録\n＜ Learn キー＞ < 空いているマクロ番号 > <Enter ＞\nLearn キー # Enter\n① 上記構文で 「Macro#」 の作成を開始します。 Learn の構文はスナップショットと同様でタブ下に赤字で\n表示されます。\nもし Macro# が重複している場合、 以下のように言われます。\n\nChapter 15 その他の機能\n② 重複しない番号の場合 「記憶中 Macro ＃ 」 が表示され、 Enter を押すと点滅します。 点滅\nが始まると入力の記録が始まります。 入力中、 Macro、 矢印、 Select、 ESC,Learn のキーは使用でき\nません。\n③ Macro の入力中、 誤った操作も記録され、 取り消しはできません。 （Edit 画面から消せます。）\n④ Learn キーを押すと Macro の記録が終了し、 「記憶中 Macro ＃」 の点滅も止まります。\nMacro Editor Display\nLabel ： Macro の表示名称をつけられます。\nIcon ： 画像などを登録し、 マクロをダイレクトセレクト内などで見つけやすくできます。\nColor ： 赤、 緑、 白から選べます。 ダイレクトセレクト内の左下角に表示されます。\nソフトキーの Red,Green, White\nDark （無印） で選択します。\nMode ： Background, Foreground, Default の選択肢があります。\n① Background はコマンドラインに影響を与えません。\n② Foreground はコマンドラインで Macro の構文を実行します。\n③ Default は、 マニュアルで実行したとき Foreground、 キューで実行したとき Background になります。\n目次 01\nマクロコンテンツから MacroEditor Display(MED) に入り編集します。\n『Nomad 使用の場合』\n02\n全ての入力は MED の編集とみなされます。\n入力を誤った場合は画面右下の 「削除」 ソフトキーを使用してください。\n03\nテンキーの Delete を押すとマクロの構文として入力されます\n04\n05\n15-2-2. マクロの構文例\n06\nMED を編集する際、 CIA に色々な構文例が出てきます。 必要に応じて組み合わせてください。\n07\n08\n09\n10\n11\nさらに様々な構文があります。\n※もし Macro 内の構文でループを作ってしまい、 永遠に止まらないループを実行してしまった時などは ESC\n12\nキーでマクロの実行を止めることができます。\n13\n14\n15\n\n15-2-3. マクロの実行と使用例\nマクロを実行はコマンドラインでは行われず欄外に赤字にて表示されます。\nマクロの実行\n＜ Macro キー＞ < マクロ番号 > <Enter ＞\nMacro キー # Enter\n例\nマクロ 27 を実行\n• Macro27 Enter\nマクロの使用例①\nカラーにかかっているエフェクトを停止します。\nマクロの使用例②\n実行中の Q にパート２０を作り、 優先度の高いマークフラッグを入れます。 そしてパート２０のラベルに” スタン\nバイ” と入れます。\nマクロの使用例③\nLive Move （動きながらついてしまった、 ホーム / 前のキュー状態から変化しながら実行されたキューの値に\nなる状態） の灯体を選択し、 マークのフラッグが経っているキューでスタンバイさせるマクロです。"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "15_3",
+      "manual_section": "15-3",
+      "chapter": 15,
+      "chapter_title": "その他の機能",
+      "category_id": "utilities",
+      "title": "Park",
+      "route": "/guide/15_3",
+      "theme_color": "#9b5de5",
+      "summary": "チャンネルやパラメーター値を固定し、CueやSubmasterから変化しないようにする。",
+      "when_to_use": [
+        "値を固定",
+        "動かない",
+        "パーク解除"
+      ],
+      "commands": [
+        "Channel # At level Park Enter",
+        "Channel # Park Enter",
+        "Channel # Unpark Enter"
+      ],
+      "warnings": [
+        "Park中の値はCueやSubmasterで変化しない。解除忘れに注意する。"
+      ],
+      "keywords": [
+        "Park",
+        "その他の機能",
+        "値を固定",
+        "動かない",
+        "パーク解除"
+      ],
+      "subtopics": [
+        {
+          "id": "15-3-1",
+          "title": "Live でのパークのかけ方"
+        },
+        {
+          "id": "15-3-2",
+          "title": "Live でのパークの外し方（Unpark）"
+        },
+        {
+          "id": "15-3-3",
+          "title": "Blind でのパーク画面"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 147,
+        "page_end": 148,
+        "extracted_text": "15-3. パーク (Park)\nChapter 15 その他の機能\nPark とはチャンネルやそのパラメータの数値を固定し、 出力することをいいます。 例えば、 ある灯体の\nIntensity を Park するとその灯体のゲージは変化しなくなり、 サブマスターやキューでも数値は変化しなくな\nります。 さらに、 その特定の数値がキューに Record ・ Update されることもありません。\n注意\nチャンネルがパークされていてもデータ上でマニュアル数値を乗せること、 Record、 Update すること\nが可能です。 その際、 「実際に実行している明かり」 と 「記録される明かり」 が違うということが発生する\n可能性があるので注意してください。\n左の画像では Ch1 が Intensity 40% で Park されている状態だとします。\nマニュアルで 80% をのせましたが、 実行されるのは 40％になります。\nグランドマスターやブラックアウト操作も影響を受けません。 Park をかけると画像の通り 「P」 と入ります。\nそして、 右上にも 「Parked Channels」 と表示されます。\n目次 01\n15-3-1. Live でのパークのかけ方\n02\nLive で全てのパラメーターをパークする\n＜指定するチャンネル＞ <Park> <Enter ＞\n03\nCh# Park Enter\n04\n例\n05\nチャンネル 31 から 35 の全パラメーターをパーク\n• Ch31 thru 35 Park Enter\n06\n07\nLive でチャンネルとゲージを指定してパークする\n＜指定するチャンネル＞ <At> < ゲージ > <Park> <Enter ＞\n08\nCh# At ＃ Park Enter\n09\n例\n10\nチャンネル 2 を 50％でパーク\n• 2 at 50 Park Enter\n11\n12\n13\n14\n15\n\nLive で指定したパラメーター (Intensity など ) をパークする\n＜指定するチャンネル＞ < パラメーター > <Park> <Enter ＞\nCh# パラメーター Park Enter\n例\nチャンネル 3 のパラメーターをパーク\n• Ch3 { パラメーター } Park Enter\nパラメータの指定はソフトキーで入力できます。\n15-3-2. Live でのパークの外し方（Unpark）\nLive で全てのパークを外す\n<Park> <Enter ＞ <Enter ＞\nPark Enter Enter\n2 度めの Enter で Confirm します。\nLive で個別にパークを外す\n＜指定するチャンネル＞ <Park> <Enter ＞\nCh# Park Enter\n例\nチャンネル 2 のパークを外す\n• 2 Park Enter\n15-3-3. Blind でのパーク画面\nPark キーを二度押すと ParkDisplay に入り、 自動で Blind モードとなります。\nこの画面では、毎回 Park キーを使用して構文を入力する必要がありません。 ムービングや LED のパラメーター\nを指定した Park、 Unpark ができます。\nPark されたチャンネル\nPark されたアドレス"
+      },
+      "content_status": "structured-from-manual"
+    },
+    {
+      "id": "15_4",
+      "manual_section": "15-4",
+      "chapter": 15,
+      "chapter_title": "その他の機能",
+      "category_id": "utilities",
+      "title": "Augment3d",
+      "route": "/guide/15_4",
+      "theme_color": "#9b5de5",
+      "summary": "3D空間で仕込み確認、フォーカス、プログラミングを支援する。",
+      "when_to_use": [],
+      "commands": [],
+      "warnings": [],
+      "keywords": [
+        "Augment3d",
+        "その他の機能"
+      ],
+      "subtopics": [
+        {
+          "id": "15-4-1",
+          "title": "Augment3d でできること"
+        }
+      ],
+      "source": {
+        "manual": "Eos Family 操作マニュアル 1.1.0 w",
+        "page_start": 149,
+        "page_end": 149,
+        "extracted_text": "Chapter 15 その他の機能\nBlind でチャンネルとゲージを指定してパークする\n＜指定するチャンネル＞ <At> < ゲージ > <Enter ＞\nCh# At ＃ Enter\n例\nチャンネル 3 を 40％でパーク\n• 3 at 40 Enter\nBlind でパークを外す\n＜指定するチャンネル＞ <At> <Enter ＞\nCh# At Enter\n例\nチャンネル 3 のパークを外す\n• 3 at Enter\n15-4. Augment3d\n目次 01\nAugment3d はオーグメンティッド (Augmented) と呼びます。 E がひっくり返り 3 になっています。\nEos に標準で搭載されているビジュアライザーです。\n15-4-1. Augment3d でできること\n02\n• Click-To-Focus ： Augment3d 上でタッチやマウスクリックを使用しムービングを Focus します。\n• Find Me ： スマートフォンと連携し、 aRFR/iRFR 機能を使用しムービングに自分を追わせます。\n03\n• Focus Wand ： スマートフォンを向けた方向にムービングを Focus します。\n• Zones ： Zone を設定し、 ムービングのビームがそのゾーンに入ると消える、 色が変わるなどの変化を設\n04\n定できます。\n05\n使用例 Broadway Musical『Hamilton』\n06\nAugment3d の機能を多く使用しているサンプルショーファイル 『Hamilton』 を ETC の公式サイトからダウ\n07\nンロードすることができます。 このショーファイルの中ではキューによって道具 ・ 役者の位置もプログラミングさ\nれていてそれら機能の例を実際に触ることができます。\n08\n09\n10\n11\n12\n13\n14\n15"
+      },
+      "content_status": "structured-from-manual"
+    }
+  ],
+  "keyboard_index": [
+    {
+      "key": "Sneak",
+      "article_id": "8_3"
+    },
+    {
+      "key": "Group",
+      "article_id": "8_4"
+    },
+    {
+      "key": "Select Last",
+      "article_id": "8_5"
+    },
+    {
+      "key": "Query",
+      "article_id": "8_6"
+    },
+    {
+      "key": "Undo",
+      "article_id": "8_7"
+    },
+    {
+      "key": "Capture",
+      "article_id": "8_8"
+    },
+    {
+      "key": "Rem Dim",
+      "article_id": "8_9"
+    },
+    {
+      "key": "Highlight",
+      "article_id": "8_10"
+    },
+    {
+      "key": "Offset",
+      "article_id": "8_11"
+    },
+    {
+      "key": "Fan",
+      "article_id": "8_12"
+    },
+    {
+      "key": "Effect",
+      "article_id": "13_1"
+    },
+    {
+      "key": "Park",
+      "article_id": "15_3"
+    },
+    {
+      "key": "About",
+      "article_id": "6_1"
+    },
+    {
+      "key": "Update",
+      "article_id": "11_4"
+    },
+    {
+      "key": "Record",
+      "article_id": "11_2"
+    },
+    {
+      "key": "Go To Cue",
+      "article_id": "11_3"
+    }
+  ],
+  "stats": {
+    "home_button_count": 12,
+    "chapter_count": 15,
+    "article_count": 72,
+    "articles_with_commands": 22,
+    "articles_with_warnings": 9
+  }
+}

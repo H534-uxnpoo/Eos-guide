@@ -1,0 +1,7 @@
+﻿{
+  "3_1": {"steps": ["DisplayキーでCIAを開き、Fileを選択します。", "上書き保存はSave、別名保存はSave As...から保存先を選択します。USBへ保存する場合は接続したUSB名を選びます。", "保存確認でOKを選択します。上書き保存はSuccessの表示を確認します。", "名前を変更する場合はキーボードから入力します。"], "verified_pages": [20,21]},
+  "8_3": {"steps": ["Sneakはマニュアルデータを削除し、Cue・Submasterなどのバックグラウンド、またはホーム値へ戻します。", "対象を限定する場合は、Sneakの前にチャンネルやパラメーターを指定します。", "全てのマニュアルデータを戻す場合はSneak、Enterを押します。全てのマニュアルデータが失われる点に注意してください。"], "verified_pages": [65]},
+  "11_3": {"steps": ["次のCueを再生する場合はGOボタンを押します。", "Cueを指定する場合はGo To Cueキー、Cue番号、Enterの順に入力します。", "指定したCueは、そのCueに設定されたタイムで実行されます。"], "verified_pages": [100]},
+  "13_6": {"steps": ["Liveモードで操作します。実行するEffectがエフェクトリストに登録されていることを確認します。", "対象チャンネル、Effect、Effect番号、Enterの順に入力します。", "Step Based Effectは内部でチャンネルが指定されているため、Recall From、Effect、Effect番号、Enterで実行できます。"], "verified_pages": [132]},
+  "13_8": {"steps": ["Shiftを押しながらEffectキーを押してStopEffectを呼び出します。", "停止するEffect番号を入力し、Enterで確定します。番号を入力しない場合は全てのEffectが停止します。"], "verified_pages": [133]}
+}

@@ -1,0 +1,26 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.local
+
+## 1. プロジェクトフォルダへ移動
+#cd "プロジェクトのフォルダ"
+
+# 2. Gitリポジトリとして初期化（まだなら）
+#git init
+
+# 3. ファイルを追加
+#git add .
+
+# 4. コミット
+#git commit -m "Initial commit"
+
+# 5. ブランチ名を main にする
+#git branch -M main
+
+# 6. GitHubの新しいリポジトリを登録
+#git remote add origin https://github.com/ユーザー名/リポジトリ名.git
+
+# 7. GitHubへpush
+#git push -u origin main

@@ -1,0 +1,3 @@
+﻿/* eslint-disable @typescript-eslint/no-explicit-any */
+export default function LiveBlindComparison({section}:{section:any}){return <section className="detail-card visual-widget"><h2>{section.title}</h2><div className="live-blind-grid">{(Array.isArray(section.modes)?section.modes:[]).map((m:any)=><article key={m.id} className={`mode-card mode-${m.id}`}><span className="visual-detail-label">モード</span><h3>{m.label}</h3><strong className="visual-title">{m.context}</strong><p className="visual-description">{m.command_line}</p><ul>{(m.points||[]).map((p:string,i:number)=><li key={i}>{p}</li>)}</ul></article>)}</div><p className="visual-note">概念図です。実際のEos画面を再現したものではありません。</p></section>}
+
