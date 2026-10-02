@@ -211,236 +211,6 @@
   ],
   "articles": [
     {
-      "id": "1_4",
-      "manual_section": "1-4",
-      "chapter": 1,
-      "chapter_title": "卓の外観と名称",
-      "category_id": "start",
-      "title": "キーの配置",
-      "route": "/guide/1_4",
-      "theme_color": "#ef476f",
-      "summary": "EosキーとPCキーボードの対応、Cue再生やCue Only操作などの実用コマンドを確認する。",
-      "when_to_use": [],
-      "commands": [],
-      "warnings": [],
-      "keywords": [
-        "キーの配置",
-        "PCキー",
-        "キーボード",
-        "ショートカット",
-        "Space",
-        "Cue Only",
-        "Go",
-        "Back",
-        "コマンドライン全消去"
-      ],
-      "subtopics": [
-        {
-          "id": "1-4-keyboard",
-          "title": "キーボード全体"
-        },
-        {
-          "id": "1-4-shortcuts",
-          "title": "PCキー早見表"
-        },
-        {
-          "id": "1-4-practical",
-          "title": "実用PCコマンド"
-        }
-      ],
-      "source": {
-        "manual": "Eos Family 操作マニュアル 1.1.0 w",
-        "page_start": 11,
-        "page_end": 11,
-        "extracted_text": "Chapter 1 卓の外観と名称 目次 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15\n11\n1-4. キーの配置"
-      },
-      "content_status": "user-curated",
-      "review": {
-        "decision": "表示",
-        "note": "使うもののみ表でまとめたい"
-      },
-      "keyboard_shortcuts": [],
-      "editorial_status": "published",
-      "content_sections": [
-        {
-          "type": "paragraphs",
-          "title": "キーの見方",
-          "items": [
-            "Eosキーの右下に書かれた小さい文字が、PCキーボードで使用するキーです。",
-            "このガイドではa4やcGのような省略表記を使わず、Alt＋4、Ctrl＋Gのように表示します。"
-          ]
-        },
-        {
-          "type": "image",
-          "title": "Eosキーボード全体",
-          "src": "/assets/keyboard/eos-keyboard.png",
-          "alt": "Eosキーボード全体とPCキーの対応",
-          "caption": "各キー右下の小さい表記がPCキーボードの割り当てです。"
-        },
-        {
-          "type": "table",
-          "title": "よく使うPCキー",
-          "columns": [
-            "Eosキー",
-            "PCキー",
-            "内容"
-          ],
-          "rows": [
-            [
-              "Group",
-              "G",
-              "Groupを指定"
-            ],
-            [
-              "Thru",
-              "T",
-              "範囲を指定"
-            ],
-            [
-              "At",
-              "A",
-              "値を指定"
-            ],
-            [
-              "Full",
-              "F",
-              "100％にする"
-            ],
-            [
-              "Out",
-              "O",
-              "0％にする"
-            ],
-            [
-              "Record",
-              "R",
-              "記録"
-            ],
-            [
-              "Update",
-              "U",
-              "更新"
-            ],
-            [
-              "Cue",
-              "Q",
-              "Cueを指定"
-            ],
-            [
-              "Go To Cue",
-              "Ctrl＋G",
-              "指定Cueへ移動"
-            ],
-            [
-              "Sneak",
-              "N",
-              "手動値を戻す"
-            ],
-            [
-              "Undo",
-              "Ctrl＋X",
-              "編集履歴を戻す"
-            ],
-            [
-              "Capture",
-              "Ctrl＋Alt＋P",
-              "手動値を保持"
-            ],
-            [
-              "Highlight",
-              "Alt＋4",
-              "灯体を順番に確認"
-            ]
-          ]
-        },
-        {
-          "type": "paragraphs",
-          "title": "表記の見方",
-          "items": [
-            "＋はキーを同時に押す操作、→は左から順番に押すEos構文を表します。",
-            "例：Shift＋Uは同時押し、U → X → Enterは順番に押します。"
-          ]
-        },
-        {
-          "type": "table",
-          "title": "実用PCコマンド",
-          "columns": [
-            "PC操作",
-            "動作",
-            "補足"
-          ],
-          "rows": [
-            [
-              "Shift＋Backspace",
-              "コマンドラインを全部消す",
-              "入力途中の構文をまとめて消去"
-            ],
-            [
-              "Alt＋E",
-              "現在のCue内のEffectを調整",
-              "元のEffectそのものや別のCueは変更しない"
-            ],
-            [
-              "U → X → Enter",
-              "Cue Only Update",
-              "修正を現在のCueだけに限定"
-            ],
-            [
-              "Ctrl＋X",
-              "Undo",
-              "誤って確定した編集構文を履歴から取り消す"
-            ],
-            [
-              "Shift＋U",
-              "ショーファイルを上書き保存",
-              "USBへの保存には使用しない"
-            ],
-            [
-              "Delete → Q → Cue番号 → X → Enter",
-              "Cue Only Delete",
-              "前後のCueへ影響させずに削除"
-            ],
-            [
-              "Ctrl＋G → Cue番号 → Enter",
-              "Go To Cue",
-              "指定Cueへ移動"
-            ],
-            [
-              "Alt＋G",
-              "SpaceキーのPlayback操作を有効化",
-              "Space／Alt＋Space／Shift＋Spaceを使用可能にする"
-            ],
-            [
-              "Space",
-              "GO",
-              "次のCueを再生"
-            ],
-            [
-              "Alt＋Space",
-              "Back",
-              "1つ前のCueへ戻る"
-            ],
-            [
-              "Shift＋Space",
-              "1秒でGO",
-              "移行Timeを1秒にして次のCueを再生"
-            ]
-          ]
-        },
-        {
-          "type": "note",
-          "title": "保存先に注意",
-          "tone": "warning",
-          "text": "Shift＋Uは現在のショーファイルの上書き保存です。USBへ保存するときはDisplays → File → Save AsからUSBを選びます。"
-        }
-      ],
-      "content_provenance": {
-        "experience": "user-provided-and-manual-derived",
-        "reference": "Eos Family 操作マニュアル Chapter 1／ユーザー提供キーボード画像／ユーザー実運用",
-        "review_status": "user-reviewed-shortcuts"
-      }
-    },
-    {
       "id": "1_5",
       "manual_section": "guide-glossary",
       "chapter": 1,
@@ -6556,13 +6326,13 @@
   "stats": {
     "home_button_count": 12,
     "chapter_count": 15,
-    "article_count": 36,
+    "article_count": 35,
     "articles_with_commands": 19,
     "articles_with_warnings": 2,
     "hidden_article_count": 34,
     "merged_article_count": 16,
     "keyboard_shortcut_count": 46,
-    "articles_with_structured_content": 36,
+    "articles_with_structured_content": 35,
     "interactive_timeline_count": 1,
     "annotated_image_count": 2,
     "magic_sheet_image_count": 2,
@@ -8467,7 +8237,6 @@
     "remaining_content_completion": {
       "version": "0.14",
       "completed_source_ids": [
-        "1_4",
         "2_2",
         "3_1",
         "3_2",
@@ -8482,7 +8251,6 @@
         "13_8"
       ],
       "published_target_ids": [
-        "1_4",
         "2_2",
         "3_1",
         "4_1",
@@ -8505,7 +8273,6 @@
       "version": "0.14.1",
       "source": "user-provided-workflow",
       "updated_article_ids": [
-        "1_4",
         "3_1",
         "8_1",
         "11_2",

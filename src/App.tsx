@@ -17,6 +17,10 @@ function readRoute() {
     const match = /^\/guide\/([^/]+)$/.exec(route);
     if (match) {
       const target = resolveArticleId(match[1]);
+      if (match[1] === '1_4') {
+        history.replaceState(null, '', '/#/keyboard');
+        return '/keyboard';
+      }
       if (target !== match[1] && articleById.has(target)) {
         const canonical = articleById.get(target)!.route;
         history.replaceState(null, '', '/#' + canonical);
