@@ -3,6 +3,8 @@ dist/
 test-results/
 playwright-report/
 *.local
+git switch -c beta
+git push -u origin beta
 
 ## 1. プロジェクトフォルダへ移動
 #cd "プロジェクトのフォルダ"
@@ -24,3 +26,5 @@ playwright-report/
 
 # 7. GitHubへpush
 #git push -u origin main
+
+.vercel
