@@ -1,5 +1,6 @@
 ﻿import type { ContentSection } from '../types';
 import StepTimeline from './StepTimeline';
+import AbsoluteTimeline from './AbsoluteTimeline';
 import { CueSectionRenderer, isCueSection } from './CueSectionRenderer';
 import CueWorkflow from './CueWorkflow';
 import Glossary from './Glossary';
@@ -17,6 +18,7 @@ export default function ContentSections({ sections }: { sections: ContentSection
     if (section.type === 'submaster_visualizer') return <SubmasterVisualizer key={index} section={section} />;
     if (section.type === 'effect_type_flow') return <EffectTypeFlow key={index} section={section} />;
     if (section.type === 'step_timeline') return <StepTimeline section={section} key={index} />;
+    if (section.type === 'absolute_effect_preview') return <AbsoluteTimeline section={section} key={index} />;
     if (section.type === 'image') return <figure className="diagram content-image" key={index} data-section-type="image"><a href={section.src} target="_blank" rel="noreferrer"><img src={section.src} alt={section.alt} loading="lazy" /></a>{section.caption && <figcaption>{section.caption}</figcaption>}</figure>;
     if (section.type === 'annotated_image') return <figure className="diagram content-image annotated-image" key={index}><div className="annotated-stage"><img src={section.src} alt={section.alt} /></div>{section.caption && <figcaption>{section.caption}</figcaption>}</figure>;
     if (!['paragraphs', 'bullets', 'steps', 'table', 'note'].includes((section as { type?: string }).type ?? '')) {

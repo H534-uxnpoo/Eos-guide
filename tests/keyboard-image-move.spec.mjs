@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
-const data = JSON.parse(fs.readFileSync(new URL('../EOS_GUIDE_v015_Interactive_Visual_Update/eos-guide-data-v0.15.json', import.meta.url), 'utf8'));
+const data = JSON.parse(fs.readFileSync(new URL('../EOS_GUIDE_v016_Effect_Preview_Kana_Search_update/EOS_GUIDE_v016_Effect_Preview_Kana_Search_update/eos-guide-data-v0.15.json', import.meta.url), 'utf8'));
 
 test('legacy keyboard article moves to the keyboard screen with the original image and shortcuts', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 740 });

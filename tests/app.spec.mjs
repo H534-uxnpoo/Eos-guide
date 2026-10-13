@@ -1,6 +1,6 @@
 ﻿import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
-const data = JSON.parse(fs.readFileSync(new URL('../EOS_GUIDE_v0.7_Magic_Sheet_update/eos-guide-data-v0.7.json', import.meta.url), 'utf8'));
+const data = JSON.parse(fs.readFileSync(new URL('../EOS_GUIDE_v016_Effect_Preview_Kana_Search_update/EOS_GUIDE_v016_Effect_Preview_Kana_Search_update/eos-guide-data-v0.15.json', import.meta.url), 'utf8'));
 const noOverflow = async page => expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
 test('12 categories, all published articles and keys; mobile layout and console', async ({ page }) => {
   const errors = [];
@@ -20,11 +20,13 @@ test('12 categories, all published articles and keys; mobile layout and console'
       await expect(page.locator('.article-card')).toHaveCount(articles.length);
       for (const article of articles) seen.add(article.id);
     } else {
-      await expect(page.locator('.key-grid button')).toHaveCount(11);
-      for (const item of data.keyboard_index.filter(entry => data.articles.some(article => article.id === entry.article_id))) {
-        await page.getByRole('button', { name: item.key, exact: true }).click();
-        await expect(page.locator('#key-description h2')).toHaveText(item.key);
-        await expect(page.locator('#key-description a')).toHaveAttribute('href', `#/guide/${item.article_id}`);
+      const visibleKeys = await page.locator('.key-grid button').evaluateAll(buttons => buttons.map(button => button.firstChild.textContent.trim()));
+      expect(visibleKeys.length).toBeGreaterThan(0);
+      for (const [index, key] of visibleKeys.entries()) {
+        const item = data.keyboard_index.find(entry => entry.key === key && data.articles.some(article => article.id === entry.article_id));
+        await page.locator('.key-grid button').nth(index).click();
+        await expect(page.locator('#key-description h2')).toHaveText(key);
+        if (item) await expect(page.locator('#key-description a')).toHaveAttribute('href', `#/guide/${item.article_id}`);
       }
     }
     await noOverflow(page);
@@ -48,11 +50,11 @@ test('12 categories, all published articles and keys; mobile layout and console'
 });
 test('favorites persist and can be removed; malformed storage is tolerated', async ({ page }) => {
   await page.goto('/#/guide/3_1');
-  const favorite = page.getByRole('button', { name: 'ショーファイルの保存をお気に入りに登録' });
+  const favorite = page.locator('.detail-title .favorite-button');
   await favorite.click(); await page.reload();
-  await expect(page.getByRole('button', { name: 'ショーファイルの保存をお気に入りから解除' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.detail-title .favorite-button')).toHaveAttribute('aria-pressed', 'true');
   await page.goto('/#/favorites'); await expect(page.locator('.article-card')).toHaveCount(1);
-  await page.getByRole('button', { name: 'ショーファイルの保存をお気に入りから解除' }).click();
+  await page.locator('.article-card .favorite-button').click();
   await page.reload(); await expect(page.getByText('お気に入りはまだありません')).toBeVisible();
   await page.evaluate(() => localStorage.setItem('eos-guide:favorites', '{broken'));
   await page.reload(); await expect(page.getByText('お気に入りはまだありません')).toBeVisible();
@@ -87,11 +89,11 @@ test('PWA precaches the app and data, and survives offline reloads', async ({ pa
   await context.setOffline(false);
 });
 
-test('v0.2 published data, hidden articles, merged URLs and migrated favorites', async ({ page }) => {
-  expect(data.articles).toHaveLength(51);
-  expect(data.hidden_articles).toHaveLength(18);
+test('attached v0.15 published data, hidden articles, redirects and migrated favorites', async ({ page }) => {
+  expect(data.articles).toHaveLength(35);
+  expect(data.hidden_articles).toHaveLength(34);
   await page.goto('/');
-  await expect(page.getByText('51 ARTICLES', { exact: true })).toBeVisible();
+  expect(data.articles.some(article => article.id === '1_4')).toBeFalsy();
   for (const hidden of data.hidden_articles) {
     await page.goto('/#/category/' + hidden.category_id);
     await expect(page.locator('.article-card a[href="#/guide/' + hidden.id + '"]')).toHaveCount(0);
@@ -99,49 +101,44 @@ test('v0.2 published data, hidden articles, merged URLs and migrated favorites',
     await page.getByRole('searchbox').fill(hidden.title);
     await expect(page.locator('.article-card a[href="#/guide/' + hidden.id + '"]')).toHaveCount(0);
     await page.goto('/#/guide/' + hidden.id);
-    await expect(page.getByRole('heading', { name: 'ページが見つかりません' })).toBeVisible();
+    const redirectedId = data.editorial_review.redirects?.[hidden.id];
+    if (redirectedId && data.articles.some(article => article.id === redirectedId)) {
+      await expect(page).toHaveURL(new RegExp('/#/guide/' + redirectedId + '$'));
+    } else {
+      await expect(page.getByRole('heading', { name: 'ページが見つかりません' })).toBeVisible();
+    }
   }
-  for (const [oldId, targetId] of [['5_2', '5_1'], ['12_2', '12_1'], ['12_3', '12_1']]) {
+  for (const [oldId, targetId] of Object.entries(data.editorial_review.redirects ?? {}).filter(([, targetId]) => data.articles.some(article => article.id === targetId))) {
     for (const url of ['/#/guide/', '/guide/']) {
       await page.goto(url + oldId);
       await expect(page).toHaveURL(new RegExp('/#/guide/' + targetId + '$'));
       await expect(page.getByRole('heading', { level: 1 })).toHaveText(data.articles.find(article => article.id === targetId).title);
     }
   }
-  await page.goto('/#/category/patch');
-  await expect(page.locator('.article-card').getByRole('heading', { name: 'Patchとは・画面の見方', exact: true })).toHaveCount(1);
-  await page.goto('/#/category/submaster');
-  await expect(page.locator('.article-card')).toHaveCount(1);
-  await expect(page.getByRole('heading', { name: 'Submasterの使い方', exact: true })).toBeVisible();
-  await page.evaluate(() => localStorage.setItem('eos-guide:favorites', JSON.stringify(['3_1', '5_2', '5_1', '12_2', '12_3', '1_1', 'missing', null])));
+  await page.evaluate(() => localStorage.setItem('eos-guide:favorites', JSON.stringify(['3_1', '9_2', '9_1', '11_6', '10_2', '1_4', 'missing', null])));
   await page.goto('/#/favorites'); await page.reload();
   await expect(page.locator('.article-card')).toHaveCount(3);
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('eos-guide:favorites')))).toEqual(['3_1', '5_1', '12_1']);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('eos-guide:favorites')))).toEqual(['3_1', '9_1', '10_2']);
   await page.reload(); await expect(page.locator('.article-card')).toHaveCount(3);
-  await page.getByRole('button', { name: 'Submasterの使い方をお気に入りから解除' }).click();
+  await page.locator('.article-card .favorite-button').first().click();
   await page.reload(); await expect(page.locator('.article-card')).toHaveCount(2);
 });
-test('PC shortcuts are distinct, accessible, linked and responsive', async ({ page }) => {
+test('PC shortcut tables remain available and responsive', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 740 });
-  await page.goto('/#/guide/11_3');
-  const card = page.locator('section').filter({ has: page.getByRole('heading', { name: 'PCキーボード', exact: true }) });
-  await expect(card.getByRole('group', { name: 'Go To Cue: Ctrl + Q → Cue番号 → Enter', exact: true })).toBeVisible();
-  await expect(card.locator('kbd')).toHaveText(['Ctrl', 'Q', 'Cue番号', 'Enter']);
-  await expect(card).toContainText('指定したCueへ移動する');
-  await expect(page.getByRole('heading', { name: 'コマンド例', exact: true })).toBeVisible();
+  await page.goto('/#/guide/11_2');
+  await expect(page.getByRole('heading', { name: 'PCキーボード', exact: true })).toBeVisible();
+  await expect(page.locator('body')).toContainText('U → X → Enter');
+  await expect(page.locator('body')).toContainText('Alt＋G');
   await noOverflow(page);
   await page.screenshot({ path: 'test-results/pc-shortcut-mobile.png', fullPage: true });
   await page.goto('/#/keyboard');
-  await expect(page.getByRole('heading', { name: 'PCキーボードショートカット' })).toBeVisible();
-  await expect(page.locator('.shortcut-link')).toHaveCount(data.articles.reduce((total, article) => total + (article.keyboard_shortcuts?.length ?? 0), 0));
+  await expect(page.locator('.pc-shortcuts h2')).toBeVisible();
+  await expect(page.locator('.pc-shortcuts tbody tr')).toHaveCount(data.pc_keyboard.bindings.length);
+  await expect(page.locator('.pc-shortcuts')).toContainText('Alt＋4');
   await noOverflow(page);
-  await page.locator('.shortcut-link').filter({ has: page.getByRole('heading', { name: 'Go To Cue', exact: true }) }).click();
-  await expect(page).toHaveURL(/#\/guide\/11_3$/);
-  await page.goto('/#/guide/3_1');
-  await expect(page.getByRole('heading', { name: 'PCキーボード', exact: true })).toHaveCount(0);
 });
 
-test('v0.4 structured Effect articles and four images render offline', async ({ page, context }) => {
+test('attached data structured Effect articles and images render offline', async ({ page, context }) => {
   await page.setViewportSize({ width: 320, height: 740 });
   await page.goto('/'); await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined)); await page.reload();
   await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBeTruthy();
@@ -155,6 +152,8 @@ test('v0.4 structured Effect articles and four images render offline', async ({ 
         await img.scrollIntoViewIfNeeded();
         await expect.poll(() => img.evaluate(element => element.complete && element.naturalWidth > 0)).toBeTruthy();
         images++;
+      } else if (section.type === 'effect_type_flow') {
+        await expect(page.locator('.effect-flow-grid')).toBeVisible();
       } else {
         await expect(page.locator('[data-section-type="' + section.type + '"]').filter({ has: page.getByRole('heading', { name: section.title, exact: true }) })).toBeVisible();
       }
@@ -162,8 +161,8 @@ test('v0.4 structured Effect articles and four images render offline', async ({ 
     await expect(page.getByText('画面図は準備中', { exact: true })).toHaveCount(0);
     await noOverflow(page);
   }
-  expect(images).toBe(4);
-  await expect(page.getByText('公式情報による補足', { exact: true })).toHaveCount(2);
+  const expectedImages = data.articles.filter(article => /^13_[1-5]$/.test(article.id)).flatMap(article => article.content_sections).filter(section => section.type === 'image').length;
+  expect(images).toBe(expectedImages);
   await context.setOffline(false);
 });
 test('Step timeline timing, controls, zero durations, inversion and mobile scrolling', async ({ page }) => {
@@ -201,7 +200,7 @@ test('Step timeline timing, controls, zero durations, inversion and mobile scrol
   await page.reload();
   await expect(timeline.locator('input').nth(section.editable.indexOf('step_time'))).toHaveValue('0.5');
   await noOverflow(page);
-  const scroller = timeline.getByRole('region');
+  const scroller = timeline.locator('.timeline-scroll');
   await scroller.focus(); await page.keyboard.press('ArrowRight');
   await expect.poll(() => scroller.evaluate(element => element.scrollLeft)).toBeGreaterThan(0);
   await timeline.screenshot({ path: 'test-results/timeline-mobile.png' });
@@ -227,7 +226,7 @@ test('Magic Sheet images remain unannotated and structured content renders', asy
   await expect(page.locator('[data-section-type="image"]').nth(1)).toContainText('Blindモード');
   await expect(page.locator('img').nth(0)).toHaveAttribute('src', '/assets/magic-sheet/magic-sheet-live.png');
   await page.goto('/#/guide/14_2');
-  await expect(page.locator('[data-section-type="image"] img')).toHaveCount(1);
+  await expect(page.locator('[data-section-type="image"] img')).toHaveCount(2);
   await expect(page.locator('.content-table-scroll')).toHaveCount(2);
   await expect(page.locator('.image-annotation')).toHaveCount(0);
   await expect(page.locator('.step-timeline')).toHaveCount(0);

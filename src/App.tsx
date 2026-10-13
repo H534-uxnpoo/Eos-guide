@@ -6,6 +6,7 @@ import Icon from './components/Icon';
 import ArticleCard from './components/ArticleCard';
 import ArticleDetail from './components/ArticleDetail';
 import Keyboard from './components/Keyboard';
+import { normalizeSearchText } from './search';
 
 const STORAGE_KEY = 'eos-guide:favorites';
 function loadFavorites(): string[] {
@@ -73,9 +74,8 @@ export default function App() {
   const isKeyboard = route === '/keyboard' || category?.id === 'keyboard';
   const title = article?.title ?? category?.label ?? (route === '/favorites' ? 'お気に入り' : route === '/search' ? '記事を検索' : isKeyboard ? 'Eosキーボード' : isHome ? '' : 'ページが見つかりません');
   useEffect(() => { document.title = title ? `${title} | EOS GUIDE` : 'EOS GUIDE — Eos操作ガイド'; }, [title]);
-  const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase().replace(/\s+/g, ' ').trim();
-  const terms = normalize(query).split(' ').filter(Boolean);
-  const articles = category ? data.articles.filter(item => item.category_id === category.id) : route === '/favorites' ? data.articles.filter(item => favorites.includes(item.id)) : route === '/search' && terms.length ? data.articles.filter(item => { const haystack = normalize([item.title, item.summary, ...item.keywords, ...item.when_to_use, ...item.commands, ...item.subtopics.map(topic => topic.title)].join(' ')); return terms.every(term => haystack.includes(term)); }) : [];
+  const terms = normalizeSearchText(query).split(' ').filter(Boolean);
+  const articles = category ? data.articles.filter(item => item.category_id === category.id) : route === '/favorites' ? data.articles.filter(item => favorites.includes(item.id)) : route === '/search' && terms.length ? data.articles.filter(item => { const haystack = normalizeSearchText([item.title, item.summary, ...item.keywords, ...item.when_to_use, ...item.commands, ...item.subtopics.map(topic => topic.title)].join(' ')); return terms.every(term => haystack.includes(term)); }) : [];
   const accent = categoryColor(article?.category_id ?? category?.id ?? '');
   return <div className="app" style={{ '--accent': accent } as CSSProperties}>
     <a className="skip-link" href="#main-content" onClick={event => { event.preventDefault(); main.current?.focus(); }}>本文へ移動</a>

@@ -1,5 +1,5 @@
 ﻿import type { GuideData } from './types';
-import raw from '../EOS_GUIDE_v015_Interactive_Visual_Update/eos-guide-data-v0.15.json';
+import raw from '../EOS_GUIDE_v016_Effect_Preview_Kana_Search_update/EOS_GUIDE_v016_Effect_Preview_Kana_Search_update/eos-guide-data-v0.15.json';
 export const data = raw as GuideData;
 export const articleById = new Map(data.articles.map(article => [article.id, article]));
 const mergedIds = new Map<string, string>(data.editorial_review.merge_groups.flatMap(group => group.source_ids.filter(id => id !== group.target_id).map(id => [id, group.target_id] as const)));

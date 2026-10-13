@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160">
+  <defs>
+    <style>
+      .bg{fill:#07111b}.panel{fill:#0d1b29;stroke:#34516b;stroke-width:2}.sub{fill:#101f2e;stroke:#2b4358;stroke-width:1.5}
+      .title{fill:#f2f6fb;font:700 30px 'Yu Gothic','Meiryo',sans-serif}.h2{fill:#f3b419;font:700 22px 'Yu Gothic','Meiryo',sans-serif}
+      .txt{fill:#d9e2ec;font:16px 'Yu Gothic','Meiryo',sans-serif}.small{fill:#9fb1c3;font:14px 'Yu Gothic','Meiryo',sans-serif}
+      .label{fill:#b9c8d6;font:15px 'Yu Gothic','Meiryo',sans-serif}.num{fill:#07111b;font:700 20px 'Yu Gothic','Meiryo',sans-serif;text-anchor:middle;dominant-baseline:middle}
+      .offnum{fill:#d9e2ec;font:700 20px 'Yu Gothic','Meiryo',sans-serif;text-anchor:middle;dominant-baseline:middle}
+      .axis{stroke:#66839b;stroke-width:2}.grid{stroke:#263b4d;stroke-width:1}.on{fill:#ffd21f;stroke:#ffe783;stroke-width:3}.off{fill:#111c26;stroke:#60778a;stroke-width:3}
+      .curve{fill:none;stroke:#ffd21f;stroke-width:4}.area{fill:#ffd21f;opacity:.16}.marker{stroke:#ff9f1a;stroke-width:2;stroke-dasharray:7 6}
+      .chip{fill:#162b3d;stroke:#44627b}.chiptext{fill:#dbe7f0;font:14px 'Yu Gothic','Meiryo',sans-serif;text-anchor:middle}
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="1160"/>
+
+  <text class="title" x="50" y="58">Effect 動作プレビュー — 想定図</text>
+  <text class="small" x="50" y="88">上：灯体の現在状態　下：既存の時間グラフ　▶で再生／一時停止、↺で先頭へ戻る</text>
+
+  <!-- Step based -->
+  <rect class="panel" x="40" y="120" width="1360" height="480" rx="18"/>
+  <text class="h2" x="70" y="162">Step Based Effect</text>
+  <rect class="chip" x="1135" y="137" width="92" height="34" rx="17"/><text class="chiptext" x="1181" y="159">▶ 再生</text>
+  <rect class="chip" x="1238" y="137" width="125" height="34" rx="17"/><text class="chiptext" x="1300" y="159">↺ 先頭へ</text>
+  <text class="label" x="70" y="205">灯体プレビュー</text>
+  <text class="small" x="1200" y="205">現在 2.2秒</text>
+  <line class="axis" x1="160" y1="270" x2="1280" y2="270"/>
+  <circle class="off" cx="220" cy="260" r="42"/><text class="offnum" x="220" y="260">6</text>
+  <circle class="off" cx="410" cy="260" r="42"/><text class="offnum" x="410" y="260">7</text>
+  <circle class="on" cx="600" cy="260" r="42"/><text class="num" x="600" y="260">8</text>
+  <circle class="off" cx="790" cy="260" r="42"/><text class="offnum" x="790" y="260">9</text>
+  <circle class="off" cx="980" cy="260" r="42"/><text class="offnum" x="980" y="260">10</text>
+  <circle class="off" cx="1170" cy="260" r="42"/><text class="offnum" x="1170" y="260">11</text>
+  <text class="small" x="70" y="327">入力例：Step 0.5s ／ In 0.5s ／ Dwell 0.7s ／ Decay 0.5s ／ On 100 ／ Off 0</text>
+  <rect class="sub" x="70" y="350" width="1290" height="210" rx="10"/>
+  <line class="axis" x1="155" y1="520" x2="1325" y2="520"/>
+  <line class="grid" x1="155" y1="380" x2="155" y2="520"/><line class="grid" x1="375" y1="380" x2="375" y2="520"/>
+  <line class="grid" x1="595" y1="380" x2="595" y2="520"/><line class="grid" x1="815" y1="380" x2="815" y2="520"/>
+  <line class="grid" x1="1035" y1="380" x2="1035" y2="520"/><line class="grid" x1="1255" y1="380" x2="1255" y2="520"/>
+  <text class="small" x="145" y="545">0</text><text class="small" x="365" y="545">1</text><text class="small" x="585" y="545">2</text>
+  <text class="small" x="805" y="545">3</text><text class="small" x="1025" y="545">4</text><text class="small" x="1245" y="545">5秒</text>
+  <path class="area" d="M155 520 L265 410 L419 410 L529 520 L375 520 L485 410 L639 410 L749 520 L595 520 L705 410 L859 410 L969 520 L815 520 L925 410 L1079 410 L1189 520 L1035 520 L1145 410 L1299 410 L1325 436 L1325 520 Z"/>
+  <path class="curve" d="M155 520 L265 410 L419 410 L529 520 M375 520 L485 410 L639 410 L749 520 M595 520 L705 410 L859 410 L969 520 M815 520 L925 410 L1079 410 L1189 520 M1035 520 L1145 410 L1299 410 L1325 436"/>
+  <line class="marker" x1="639" y1="370" x2="639" y2="520"/><text class="small" x="650" y="390">現在位置</text>
+
+  <!-- Absolute -->
+  <rect class="panel" x="40" y="630" width="1360" height="480" rx="18"/>
+  <text class="h2" x="70" y="672">Absolute Effect</text>
+  <rect class="chip" x="1135" y="647" width="92" height="34" rx="17"/><text class="chiptext" x="1181" y="669">▶ 再生</text>
+  <rect class="chip" x="1238" y="647" width="125" height="34" rx="17"/><text class="chiptext" x="1300" y="669">↺ 先頭へ</text>
+  <text class="label" x="70" y="715">灯体プレビュー（Grouping：3）</text>
+  <text class="small" x="1200" y="715">現在 1.5秒</text>
+  <line class="axis" x1="160" y1="780" x2="1280" y2="780"/>
+  <circle class="on" cx="220" cy="770" r="42"/><text class="num" x="220" y="770">6</text>
+  <circle class="on" cx="410" cy="770" r="42"/><text class="num" x="410" y="770">7</text>
+  <circle class="off" cx="600" cy="770" r="42"/><text class="offnum" x="600" y="770">8</text>
+  <circle class="off" cx="790" cy="770" r="42"/><text class="offnum" x="790" y="770">9</text>
+  <circle class="off" cx="980" cy="770" r="42"/><text class="offnum" x="980" y="770">10</text>
+  <circle class="off" cx="1170" cy="770" r="42"/><text class="offnum" x="1170" y="770">11</text>
+  <text class="small" x="70" y="837">入力例：Time 0.5s ／ Dwell 0.7s ／ Level 100 → Bkgrd ／ Grouping 3 ／ Cycle 4.8s</text>
+  <rect class="sub" x="70" y="860" width="1290" height="210" rx="10"/>
+  <line class="axis" x1="155" y1="1030" x2="1325" y2="1030"/>
+  <line class="grid" x1="155" y1="890" x2="155" y2="1030"/><line class="grid" x1="399" y1="890" x2="399" y2="1030"/>
+  <line class="grid" x1="643" y1="890" x2="643" y2="1030"/><line class="grid" x1="887" y1="890" x2="887" y2="1030"/>
+  <line class="grid" x1="1131" y1="890" x2="1131" y2="1030"/><line class="grid" x1="1325" y1="890" x2="1325" y2="1030"/>
+  <text class="small" x="145" y="1055">0</text><text class="small" x="389" y="1055">1</text><text class="small" x="633" y="1055">2</text>
+  <text class="small" x="877" y="1055">3</text><text class="small" x="1121" y="1055">4</text><text class="small" x="1300" y="1055">4.8秒</text>
+  <path class="area" d="M155 1030 L277 910 L448 910 L570 1030 L643 1030 L765 910 L936 910 L1058 1030 L1131 1030 L1253 910 L1325 910 L1325 1030 Z"/>
+  <path class="curve" d="M155 1030 L277 910 L448 910 L570 1030 L643 1030 L765 910 L936 910 L1058 1030 L1131 1030 L1253 910 L1325 910"/>
+  <line class="marker" x1="521" y1="880" x2="521" y2="1030"/><text class="small" x="532" y="900">現在位置</text>
+  <text class="small" x="170" y="900">Group 1：ch6・7</text><text class="small" x="658" y="900">Group 2：ch8・9</text><text class="small" x="1145" y="900">Group 3：ch10・11</text>
+</svg>

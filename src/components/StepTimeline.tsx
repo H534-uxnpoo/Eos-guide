@@ -1,11 +1,17 @@
 ﻿import { useId, useState } from 'react';
 import type { StepTimelineSection, TimelineField } from '../types';
+import { clampPercent, mixHex } from './effects/effectColors';
+import EffectPlaybackControls from './effects/EffectPlaybackControls';
+import FixturePreview from './effects/FixturePreview';
+import { useEffectPlayback } from './effects/useEffectPlayback';
 const format = (value: number) => Number(value.toFixed(2)).toString();
 export default function StepTimeline({ section }: { section: StepTimelineSection }) {
   const [values, setValues] = useState(section.defaults);
   const id = useId();
+  const channels = Array.isArray(section.channels) ? section.channels : [];
   const duration = values.in_time + values.dwell_time + values.decay_time;
-  const end = Math.max(1, Math.max(0, section.channels.length - 1) * values.step_time + duration + 0.5);
+  const end = Math.max(1, Math.max(0, channels.length - 1) * values.step_time + duration + 0.5);
+  const playback = useEffectPlayback(end);
   const width = 1000, left = 135, right = 45, top = 85, laneHeight = 116;
   const height = top + section.channels.length * laneHeight + 60;
   const x = (time: number) => left + time / end * (width - left - right);
@@ -20,20 +26,38 @@ export default function StepTimeline({ section }: { section: StepTimelineSection
     if (!Number.isFinite(next)) return;
     setValues(previous => ({ ...previous, [field]: Math.min(field.endsWith('state') ? 100 : 60, Math.max(0, next)) }));
   }
+  const fixtures = channels.map((channel, index) => {
+    const elapsed = playback.currentTime - index * values.step_time;
+    const off = values.off_state;
+    const on = values.on_state;
+    let level = off;
+    if (elapsed >= 0) {
+      if (values.in_time > 0 && elapsed < values.in_time) level = off + (on - off) * elapsed / values.in_time;
+      else if (elapsed < values.in_time + values.dwell_time) level = on;
+      else if (values.decay_time > 0 && elapsed < values.in_time + values.dwell_time + values.decay_time) {
+        const decayProgress = (elapsed - values.in_time - values.dwell_time) / values.decay_time;
+        level = on + (off - on) * decayProgress;
+      }
+    }
+    const percent = clampPercent(level);
+    return { channel, fill: mixHex('#111c26', '#ffd21f', percent / 100), textColor: percent > 64 ? '#172019' : '#eef2f5', label: `${format(percent)}%` };
+  });
   return <section className="detail-card step-timeline" data-section-type="step_timeline">
     <h2>{section.title}</h2><p>{section.description}</p>
     <div className="timeline-controls">{section.editable.map(field => <label key={field} htmlFor={`${id}-${field}`}><span>{section.labels[field]}</span><div><input id={`${id}-${field}`} aria-label={section.labels[field]} type="number" min="0" max={field.endsWith('state') ? 100 : 60} step={field.endsWith('state') ? 1 : 0.1} value={values[field]} onChange={event => update(field, event.target.value)} /><span>{field.endsWith('state') ? '%' : section.axis.unit}</span></div></label>)}</div>
     <button className="timeline-reset" onClick={() => setValues({ ...section.defaults })}>初期値に戻す</button>
+    <FixturePreview fixtures={fixtures} />
+    <EffectPlaybackControls currentTime={playback.currentTime} isPlaying={playback.isPlaying} onPlay={playback.play} onPause={playback.pause} onReset={playback.reset} />
     <p className="muted small">時間は0〜60秒、値は0〜100%で確認できます。図は横にスクロールできます。</p>
     <div className="timeline-legend">{phases.map(phase => <span className={phase.className} key={phase.field}>{section.labels[phase.field]}: {format(values[phase.field])}{section.axis.unit}</span>)}</div>
     <p className="small">{section.labels.on_state}: {format(values.on_state)}% ／ {section.labels.off_state}: {format(values.off_state)}%</p>
     <div className="timeline-scroll" role="region" aria-label={`${section.title}の横スクロール図`} tabIndex={0}>
       <svg className="timeline-svg" viewBox={`0 0 ${width} ${height}`} role="img" aria-labelledby={`${id}-title`} aria-describedby={`${id}-description`}>
         <title id={`${id}-title`}>{section.title}</title>
-        <desc id={`${id}-description`}>{section.description} {section.channels.map((channel, index) => `チャンネル${channel}: ${format(index * values.step_time)}秒から開始`).join('。')}。{section.labels.in_time} {values.in_time}秒、{section.labels.dwell_time} {values.dwell_time}秒、{section.labels.decay_time} {values.decay_time}秒。{section.labels.off_state} {values.off_state}%から{section.labels.on_state} {values.on_state}%へ変化し、元へ戻ります。</desc>
+        <desc id={`${id}-description`}>{section.description} {channels.map((channel, index) => `チャンネル${channel}: ${format(index * values.step_time)}秒から開始`).join('。')}。{section.labels.in_time} {values.in_time}秒、{section.labels.dwell_time} {values.dwell_time}秒、{section.labels.decay_time} {values.decay_time}秒。{section.labels.off_state} {values.off_state}%から{section.labels.on_state} {values.on_state}%へ変化し、元へ戻ります。</desc>
         <text x={left} y={23}>{section.axis.label}（{section.axis.unit}）</text>
         {Array.from({ length: 7 }, (_, index) => end * index / 6).map((time, index) => <g key={index}><line className="time-grid" x1={x(time)} x2={x(time)} y1={55} y2={height - 45}/><text x={x(time)} y={47} textAnchor="middle">{format(time)}</text></g>)}
-        {section.channels.map((channel, index) => {
+        {channels.map((channel, index) => {
           const start = index * values.step_time;
           const inEnd = start + values.in_time, dwellEnd = inEnd + values.dwell_time, finish = dwellEnd + values.decay_time;
           const laneTop = top + index * laneHeight;
